@@ -32,11 +32,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       
-      - name: Generate picks (lite version)
+      - name: Generate picks (REAL MODEL)
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: |
-          python scripts/generate_picks_for_rrmodel_lite.py
+          python scripts/generate_picks_for_rrmodel.py
       
       - name: Commit and push picks
         run: |

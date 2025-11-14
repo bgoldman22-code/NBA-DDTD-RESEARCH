@@ -35,13 +35,6 @@ env/
 .DS_Store
 Thumbs.db
 
-# Data - exclude raw boxscores (too large for git - 600MB+)
-# The trained model (ddtd_model_v3.pkl) is kept, raw data excluded
-data/nba/boxscores-raw/
-
-# Keep only the output file
-!data/nba/ddtd_today_picks.json
-
 # Logs
 *.log
 
