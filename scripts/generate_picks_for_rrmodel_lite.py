@@ -19,6 +19,9 @@ ODDS_API_KEY = os.environ.get('ODDS_API_KEY')
 MODEL_PATH = Path('models/nba/ddtd/ddtd_model_v3.pkl')
 OUTPUT_PATH = Path('data/nba/ddtd_today_picks.json')
 
+# Allowed bookmakers
+ALLOWED_BOOKS = ['fanduel', 'draftkings', 'caesars', 'betmgm', 'fanatics', 'williamhill_us']
+
 def fetch_todays_games():
     """Fetch today's NBA games from ESPN"""
     url = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard'
@@ -74,6 +77,12 @@ def fetch_player_props_odds():
                 props_data = props_response.json()
                 
                 for bookmaker in props_data.get('bookmakers', []):
+                    book_key = bookmaker['key']
+                    
+                    # Filter to allowed bookmakers
+                    if book_key not in ALLOWED_BOOKS:
+                        continue
+                    
                     for market in bookmaker.get('markets', []):
                         market_key = market['key']
                         
@@ -82,10 +91,10 @@ def fetch_player_props_odds():
                                 'player_name': outcome['description'],
                                 'market': market_key,
                                 'odds': outcome['price'],
-                                'bookmaker': bookmaker['key']
+                                'bookmaker': bookmaker['title']  # Use title for display name
                             })
         
-        print(f"✅ Fetched odds for {len(all_props)} props\n")
+        print(f"✅ Fetched odds for {len(all_props)} props (filtered books)\n")
         return pd.DataFrame(all_props)
     
     except Exception as e:
@@ -187,7 +196,7 @@ def main():
             
             pick = {
                 'player': player,
-                'odds': odds,
+                'odds': int(odds),  # Keep as integer American odds
                 'implied_prob': round(implied_prob * 100, 1),
                 'edge': round(edge, 1),
                 'bookmaker': row['bookmaker']
@@ -215,7 +224,7 @@ def main():
                 'dd_picks': len(dd_picks),
                 'td_picks': len(td_picks)
             },
-            'note': 'Lite version - fetch recent stats via API'
+            'note': 'Lite version - filtered to approved bookmakers'
         }
     
     # Save output
