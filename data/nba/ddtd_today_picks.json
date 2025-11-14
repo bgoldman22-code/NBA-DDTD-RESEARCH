@@ -1,16 +1,122 @@
 {
   "date": "2025-11-14",
-  "generated_at": "2025-11-14T00:00:00Z",
-  "model_version": "v3",
+  "generated_at": "2025-11-14T20:08:15.759796",
+  "model_version": "v3_lite",
   "picks": {
-    "dd": [],
-    "td": []
+    "double_double": [
+      {
+        "player": "Pelle Larsson",
+        "odds": 71.0,
+        "implied_prob": 58.5,
+        "edge": 41.5,
+        "bookmaker": "draftkings"
+      },
+      {
+        "player": "Norman Powell",
+        "odds": 47.0,
+        "implied_prob": 68.0,
+        "edge": 32.0,
+        "bookmaker": "draftkings"
+      },
+      {
+        "player": "DeMar DeRozan",
+        "odds": 43.0,
+        "implied_prob": 69.9,
+        "edge": 30.1,
+        "bookmaker": "draftkings"
+      },
+      {
+        "player": "Cole Anthony",
+        "odds": 41.0,
+        "implied_prob": 70.9,
+        "edge": 29.1,
+        "bookmaker": "bovada"
+      },
+      {
+        "player": "Rui Hachimura",
+        "odds": 41.0,
+        "implied_prob": 70.9,
+        "edge": 29.1,
+        "bookmaker": "fanduel"
+      },
+      {
+        "player": "Al Horford",
+        "odds": 38.0,
+        "implied_prob": 72.5,
+        "edge": 27.5,
+        "bookmaker": "draftkings"
+      },
+      {
+        "player": "Kevon Looney",
+        "odds": 37.0,
+        "implied_prob": 73.0,
+        "edge": 27.0,
+        "bookmaker": "draftkings"
+      },
+      {
+        "player": "Zach LaVine",
+        "odds": 36.0,
+        "implied_prob": 73.5,
+        "edge": 26.5,
+        "bookmaker": "draftkings"
+      },
+      {
+        "player": "Al Horford",
+        "odds": 36.0,
+        "implied_prob": 73.5,
+        "edge": 26.5,
+        "bookmaker": "bovada"
+      },
+      {
+        "player": "Jeremiah Fears",
+        "odds": 35.0,
+        "implied_prob": 74.1,
+        "edge": 25.9,
+        "bookmaker": "draftkings"
+      }
+    ],
+    "triple_double": [
+      {
+        "player": "Anthony Edwards",
+        "odds": 70.0,
+        "implied_prob": 58.8,
+        "edge": 41.2,
+        "bookmaker": "draftkings"
+      },
+      {
+        "player": "Tyrese Maxey",
+        "odds": 65.0,
+        "implied_prob": 60.6,
+        "edge": 39.4,
+        "bookmaker": "draftkings"
+      },
+      {
+        "player": "Jaime Jaquez Jr",
+        "odds": 61.0,
+        "implied_prob": 62.1,
+        "edge": 37.9,
+        "bookmaker": "fanduel"
+      },
+      {
+        "player": "Jimmy Butler",
+        "odds": 56.0,
+        "implied_prob": 64.1,
+        "edge": 35.9,
+        "bookmaker": "fanduel"
+      },
+      {
+        "player": "Jaime Jaquez Jr",
+        "odds": 51.0,
+        "implied_prob": 66.2,
+        "edge": 33.8,
+        "bookmaker": "bovada"
+      }
+    ]
   },
   "summary": {
-    "total_dd": 0,
-    "total_td": 0,
-    "avg_edge_dd": 0,
-    "avg_edge_td": 0
+    "total_picks": 15,
+    "dd_picks": 10,
+    "td_picks": 5
   },
-  "note": "Initial file - will be updated by GitHub Action"
+  "note": "Lite version - fetch recent stats via API"
 }
