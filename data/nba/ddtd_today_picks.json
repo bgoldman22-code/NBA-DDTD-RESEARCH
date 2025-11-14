@@ -1,0 +1,16 @@
+{
+  "date": "2025-11-14",
+  "generated_at": "2025-11-14T00:00:00Z",
+  "model_version": "v3",
+  "picks": {
+    "dd": [],
+    "td": []
+  },
+  "summary": {
+    "total_dd": 0,
+    "total_td": 0,
+    "avg_edge_dd": 0,
+    "avg_edge_td": 0
+  },
+  "note": "Initial file - will be updated by GitHub Action"
+}

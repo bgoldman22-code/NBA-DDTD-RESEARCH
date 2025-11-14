@@ -1,0 +1,43 @@
+name: Generate Daily NBA DD/TD Picks
+
+on:
+  schedule:
+    # Run daily at 3:00 PM UTC = 10:00 AM Eastern (adjust for DST as needed)
+    # NBA games typically start 7-10 PM ET, so 10 AM gives time for odds to settle
+    - cron: '0 15 * * *'
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  generate-picks:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install joblib pandas numpy requests scikit-learn
+      
+      - name: Generate picks
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: |
+          python scripts/generate_picks_for_rrmodel.py
+      
+      - name: Commit and push picks
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/nba/ddtd_today_picks.json
+          git diff --staged --quiet || git commit -m "Update daily DD/TD picks [automated]"
+          git push
