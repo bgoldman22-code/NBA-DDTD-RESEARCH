@@ -101,45 +101,23 @@ def fetch_player_props_odds():
         print(f"⚠️  Error fetching odds: {e}")
         return pd.DataFrame()
 
-def fetch_recent_player_stats(player_name, games=20):
-    """Fetch recent stats for a player from ESPN API"""
-    # Clean player name for URL
-    search_name = player_name.replace(' ', '%20')
+def get_best_odds(odds_df):
+    """
+    For each player + market combo, keep only the best odds
+    Best = highest positive odds (e.g., +700 better than +600)
+    """
+    if odds_df.empty:
+        return odds_df
     
-    try:
-        # Search for player
-        search_url = f'https://site.api.espn.com/apis/common/v3/search?query={search_name}&type=player&sport=basketball&league=nba'
-        search_response = requests.get(search_url, timeout=10)
-        results = search_response.json().get('results', [])
-        
-        if not results:
-            return None
-        
-        player_id = results[0].get('id')
-        
-        # Get player stats
-        stats_url = f'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/athletes/{player_id}/gamelog'
-        stats_response = requests.get(stats_url, timeout=10)
-        game_log = stats_response.json()
-        
-        # Extract recent games
-        events = game_log.get('events', [])[:games]
-        
-        recent_stats = {
-            'avg_minutes': np.mean([e.get('stats', {}).get('minutes', 0) for e in events]),
-            'avg_points': np.mean([e.get('stats', {}).get('points', 0) for e in events]),
-            'avg_rebounds': np.mean([e.get('stats', {}).get('rebounds', 0) for e in events]),
-            'avg_assists': np.mean([e.get('stats', {}).get('assists', 0) for e in events]),
-            'avg_steals': np.mean([e.get('stats', {}).get('steals', 0) for e in events]),
-            'avg_blocks': np.mean([e.get('stats', {}).get('blocks', 0) for e in events]),
-            'games_played': len(events)
-        }
-        
-        return recent_stats
+    best_odds = []
     
-    except Exception as e:
-        print(f"   ⚠️  Error fetching stats for {player_name}: {e}")
-        return None
+    # Group by player and market
+    for (player, market), group in odds_df.groupby(['player_name', 'market']):
+        # Find best odds (highest for positive odds)
+        best_row = group.loc[group['odds'].idxmax()]
+        best_odds.append(best_row)
+    
+    return pd.DataFrame(best_odds)
 
 def main():
     print("🏀 NBA DD/TD Picks Generator (Lite Version)\n")
@@ -176,6 +154,11 @@ def main():
             'note': 'No odds available - waiting for games to be posted'
         }
     else:
+        # Deduplicate - keep best odds per player
+        print("🔄 Deduplicating odds (keeping best per player)...")
+        odds_df = get_best_odds(odds_df)
+        print(f"✅ {len(odds_df)} unique player props after deduplication\n")
+        
         # Generate predictions (simplified - using odds as proxy)
         dd_picks = []
         td_picks = []
@@ -224,7 +207,7 @@ def main():
                 'dd_picks': len(dd_picks),
                 'td_picks': len(td_picks)
             },
-            'note': 'Lite version - filtered to approved bookmakers'
+            'note': 'Best odds per player from approved bookmakers'
         }
     
     # Save output
