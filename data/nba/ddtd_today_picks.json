@@ -1,114 +1,114 @@
 {
-  "date": "2025-11-15",
-  "generated_at": "2025-11-15T15:13:45.171738",
+  "date": "2025-11-16",
+  "generated_at": "2025-11-16T15:13:22.513248",
   "model_version": "v3_lite",
   "picks": {
     "double_double": [
       {
-        "player": "Ben Sheppard",
-        "odds": 43,
-        "implied_prob": 69.9,
-        "edge": 30.1,
+        "player": "Harrison Barnes",
+        "odds": 96,
+        "implied_prob": 51.0,
+        "edge": 49.0,
         "bookmaker": "DraftKings"
       },
       {
-        "player": "Donte DiVincenzo",
+        "player": "DeMar DeRozan",
+        "odds": 51,
+        "implied_prob": 66.2,
+        "edge": 33.8,
+        "bookmaker": "DraftKings"
+      },
+      {
+        "player": "Devin Vassell",
+        "odds": 51,
+        "implied_prob": 66.2,
+        "edge": 33.8,
+        "bookmaker": "DraftKings"
+      },
+      {
+        "player": "Khris Middleton",
+        "odds": 51,
+        "implied_prob": 66.2,
+        "edge": 33.8,
+        "bookmaker": "DraftKings"
+      },
+      {
+        "player": "Dennis Schroder",
+        "odds": 46,
+        "implied_prob": 68.5,
+        "edge": 31.5,
+        "bookmaker": "DraftKings"
+      },
+      {
+        "player": "Kevin Huerter",
         "odds": 41,
         "implied_prob": 70.9,
         "edge": 29.1,
         "bookmaker": "FanDuel"
       },
       {
-        "player": "Jaylen Wells",
-        "odds": 37,
-        "implied_prob": 73.0,
-        "edge": 27.0,
+        "player": "Terance Mann",
+        "odds": 41,
+        "implied_prob": 70.9,
+        "edge": 29.1,
+        "bookmaker": "FanDuel"
+      },
+      {
+        "player": "Zach LaVine",
+        "odds": 40,
+        "implied_prob": 71.4,
+        "edge": 28.6,
         "bookmaker": "DraftKings"
       },
       {
-        "player": "Jarace Walker",
+        "player": "Precious Achiuwa",
         "odds": 36,
         "implied_prob": 73.5,
         "edge": 26.5,
         "bookmaker": "DraftKings"
       },
       {
-        "player": "Jaden McDaniels",
-        "odds": 31,
-        "implied_prob": 76.3,
-        "edge": 23.7,
-        "bookmaker": "FanDuel"
-      },
-      {
-        "player": "Tony Bradley",
-        "odds": 29,
-        "implied_prob": 77.5,
-        "edge": 22.5,
-        "bookmaker": "DraftKings"
-      },
-      {
-        "player": "T.J. McConnell",
-        "odds": 28,
-        "implied_prob": 78.1,
-        "edge": 21.9,
-        "bookmaker": "FanDuel"
-      },
-      {
-        "player": "Jamal Shead",
-        "odds": 26,
-        "implied_prob": 79.4,
-        "edge": 20.6,
-        "bookmaker": "Fanatics"
-      },
-      {
-        "player": "Lonzo Ball",
-        "odds": 24,
-        "implied_prob": 80.6,
-        "edge": 19.4,
-        "bookmaker": "DraftKings"
-      },
-      {
-        "player": "Sandro Mamukelashvili",
-        "odds": 24,
-        "implied_prob": 80.6,
-        "edge": 19.4,
+        "player": "Jordan Walsh",
+        "odds": 35,
+        "implied_prob": 74.1,
+        "edge": 25.9,
         "bookmaker": "DraftKings"
       }
     ],
     "triple_double": [
       {
-        "player": "Donovan Mitchell",
+        "player": "De'Aaron Fox",
+        "odds": 85,
+        "implied_prob": 54.1,
+        "edge": 45.9,
+        "bookmaker": "DraftKings"
+      },
+      {
+        "player": "Nicolas Claxton",
+        "odds": 81,
+        "implied_prob": 55.2,
+        "edge": 44.8,
+        "bookmaker": "DraftKings"
+      },
+      {
+        "player": "Devin Booker",
         "odds": 76,
         "implied_prob": 56.8,
         "edge": 43.2,
         "bookmaker": "FanDuel"
       },
       {
-        "player": "Jamal Murray",
+        "player": "Zion Williamson",
+        "odds": 76,
+        "implied_prob": 56.8,
+        "edge": 43.2,
+        "bookmaker": "FanDuel"
+      },
+      {
+        "player": "Draymond Green",
         "odds": 71,
         "implied_prob": 58.5,
         "edge": 41.5,
-        "bookmaker": "FanDuel"
-      },
-      {
-        "player": "Shai Gilgeous-Alexander",
-        "odds": 61,
-        "implied_prob": 62.1,
-        "edge": 37.9,
-        "bookmaker": "FanDuel"
-      },
-      {
-        "player": "Austin Reaves",
-        "odds": 51,
-        "implied_prob": 66.2,
-        "edge": 33.8,
-        "bookmaker": "FanDuel"
-      },
-      {
-        "player": "LaMelo Ball",
-        "odds": 51,
-        "implied_prob": 66.2,
-        "edge": 33.8,
         "bookmaker": "FanDuel"
       }
     ]
