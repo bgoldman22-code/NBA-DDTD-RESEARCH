@@ -1,122 +1,108 @@
 {
-  "date": "2025-11-16",
-  "generated_at": "2025-11-16T15:13:22.513248",
-  "model_version": "v3_lite",
+  "date": "2025-11-17",
+  "generated_at": "2025-11-17T15:17:13.870048+00:00",
+  "model_version": "v3",
   "picks": {
-    "double_double": [
+    "dd": [
       {
-        "player": "Harrison Barnes",
-        "odds": 96,
-        "implied_prob": 51.0,
-        "edge": 49.0,
-        "bookmaker": "DraftKings"
+        "player": "John Collins",
+        "model_prob": 0.8,
+        "best_odds": 730,
+        "implied_prob": 0.1205,
+        "edge": 0.6795,
+        "avg_minutes": 31.6,
+        "l20_dd_rate": 0.3,
+        "game": "Los Angeles Clippers @ Philadelphia 76ers"
       },
       {
-        "player": "DeMar DeRozan",
-        "odds": 51,
-        "implied_prob": 66.2,
-        "edge": 33.8,
-        "bookmaker": "DraftKings"
+        "player": "Nikola Vucevic",
+        "model_prob": 0.9167,
+        "best_odds": 160,
+        "implied_prob": 0.3846,
+        "edge": 0.5321,
+        "avg_minutes": 31.2,
+        "l20_dd_rate": 0.4,
+        "game": "Chicago Bulls @ Denver Nuggets"
       },
       {
-        "player": "Devin Vassell",
-        "odds": 51,
-        "implied_prob": 66.2,
-        "edge": 33.8,
-        "bookmaker": "DraftKings"
+        "player": "Karl-Anthony Towns",
+        "model_prob": 0.9946,
+        "best_odds": -380,
+        "implied_prob": 0.7917,
+        "edge": 0.203,
+        "avg_minutes": 35.4,
+        "l20_dd_rate": 0.95,
+        "game": "New York Knicks @ Miami Heat"
       },
       {
-        "player": "Khris Middleton",
-        "odds": 51,
-        "implied_prob": 66.2,
-        "edge": 33.8,
-        "bookmaker": "DraftKings"
+        "player": "Jakob Poeltl",
+        "model_prob": 0.5,
+        "best_odds": 175,
+        "implied_prob": 0.3636,
+        "edge": 0.1364,
+        "avg_minutes": 32.1,
+        "l20_dd_rate": 0.15,
+        "game": "Charlotte Hornets @ Toronto Raptors"
       },
       {
-        "player": "Dennis Schroder",
-        "odds": 46,
-        "implied_prob": 68.5,
-        "edge": 31.5,
-        "bookmaker": "DraftKings"
+        "player": "Myles Turner",
+        "model_prob": 0.2165,
+        "best_odds": 1060,
+        "implied_prob": 0.0862,
+        "edge": 0.1303,
+        "avg_minutes": 31.8,
+        "l20_dd_rate": 0.15,
+        "game": "Milwaukee Bucks @ Cleveland Cavaliers"
       },
       {
-        "player": "Kevin Huerter",
-        "odds": 41,
-        "implied_prob": 70.9,
-        "edge": 29.1,
-        "bookmaker": "FanDuel"
-      },
-      {
-        "player": "Terance Mann",
-        "odds": 41,
-        "implied_prob": 70.9,
-        "edge": 29.1,
-        "bookmaker": "FanDuel"
-      },
-      {
-        "player": "Zach LaVine",
-        "odds": 40,
-        "implied_prob": 71.4,
-        "edge": 28.6,
-        "bookmaker": "DraftKings"
-      },
-      {
-        "player": "Precious Achiuwa",
-        "odds": 36,
-        "implied_prob": 73.5,
-        "edge": 26.5,
-        "bookmaker": "DraftKings"
-      },
-      {
-        "player": "Jordan Walsh",
-        "odds": 35,
-        "implied_prob": 74.1,
-        "edge": 25.9,
-        "bookmaker": "DraftKings"
+        "player": "P.J. Washington",
+        "model_prob": 0.3496,
+        "best_odds": 340,
+        "implied_prob": 0.2273,
+        "edge": 0.1223,
+        "avg_minutes": 33.0,
+        "l20_dd_rate": 0.4,
+        "game": "Dallas Mavericks @ Minnesota Timberwolves"
       }
     ],
-    "triple_double": [
+    "td": [
       {
-        "player": "De'Aaron Fox",
-        "odds": 85,
-        "implied_prob": 54.1,
-        "edge": 45.9,
-        "bookmaker": "DraftKings"
-      },
-      {
-        "player": "Nicolas Claxton",
-        "odds": 81,
-        "implied_prob": 55.2,
-        "edge": 44.8,
-        "bookmaker": "DraftKings"
-      },
-      {
-        "player": "Devin Booker",
-        "odds": 76,
-        "implied_prob": 56.8,
-        "edge": 43.2,
-        "bookmaker": "FanDuel"
-      },
-      {
-        "player": "Zion Williamson",
-        "odds": 76,
-        "implied_prob": 56.8,
-        "edge": 43.2,
-        "bookmaker": "FanDuel"
-      },
-      {
-        "player": "Draymond Green",
-        "odds": 71,
-        "implied_prob": 58.5,
-        "edge": 41.5,
-        "bookmaker": "FanDuel"
+        "player": "Scottie Barnes",
+        "model_prob": 0.2308,
+        "best_odds": 2700,
+        "implied_prob": 0.0357,
+        "edge": 0.1951,
+        "avg_minutes": 33.1,
+        "l20_td_rate": 0.05,
+        "game": "Charlotte Hornets @ Toronto Raptors",
+        "profile": "core",
+        "stake_size": 1.0
       }
     ]
   },
   "summary": {
-    "total_picks": 15,
-    "dd_picks": 10,
-    "td_picks": 5
+    "total_dd": 6,
+    "total_td": 1,
+    "td_core": 1,
+    "td_lotto": 0,
+    "avg_edge_dd": 0.3006,
+    "avg_edge_td": 0.1951
   },
-  "note": "Best odds per player from approved bookmakers"
+  "gates": {
+    "td_core": {
+      "min_prob": 0.085,
+      "min_minutes": 33,
+      "min_edge": 0.045,
+      "min_odds": 400,
+      "description": "High-confidence TD plays with sustainable edge"
+    },
+    "td_lotto": {
+      "min_prob": 0.045,
+      "min_minutes": 30,
+      "min_edge": 0.1,
+      "min_odds": 800,
+      "description": "High-variance longshots with extreme value",
+      "stake_multiplier": 0.5
+    }
+  }
 }
