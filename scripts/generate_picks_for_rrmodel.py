@@ -95,6 +95,10 @@ def fetch_player_props_odds():
                         market_key = market.get('key')
                         if market_key in ['player_double_double', 'player_triple_double']:
                             for outcome in market.get('outcomes', []):
+                                # CRITICAL: Only include "Yes" outcomes (filter out "No" bets)
+                                if outcome.get('name') != 'Yes':
+                                    continue
+                                    
                                 odds_data.append({
                                     'player_name': outcome.get('description'),
                                     'bet_type': 'DD' if market_key == 'player_double_double' else 'TD',
@@ -251,7 +255,9 @@ def main():
         gates = json.load(f)
     
     print(f"✅ Model loaded")
-    print(f"✅ Gates: DD {gates['dd']['min_prob']*100:.0f}%+ @ {gates['dd']['min_minutes']} min, TD {gates['td']['min_prob']*100:.0f}%+ @ {gates['td']['min_minutes']} min\n")
+    print(f"✅ Gates: DD {gates['dd']['min_prob']*100:.0f}%+ @ {gates['dd']['min_minutes']} min")
+    print(f"   TD Core: {gates['td']['core']['min_prob']*100:.1f}%+, {gates['td']['core']['min_minutes']} min, +{gates['td']['core']['min_odds']} odds")
+    print(f"   TD Lotto: {gates['td']['lotto']['min_prob']*100:.1f}%+, {gates['td']['lotto']['min_minutes']} min, +{gates['td']['lotto']['min_odds']} odds\n")
     
     # Fetch odds
     odds_df = fetch_player_props_odds()
@@ -332,8 +338,10 @@ def main():
     
     # Apply acceptance gates
     dd_gate = gates['dd']
-    td_gate = gates['td']
+    td_core_gate = gates['td']['core']
+    td_lotto_gate = gates['td']['lotto']
     
+    # DD Gates (unchanged)
     dd_standard = (pred_df['dd_prob'] >= dd_gate['min_prob']) & \
                  (pred_df['avg_minutes'] >= dd_gate['min_minutes']) & \
                  (pred_df['dd_odds'].notna())
@@ -344,28 +352,49 @@ def main():
     
     dd_picks = pred_df[dd_standard | dd_elite].copy()
     
-    td_standard = (pred_df['td_prob'] >= td_gate['min_prob']) & \
-                 (pred_df['avg_minutes'] >= td_gate['min_minutes']) & \
-                 (pred_df['td_odds'].notna())
+    # TD Core Gates: High-confidence plays with sustainable edge
+    td_core = (pred_df['td_prob'] >= td_core_gate['min_prob']) & \
+              (pred_df['avg_minutes'] >= td_core_gate['min_minutes']) & \
+              (pred_df['td_odds'].notna()) & \
+              (pred_df['td_odds'] >= td_core_gate['min_odds'])
     
-    td_elite = (pred_df['td_prob'] >= td_gate.get('elite_prob', 0.80)) & \
-              (pred_df['avg_minutes'] >= td_gate.get('elite_minutes', 33)) & \
-              (pred_df['td_odds'].notna())
+    # TD Lotto Gates: Longshot value plays
+    td_lotto = (pred_df['td_prob'] >= td_lotto_gate['min_prob']) & \
+               (pred_df['td_prob'] < td_lotto_gate['max_prob']) & \
+               (pred_df['avg_minutes'] >= td_lotto_gate['min_minutes']) & \
+               (pred_df['td_odds'].notna()) & \
+               (pred_df['td_odds'] >= td_lotto_gate['min_odds'])
     
-    td_picks = pred_df[td_standard | td_elite].copy()
+    td_core_picks = pred_df[td_core].copy()
+    td_lotto_picks = pred_df[td_lotto].copy()
     
-    # Calculate edges
+    # Calculate edges for DD
     if not dd_picks.empty:
         dd_picks['implied_prob'] = dd_picks['dd_odds'].apply(odds_to_implied_prob)
         dd_picks['edge'] = dd_picks['dd_prob'] - dd_picks['implied_prob']
         dd_picks = dd_picks[dd_picks['edge'] > 0]
         dd_picks = dd_picks.sort_values('edge', ascending=False)
     
-    if not td_picks.empty:
-        td_picks['implied_prob'] = td_picks['td_odds'].apply(odds_to_implied_prob)
-        td_picks['edge'] = td_picks['td_prob'] - td_picks['implied_prob']
-        td_picks = td_picks[td_picks['edge'] > 0]
-        td_picks = td_picks.sort_values('edge', ascending=False)
+    # Calculate edges for TD Core
+    if not td_core_picks.empty:
+        td_core_picks['implied_prob'] = td_core_picks['td_odds'].apply(odds_to_implied_prob)
+        td_core_picks['edge'] = td_core_picks['td_prob'] - td_core_picks['implied_prob']
+        td_core_picks = td_core_picks[td_core_picks['edge'] >= td_core_gate['min_edge']]
+        td_core_picks['profile'] = 'core'
+        td_core_picks['stake_size'] = 1.0
+        td_core_picks = td_core_picks.sort_values('edge', ascending=False)
+    
+    # Calculate edges for TD Lotto
+    if not td_lotto_picks.empty:
+        td_lotto_picks['implied_prob'] = td_lotto_picks['td_odds'].apply(odds_to_implied_prob)
+        td_lotto_picks['edge'] = td_lotto_picks['td_prob'] - td_lotto_picks['implied_prob']
+        td_lotto_picks = td_lotto_picks[td_lotto_picks['edge'] >= td_lotto_gate['min_edge']]
+        td_lotto_picks['profile'] = 'lotto'
+        td_lotto_picks['stake_size'] = td_lotto_gate['stake_multiplier']
+        td_lotto_picks = td_lotto_picks.sort_values('edge', ascending=False)
+    
+    # Combine TD picks (core first, then lotto)
+    td_picks = pd.concat([td_core_picks, td_lotto_picks], ignore_index=True) if not td_core_picks.empty or not td_lotto_picks.empty else pd.DataFrame()
     
     # Format output for web consumption
     dd_picks_list = []
@@ -391,8 +420,14 @@ def main():
             'edge': round(float(pick['edge']), 4),
             'avg_minutes': round(float(pick['avg_minutes']), 1),
             'l20_td_rate': round(float(pick['l20_td_rate']), 3),
-            'game': pick['game']
+            'game': pick['game'],
+            'profile': pick['profile'],
+            'stake_size': float(pick['stake_size'])
         })
+    
+    # Count picks by profile
+    td_core_count = sum(1 for p in td_picks_list if p['profile'] == 'core')
+    td_lotto_count = sum(1 for p in td_picks_list if p['profile'] == 'lotto')
     
     # Create output JSON
     output = {
@@ -406,8 +441,27 @@ def main():
         'summary': {
             'total_dd': len(dd_picks_list),
             'total_td': len(td_picks_list),
+            'td_core': td_core_count,
+            'td_lotto': td_lotto_count,
             'avg_edge_dd': round(float(dd_picks['edge'].mean()), 4) if not dd_picks.empty else 0,
             'avg_edge_td': round(float(td_picks['edge'].mean()), 4) if not td_picks.empty else 0
+        },
+        'gates': {
+            'td_core': {
+                'min_prob': td_core_gate['min_prob'],
+                'min_minutes': td_core_gate['min_minutes'],
+                'min_edge': td_core_gate['min_edge'],
+                'min_odds': td_core_gate['min_odds'],
+                'description': td_core_gate['description']
+            },
+            'td_lotto': {
+                'min_prob': td_lotto_gate['min_prob'],
+                'min_minutes': td_lotto_gate['min_minutes'],
+                'min_edge': td_lotto_gate['min_edge'],
+                'min_odds': td_lotto_gate['min_odds'],
+                'description': td_lotto_gate['description'],
+                'stake_multiplier': td_lotto_gate['stake_multiplier']
+            }
         }
     }
     
@@ -419,6 +473,10 @@ def main():
     
     print("=" * 60)
     print(f"✅ Generated {len(dd_picks_list)} DD picks, {len(td_picks_list)} TD picks")
+    if td_core_count > 0:
+        print(f"   📊 TD Core: {td_core_count} (high-confidence)")
+    if td_lotto_count > 0:
+        print(f"   🎰 TD Lotto: {td_lotto_count} (longshot value)")
     print(f"✅ Saved to {output_path}")
     print("=" * 60)
 

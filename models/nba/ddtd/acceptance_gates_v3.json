@@ -10,13 +10,36 @@
     "hit_rate": 0.4964705882352941
   },
   "td": {
-    "min_prob": 0.1,
-    "min_minutes": 35,
-    "elite_prob": 0.80,
-    "elite_minutes": 33,
-    "near_miss_prob": 0.08,
-    "near_miss_minutes": 33,
-    "expected_edge": 0.18888888888888886,
-    "hit_rate": 0.28888888888888886
+    "core": {
+      "min_prob": 0.085,
+      "min_minutes": 33,
+      "min_edge": 0.045,
+      "min_odds": 400,
+      "description": "High-confidence TD plays with sustainable edge",
+      "target_picks_per_slate": "0-3",
+      "profile": "core"
+    },
+    "lotto": {
+      "min_prob": 0.045,
+      "min_minutes": 30,
+      "min_edge": 0.10,
+      "min_odds": 800,
+      "max_prob": 0.085,
+      "description": "High-variance longshots with extreme value",
+      "target_picks_per_week": "0-5",
+      "profile": "lotto",
+      "stake_multiplier": 0.5
+    },
+    "legacy": {
+      "min_prob": 0.1,
+      "min_minutes": 35,
+      "elite_prob": 0.80,
+      "elite_minutes": 33,
+      "near_miss_prob": 0.08,
+      "near_miss_minutes": 33,
+      "expected_edge": 0.18888888888888886,
+      "hit_rate": 0.28888888888888886,
+      "note": "Historical gates - kept for reference"
+    }
   }
 }
