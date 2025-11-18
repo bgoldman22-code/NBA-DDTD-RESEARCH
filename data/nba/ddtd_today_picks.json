@@ -1,92 +1,52 @@
 {
-  "date": "2025-11-17",
-  "generated_at": "2025-11-17T15:17:13.870048+00:00",
+  "date": "2025-11-18",
+  "generated_at": "2025-11-18T15:17:12.024449+00:00",
   "model_version": "v3",
   "picks": {
     "dd": [
       {
-        "player": "John Collins",
-        "model_prob": 0.8,
-        "best_odds": 730,
-        "implied_prob": 0.1205,
-        "edge": 0.6795,
-        "avg_minutes": 31.6,
-        "l20_dd_rate": 0.3,
-        "game": "Los Angeles Clippers @ Philadelphia 76ers"
-      },
-      {
-        "player": "Nikola Vucevic",
-        "model_prob": 0.9167,
-        "best_odds": 160,
-        "implied_prob": 0.3846,
-        "edge": 0.5321,
-        "avg_minutes": 31.2,
+        "player": "Deandre Ayton",
+        "model_prob": 0.878,
+        "best_odds": 145,
+        "implied_prob": 0.4082,
+        "edge": 0.4699,
+        "avg_minutes": 30.4,
         "l20_dd_rate": 0.4,
-        "game": "Chicago Bulls @ Denver Nuggets"
+        "game": "Utah Jazz @ Los Angeles Lakers"
       },
       {
-        "player": "Karl-Anthony Towns",
+        "player": "Jalen Johnson",
         "model_prob": 0.9946,
-        "best_odds": -380,
-        "implied_prob": 0.7917,
-        "edge": 0.203,
-        "avg_minutes": 35.4,
-        "l20_dd_rate": 0.95,
-        "game": "New York Knicks @ Miami Heat"
-      },
-      {
-        "player": "Jakob Poeltl",
-        "model_prob": 0.5,
-        "best_odds": 175,
-        "implied_prob": 0.3636,
-        "edge": 0.1364,
-        "avg_minutes": 32.1,
-        "l20_dd_rate": 0.15,
-        "game": "Charlotte Hornets @ Toronto Raptors"
-      },
-      {
-        "player": "Myles Turner",
-        "model_prob": 0.2165,
-        "best_odds": 1060,
-        "implied_prob": 0.0862,
-        "edge": 0.1303,
-        "avg_minutes": 31.8,
-        "l20_dd_rate": 0.15,
-        "game": "Milwaukee Bucks @ Cleveland Cavaliers"
-      },
-      {
-        "player": "P.J. Washington",
-        "model_prob": 0.3496,
-        "best_odds": 340,
-        "implied_prob": 0.2273,
-        "edge": 0.1223,
-        "avg_minutes": 33.0,
-        "l20_dd_rate": 0.4,
-        "game": "Dallas Mavericks @ Minnesota Timberwolves"
+        "best_odds": -115,
+        "implied_prob": 0.5349,
+        "edge": 0.4597,
+        "avg_minutes": 36.6,
+        "l20_dd_rate": 0.5,
+        "game": "Detroit Pistons @ Atlanta Hawks"
       }
     ],
     "td": [
       {
-        "player": "Scottie Barnes",
-        "model_prob": 0.2308,
-        "best_odds": 2700,
-        "implied_prob": 0.0357,
-        "edge": 0.1951,
-        "avg_minutes": 33.1,
-        "l20_td_rate": 0.05,
-        "game": "Charlotte Hornets @ Toronto Raptors",
+        "player": "Jalen Johnson",
+        "model_prob": 0.8966,
+        "best_odds": 1000,
+        "implied_prob": 0.0909,
+        "edge": 0.8056,
+        "avg_minutes": 36.6,
+        "l20_td_rate": 0.35,
+        "game": "Detroit Pistons @ Atlanta Hawks",
         "profile": "core",
         "stake_size": 1.0
       }
     ]
   },
   "summary": {
-    "total_dd": 6,
+    "total_dd": 2,
     "total_td": 1,
     "td_core": 1,
     "td_lotto": 0,
-    "avg_edge_dd": 0.3006,
-    "avg_edge_td": 0.1951
+    "avg_edge_dd": 0.4648,
+    "avg_edge_td": 0.8056
   },
   "gates": {
     "td_core": {
