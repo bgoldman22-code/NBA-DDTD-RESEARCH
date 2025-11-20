@@ -1,0 +1,30 @@
+Date,Player,Game,Game_Time,Model_Prob,Market_Odds,Market_Prob,Edge,Bet_Amount,Result,Profit_Loss,Bankroll,Notes
+2025-11-20,Example Player,ATL@BOS,7:30 PM,0.35,+200,0.333,0.017,100,WIN,200,10200,First test bet
+2025-11-20,Example Player 2,LAL@GSW,10:00 PM,0.45,-150,0.600,-0.150,SKIP,SKIP,0,10200,Edge too low
+,,,,,,,,,,,10000,Starting bankroll
+
+# Paper Trading Tracker
+# Instructions:
+# 1. Each day before games, add rows for picks
+# 2. Fill in: Date, Player, Game, Game_Time, Model_Prob, Market_Odds, Market_Prob, Edge, Bet_Amount
+# 3. Next morning, fill in: Result (WIN/LOSS), Profit_Loss, Bankroll
+# 4. Keep running total in Bankroll column
+#
+# Formulas:
+# Market_Prob (positive odds): 100 / (odds + 100)
+# Market_Prob (negative odds): |odds| / (|odds| + 100)
+# Edge: Model_Prob - Market_Prob
+# Profit (win, positive odds): Bet × (odds / 100)
+# Profit (win, negative odds): Bet × (100 / |odds|)
+# Profit (loss): -Bet
+#
+# Betting Rules:
+# - Only bet if Edge > 0.05 (5%)
+# - Only bet if Model_Prob > 0.17 (17%)
+# - Bet $100 per pick (1% of $10k bankroll)
+# - Adjust bet size as bankroll changes
+#
+# Validation Criteria (after 50+ bets):
+# GREEN LIGHT: ROI > 5%, Hit rate within 5% of predictions
+# YELLOW LIGHT: ROI 0-5%, need more data
+# RED LIGHT: ROI < 0%, do NOT bet real money

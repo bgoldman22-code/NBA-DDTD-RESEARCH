@@ -1,0 +1,115 @@
+{
+  "date": "2025-11-14",
+  "dd_picks": [
+    {
+      "player": "Karl-Anthony Towns",
+      "dd_prob": 0.9946236559139785,
+      "td_prob": 0.011571254567600487,
+      "dd_odds": 250,
+      "td_odds": 2200.0,
+      "avg_minutes": 35.4,
+      "l20_dd_rate": 0.95,
+      "l20_td_rate": 0.65,
+      "implied_prob": 0.2857142857142857,
+      "edge": 0.7089093701996928
+    },
+    {
+      "player": "John Collins",
+      "dd_prob": 0.8,
+      "td_prob": 0.07485375448467849,
+      "dd_odds": 950,
+      "td_odds": NaN,
+      "avg_minutes": 31.65,
+      "l20_dd_rate": 0.3,
+      "l20_td_rate": 0.15,
+      "implied_prob": 0.09523809523809523,
+      "edge": 0.7047619047619048
+    },
+    {
+      "player": "Domantas Sabonis",
+      "dd_prob": 0.9946236559139785,
+      "td_prob": 0.896551724137931,
+      "dd_odds": 180,
+      "td_odds": 4000.0,
+      "avg_minutes": 29.65,
+      "l20_dd_rate": 0.7,
+      "l20_td_rate": 0.2,
+      "implied_prob": 0.35714285714285715,
+      "edge": 0.6374807987711213
+    },
+    {
+      "player": "Deandre Ayton",
+      "dd_prob": 0.8780487804878049,
+      "td_prob": 0.011571254567600487,
+      "dd_odds": 173,
+      "td_odds": NaN,
+      "avg_minutes": 30.35,
+      "l20_dd_rate": 0.4,
+      "l20_td_rate": 0.05,
+      "implied_prob": 0.3663003663003663,
+      "edge": 0.5117484141874387
+    },
+    {
+      "player": "Victor Wembanyama",
+      "dd_prob": 0.6666666666666666,
+      "td_prob": 0.040498442367601244,
+      "dd_odds": 333,
+      "td_odds": 2000.0,
+      "avg_minutes": 32.8,
+      "l20_dd_rate": 0.5,
+      "l20_td_rate": 0.35,
+      "implied_prob": 0.23094688221709006,
+      "edge": 0.4357197844495766
+    },
+    {
+      "player": "Giannis Antetokounmpo",
+      "dd_prob": 0.5,
+      "td_prob": 0.0,
+      "dd_odds": 220,
+      "td_odds": 526.0,
+      "avg_minutes": 30.3,
+      "l20_dd_rate": 0.45,
+      "l20_td_rate": 0.0,
+      "implied_prob": 0.3125,
+      "edge": 0.1875
+    },
+    {
+      "player": "P.J. Washington",
+      "dd_prob": 0.34959349593495936,
+      "td_prob": 0.03,
+      "dd_odds": 450,
+      "td_odds": NaN,
+      "avg_minutes": 33.05,
+      "l20_dd_rate": 0.4,
+      "l20_td_rate": 0.15,
+      "implied_prob": 0.18181818181818182,
+      "edge": 0.16777531411677754
+    },
+    {
+      "player": "Myles Turner",
+      "dd_prob": 0.21649484536082475,
+      "td_prob": 0.05813953488372093,
+      "dd_odds": 1000,
+      "td_odds": NaN,
+      "avg_minutes": 31.75,
+      "l20_dd_rate": 0.15,
+      "l20_td_rate": 0.0,
+      "implied_prob": 0.09090909090909091,
+      "edge": 0.12558575445173384
+    },
+    {
+      "player": "Alperen Sengun",
+      "dd_prob": 0.5,
+      "td_prob": 0.4375,
+      "dd_odds": 110,
+      "td_odds": 750.0,
+      "avg_minutes": 32.0,
+      "l20_dd_rate": 0.3,
+      "l20_td_rate": 0.05,
+      "implied_prob": 0.47619047619047616,
+      "edge": 0.023809523809523836
+    }
+  ],
+  "td_picks": [],
+  "total_picks": 9
+}

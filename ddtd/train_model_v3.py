@@ -197,7 +197,7 @@ class ModelV3Trainer:
     def train_models(self, train_df, test_df):
         """Train DD and TD models with calibration"""
         
-        # Define feature columns (38 features)
+        # Define feature columns (31 features)
         feature_cols = [
             'avg_minutes', 'avg_points', 'avg_rebounds', 'avg_assists', 
             'avg_steals', 'avg_blocks', 'avg_turnovers',
@@ -210,9 +210,10 @@ class ModelV3Trainer:
             'per_minute_pts', 'per_minute_reb', 'per_minute_ast'
         ]
         
-        # Add projected minutes as feature
-        train_df['proj_minutes'] = train_df['minutes']
-        test_df['proj_minutes'] = test_df['minutes']
+        # ✅ FIX: Use L5 average minutes instead of actual minutes played
+        # This prevents data leakage - we use historical average, not future knowledge
+        train_df['proj_minutes'] = train_df['l5_minutes']
+        test_df['proj_minutes'] = test_df['l5_minutes']
         feature_cols.append('proj_minutes')
         
         X_train = train_df[feature_cols].fillna(0)
@@ -389,6 +390,87 @@ class ModelV3Trainer:
         
         return gates
     
+    def evaluate_final_performance(self, test_df, models, gates):
+        """
+        Evaluate model on clean test set with optimized gates.
+        This provides unbiased performance metrics after gate optimization on validation set.
+        """
+        print("\n" + "=" * 60)
+        print("🎯 FINAL TEST SET EVALUATION (UNBIASED)")
+        print("=" * 60)
+        
+        # Add proj_minutes if not already present
+        test_df = test_df.copy()
+        if 'proj_minutes' not in test_df.columns:
+            test_df['proj_minutes'] = test_df['l5_minutes']
+        
+        feature_cols = models['feature_names']
+        X_test = test_df[feature_cols].fillna(0)
+        
+        # Get DD predictions
+        dd_raw = models['dd_model'].predict_proba(X_test)[:, 1]
+        dd_prob = models['dd_calibrator'].transform(dd_raw)
+        test_df['dd_prob'] = dd_prob
+        
+        # Get TD predictions
+        td_raw = models['td_model'].predict_proba(X_test)[:, 1]
+        td_prob = models['td_calibrator'].transform(td_raw)
+        test_df['td_prob'] = td_prob
+        
+        # Calculate overall metrics
+        dd_auc = roc_auc_score(test_df['dd_actual'], dd_prob)
+        dd_brier = brier_score_loss(test_df['dd_actual'], dd_prob)
+        td_auc = roc_auc_score(test_df['td_actual'], td_prob)
+        td_brier = brier_score_loss(test_df['td_actual'], td_prob)
+        
+        print(f"\n📊 Overall Test Set Metrics:")
+        print(f"   DD AUC: {dd_auc:.4f} (expect 0.85-0.87, was 0.93 with leakage)")
+        print(f"   DD Brier: {dd_brier:.4f}")
+        print(f"   TD AUC: {td_auc:.4f}")
+        print(f"   TD Brier: {td_brier:.4f}")
+        
+        # Apply gates and calculate actual performance
+        dd_picks = test_df[
+            (test_df['dd_prob'] >= gates['dd']['min_prob']) &
+            (test_df['proj_minutes'] >= gates['dd']['min_minutes'])
+        ]
+        
+        td_picks = test_df[
+            (test_df['td_prob'] >= gates['td']['min_prob']) &
+            (test_df['proj_minutes'] >= gates['td']['min_minutes'])
+        ]
+        
+        print(f"\n🎲 Performance with Acceptance Gates:")
+        print(f"\n   DD Picks:")
+        print(f"      Threshold: {gates['dd']['min_prob']*100:.1f}% prob, {gates['dd']['min_minutes']} min")
+        print(f"      Picks: {len(dd_picks)}")
+        if len(dd_picks) > 0:
+            dd_hit_rate = dd_picks['dd_actual'].mean()
+            dd_actual_edge = dd_hit_rate - gates['dd']['min_prob']
+            print(f"      Hit Rate: {dd_hit_rate*100:.1f}%")
+            print(f"      Actual Edge: {dd_actual_edge*100:.1f}% (expect 10-15%, was 27.8% with leakage)")
+        
+        print(f"\n   TD Picks:")
+        print(f"      Threshold: {gates['td']['min_prob']*100:.1f}% prob, {gates['td']['min_minutes']} min")
+        print(f"      Picks: {len(td_picks)}")
+        if len(td_picks) > 0:
+            td_hit_rate = td_picks['td_actual'].mean()
+            td_actual_edge = td_hit_rate - gates['td']['min_prob']
+            print(f"      Hit Rate: {td_hit_rate*100:.1f}%")
+            print(f"      Actual Edge: {td_actual_edge*100:.1f}%")
+        
+        print("\n✅ These are HONEST metrics - no data leakage!")
+        print("=" * 60 + "\n")
+        
+        return {
+            'dd_auc': dd_auc,
+            'dd_brier': dd_brier,
+            'td_auc': td_auc,
+            'td_brier': td_brier,
+            'dd_picks': len(dd_picks),
+            'td_picks': len(td_picks)
+        }
+    
     def save_model(self, models, gates, version='v3'):
         """Save trained model and gates"""
         model_path = self.models_dir / f'ddtd_model_{version}.pkl'
@@ -430,28 +512,42 @@ def main():
     print(f"✅ Generated {len(features_df)} training samples")
     print(f"   Unique players: {features_df['playerId'].nunique()}\n")
     
-    # Step 4: Train/test split (chronological)
-    print("✂️  Splitting train/test (chronological 80/20)...")
+    # Step 4: Three-way split (train/validation/test) - PREVENTS GATE OVERFITTING
+    print("✂️  Splitting train/validation/test (60/20/20 chronological)...")
     features_df = features_df.sort_values('gameDate')
-    split_idx = int(len(features_df) * 0.8)
-    train_df = features_df.iloc[:split_idx]
-    test_df = features_df.iloc[split_idx:]
+    n = len(features_df)
+    train_idx = int(n * 0.60)  # 60% for training
+    val_idx = int(n * 0.80)    # 20% for validation (gate optimization)
+    
+    train_df = features_df.iloc[:train_idx]
+    val_df = features_df.iloc[train_idx:val_idx]
+    test_df = features_df.iloc[val_idx:]
     
     print(f"✅ Train: {len(train_df)} samples ({train_df['gameDate'].min()} to {train_df['gameDate'].max()})")
+    print(f"✅ Validation: {len(val_df)} samples ({val_df['gameDate'].min()} to {val_df['gameDate'].max()})")
     print(f"✅ Test: {len(test_df)} samples ({test_df['gameDate'].min()} to {test_df['gameDate'].max()})\n")
     
-    # Step 5: Train models
-    models = trainer.train_models(train_df, test_df)
+    # Step 5: Train models (using validation for early evaluation)
+    models = trainer.train_models(train_df, val_df)
     
-    # Step 6: Calculate acceptance gates
-    gates = trainer.calculate_acceptance_gates(test_df, models)
+    # Step 6: Calculate acceptance gates ON VALIDATION SET (not test!)
+    print("\n⚠️  IMPORTANT: Optimizing gates on VALIDATION set to prevent overfitting")
+    gates = trainer.calculate_acceptance_gates(val_df, models)
     
-    # Step 7: Save everything
+    # Step 7: Final unbiased evaluation on TEST SET
+    print("\n📊 Final Unbiased Evaluation on Test Set...")
+    trainer.evaluate_final_performance(test_df, models, gates)
+    
+    # Step 8: Save everything
     trainer.save_model(models, gates, version='v3')
     
     print("\n" + "=" * 60)
     print("✅ MODEL V3 TRAINING COMPLETE")
     print("=" * 60)
+    print("\n✅ FIXES APPLIED:")
+    print("  1. Minutes feature uses L5 average (no future leakage)")
+    print("  2. Gates optimized on validation set (no test set contamination)")
+    print("  3. Final metrics evaluated on clean test set")
     print("\nNext step: Run backtest")
     print("  python3 ddtd/backtest_v3.py")
     print("=" * 60)

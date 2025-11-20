@@ -137,23 +137,35 @@ export async function fetchBoxScore(gameId) {
         for (const athlete of statGroup.athletes || []) {
           const rawStats = athlete.stats || [];
           
+          // ESPN API stats array indices (verified 2024-11-20):
+          // [0]: MIN, [1]: PTS, [2]: FG, [3]: 3PT, [4]: FT, [5]: REB, [6]: AST, 
+          // [7]: TO, [8]: STL, [9]: BLK, [10]: OREB, [11]: DREB, [12]: PF, [13]: +/-
+          
+          // Parse shooting stats (format: "made-attempted")
+          const fg = (rawStats[2] || '0-0').split('-');
+          const fg3 = (rawStats[3] || '0-0').split('-');
+          const ft = (rawStats[4] || '0-0').split('-');
+          
           stats.push({
             playerId: athlete.athlete?.id || '',
             playerName: athlete.athlete?.displayName || '',
             team: teamAbbr,
             minutes: parseFloat(rawStats[0] || '0'),
-            points: parseInt(rawStats[12] || '0'),
-            rebounds: parseInt(rawStats[4] || '0'),
-            assists: parseInt(rawStats[3] || '0'),
-            steals: parseInt(rawStats[1] || '0'),
-            blocks: parseInt(rawStats[2] || '0'),
-            turnovers: parseInt(rawStats[11] || '0'),
-            fgm: parseInt(rawStats[5] || '0'),
-            fga: parseInt(rawStats[6] || '0'),
-            tpm: parseInt(rawStats[7] || '0'),
-            tpa: parseInt(rawStats[8] || '0'),
-            ftm: parseInt(rawStats[9] || '0'),
-            fta: parseInt(rawStats[10] || '0')
+            points: parseInt(rawStats[1] || '0'),
+            rebounds: parseInt(rawStats[5] || '0'),
+            assists: parseInt(rawStats[6] || '0'),
+            steals: parseInt(rawStats[8] || '0'),
+            blocks: parseInt(rawStats[9] || '0'),
+            turnovers: parseInt(rawStats[7] || '0'),
+            fgm: parseInt(fg[0] || '0'),
+            fga: parseInt(fg[1] || '0'),
+            tpm: parseInt(fg3[0] || '0'),
+            tpa: parseInt(fg3[1] || '0'),
+            ftm: parseInt(ft[0] || '0'),
+            fta: parseInt(ft[1] || '0'),
+            offensiveRebounds: parseInt(rawStats[10] || '0'),
+            defensiveRebounds: parseInt(rawStats[11] || '0'),
+            personalFouls: parseInt(rawStats[12] || '0')
           });
         }
       }

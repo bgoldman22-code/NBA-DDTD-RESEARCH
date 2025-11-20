@@ -1,0 +1,19 @@
+{
+  "date": "2025-11-13",
+  "dd_picks": [
+    {
+      "player": "Karl-Anthony Towns",
+      "dd_prob": 1.0,
+      "td_prob": 0.010559662090813094,
+      "dd_odds": -296,
+      "td_odds": NaN,
+      "avg_minutes": 35.4,
+      "l20_dd_rate": 0.95,
+      "l20_td_rate": 0.65,
+      "implied_prob": 0.7474747474747475,
+      "edge": 0.2525252525252525
+    }
+  ],
+  "td_picks": [],
+  "total_picks": 1
+}

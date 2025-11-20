@@ -1,0 +1,11 @@
+
+============================================================
+🎯 Starting Backtest: 2023-24
+============================================================
+
+Loading 2023-24 game data...
+Found 1332 game files
+✅ Loaded 27,688 player-games
+Backtest Period: 2023-11-01 to 2024-04-15
+Total Days: 166
+
