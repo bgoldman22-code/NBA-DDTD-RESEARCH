@@ -1,45 +1,196 @@
 {
-  "date": "2025-11-20",
-  "generated_at": "2025-11-20T18:57:56.857648+00:00",
+  "date": "2025-11-21",
+  "generated_at": "2025-11-21T15:58:40.973391+00:00",
   "model_version": "v3",
-  "picks": {
+  "bankroll": 4500,
+  "unit_size": 10,
+  "kelly_fraction": 0.25,
+  "recommended_picks": {
     "dd": [
       {
-        "player": "Jalen Johnson",
-        "model_prob": 0.7736,
-        "best_odds": -125,
-        "implied_prob": 0.5556,
-        "edge": 0.218,
-        "avg_minutes": 31.5,
-        "l20_dd_rate": 0.4,
-        "game": "Atlanta Hawks @ San Antonio Spurs"
+        "player": "Rudy Gobert",
+        "game": "Minnesota Timberwolves @ Phoenix Suns",
+        "model_prob": 0.9896,
+        "best_odds": 135,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.4255,
+        "edge": 0.5641,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 31.6,
+        "l20_dd_rate": 0.3,
+        "stats": {
+          "pts": 6.3,
+          "reb": 8.8,
+          "ast": 3.5
+        }
+      },
+      {
+        "player": "Julius Randle",
+        "game": "Minnesota Timberwolves @ Phoenix Suns",
+        "model_prob": 0.4074,
+        "best_odds": 260,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.2778,
+        "edge": 0.1296,
+        "bet_units": 20.19,
+        "bet_amount": 201.92,
+        "avg_minutes": 32.0,
+        "l20_dd_rate": 0.25,
+        "stats": {
+          "pts": 21.4,
+          "reb": 6.3,
+          "ast": 5.0
+        }
       }
     ],
-    "td": []
+    "td": [
+      {
+        "player": "Alperen Sengun",
+        "game": "Denver Nuggets @ Houston Rockets",
+        "model_prob": 0.4545,
+        "best_odds": 600,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.1429,
+        "edge": 0.3117,
+        "bet_units": 0.41,
+        "bet_amount": 4.09,
+        "avg_minutes": 36.4,
+        "l20_td_rate": 0.0,
+        "stats": {
+          "pts": 25.1,
+          "reb": 9.4,
+          "ast": 6.8
+        }
+      }
+    ]
   },
-  "summary": {
-    "total_dd": 1,
-    "total_td": 0,
-    "td_core": 0,
-    "td_lotto": 0,
-    "avg_edge_dd": 0.218,
-    "avg_edge_td": 0
-  },
-  "gates": {
-    "td_core": {
-      "min_prob": 0.085,
-      "min_minutes": 33,
-      "min_edge": 0.045,
-      "min_odds": 400,
-      "description": "High-confidence TD plays with sustainable edge"
+  "high_probability": [
+    {
+      "player": "Rudy Gobert",
+      "game": "Minnesota Timberwolves @ Phoenix Suns",
+      "model_prob": 0.9896,
+      "best_odds": 135,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.4255,
+      "edge": 0.5641,
+      "has_positive_edge": true,
+      "avg_minutes": 31.6,
+      "l20_dd_rate": 0.3,
+      "stats": {
+        "pts": 6.3,
+        "reb": 8.8,
+        "ast": 3.5
+      }
     },
-    "td_lotto": {
-      "min_prob": 0.045,
-      "min_minutes": 30,
-      "min_edge": 0.1,
-      "min_odds": 800,
-      "description": "Longshot TD value plays",
-      "stake_multiplier": 0.5
+    {
+      "player": "Kel'el Ware",
+      "game": "Miami Heat @ Chicago Bulls",
+      "model_prob": 0.4599,
+      "best_odds": 165,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.3774,
+      "edge": 0.0825,
+      "has_positive_edge": true,
+      "avg_minutes": 25.7,
+      "l20_dd_rate": 0.4,
+      "stats": {
+        "pts": 24.8,
+        "reb": 9.3,
+        "ast": 2.9
+      }
+    },
+    {
+      "player": "Josh Giddey",
+      "game": "Miami Heat @ Chicago Bulls",
+      "model_prob": 0.4105,
+      "best_odds": -230,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.697,
+      "edge": -0.2864,
+      "has_positive_edge": false,
+      "avg_minutes": 34.8,
+      "l20_dd_rate": 0.6,
+      "stats": {
+        "pts": 23.4,
+        "reb": 8.9,
+        "ast": 8.2
+      }
+    },
+    {
+      "player": "Jusuf Nurkic",
+      "game": "Oklahoma City Thunder @ Utah Jazz",
+      "model_prob": 0.4105,
+      "best_odds": 229,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.304,
+      "edge": 0.1066,
+      "has_positive_edge": true,
+      "avg_minutes": 27.3,
+      "l20_dd_rate": 0.3,
+      "stats": {
+        "pts": 8.3,
+        "reb": 8.5,
+        "ast": 4.7
+      }
+    },
+    {
+      "player": "Chet Holmgren",
+      "game": "Oklahoma City Thunder @ Utah Jazz",
+      "model_prob": 0.4105,
+      "best_odds": 260,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.2778,
+      "edge": 0.1327,
+      "has_positive_edge": true,
+      "avg_minutes": 28.1,
+      "l20_dd_rate": 0.3,
+      "stats": {
+        "pts": 24.6,
+        "reb": 6.7,
+        "ast": 3.1
+      }
+    },
+    {
+      "player": "Julius Randle",
+      "game": "Minnesota Timberwolves @ Phoenix Suns",
+      "model_prob": 0.4074,
+      "best_odds": 260,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.2778,
+      "edge": 0.1296,
+      "has_positive_edge": true,
+      "avg_minutes": 32.0,
+      "l20_dd_rate": 0.25,
+      "stats": {
+        "pts": 21.4,
+        "reb": 6.3,
+        "ast": 5.0
+      }
+    },
+    {
+      "player": "Nikola Jokic",
+      "game": "Denver Nuggets @ Houston Rockets",
+      "model_prob": 0.3774,
+      "best_odds": -750,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.8824,
+      "edge": -0.505,
+      "has_positive_edge": false,
+      "avg_minutes": 34.7,
+      "l20_dd_rate": 0.7,
+      "stats": {
+        "pts": 39.2,
+        "reb": 10.7,
+        "ast": 8.7
+      }
     }
+  ],
+  "summary": {
+    "total_recommended_dd": 2,
+    "total_recommended_td": 1,
+    "total_high_probability": 7,
+    "total_recommended_units": 43.1,
+    "total_recommended_amount": 431.01
   }
 }
