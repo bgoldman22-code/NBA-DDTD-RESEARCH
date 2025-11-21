@@ -28,6 +28,13 @@ if not ODDS_API_KEY:
     print("❌ ERROR: ODDS_API_KEY environment variable not set")
     sys.exit(1)
 
+def american_to_prob(odds):
+    """Convert American odds to implied probability"""
+    if odds > 0:
+        return 100 / (odds + 100)
+    else:
+        return abs(odds) / (abs(odds) + 100)
+
 def calculate_td_kelly_scale(td_prob, l20_td_rate, edge):
     """
     Calculate scaled Kelly fraction for TD bets based on risk factors.
@@ -187,14 +194,25 @@ def fetch_player_props_odds():
                     for market in bookmaker.get('markets', []):
                         market_key = market.get('key')
                         if market_key in ['player_double_double', 'player_triple_double']:
+                            # Capture BOTH Yes and No outcomes to detect inversions
+                            outcomes_dict = {}
                             for outcome in market.get('outcomes', []):
-                                if outcome.get('name') != 'Yes':
-                                    continue
-                                    
+                                outcome_name = outcome.get('name')
+                                if outcome_name in ['Yes', 'No']:
+                                    outcomes_dict[outcome_name] = {
+                                        'player_name': outcome.get('description'),
+                                        'odds': outcome.get('price')
+                                    }
+                            
+                            # Add if we have at least one side (preferably both for validation)
+                            if outcomes_dict:
+                                # Use the player name from whichever outcome exists
+                                player_name_key = 'Yes' if 'Yes' in outcomes_dict else 'No'
                                 odds_data.append({
-                                    'player_name': outcome.get('description'),
+                                    'player_name': outcomes_dict[player_name_key]['player_name'],
                                     'bet_type': 'DD' if market_key == 'player_double_double' else 'TD',
-                                    'odds': outcome.get('price'),
+                                    'odds_yes': outcomes_dict.get('Yes', {}).get('odds'),
+                                    'odds_no': outcomes_dict.get('No', {}).get('odds'),
                                     'bookmaker': bookmaker_name,
                                     'game': f"{away_team} @ {home_team}"
                                 })
@@ -365,25 +383,64 @@ def main():
         # Get odds
         player_odds = odds_df[odds_df['player_name'] == player_name]
         
+        def pick_best_odds_side(odds_data, model_prob):
+            """
+            We ALWAYS bet YES (player will get DD/TD), but need to detect which outcome 
+            represents "YES" because some bookmakers invert the labels.
+            
+            Strategy: Compare implied probabilities of Yes vs No outcomes.
+            - If model_prob is HIGH and implied_yes is HIGH → correctly labeled (use Yes odds)
+            - If model_prob is HIGH but implied_yes is LOW → inverted (use No odds)
+            - If only one side available, use it (can't detect inversion)
+            """
+            if odds_data.empty:
+                return None, None
+            
+            # For each bookmaker, determine which side represents "will happen"
+            best_odds = -999999
+            best_bookmaker = None
+            
+            for idx, row in odds_data.iterrows():
+                odds_yes = row['odds_yes']
+                odds_no = row['odds_no']
+                
+                # Handle cases where only one side is available
+                if pd.isna(odds_yes) and pd.isna(odds_no):
+                    continue
+                elif pd.isna(odds_no):
+                    # Only Yes side - assume correct labeling
+                    selected_odds = odds_yes
+                elif pd.isna(odds_yes):
+                    # Only No side - assume it means "will happen" (inverted)
+                    selected_odds = odds_no
+                else:
+                    # Both sides available - detect inversion by implied probability
+                    implied_yes = american_to_prob(odds_yes)
+                    implied_no = american_to_prob(odds_no)
+                    
+                    # We ALWAYS want to bet YES (will happen)
+                    # Determine which outcome actually represents "will happen"
+                    if implied_yes > implied_no:
+                        # "Yes" is the favorite = correctly labeled as "will happen"
+                        selected_odds = odds_yes
+                    else:
+                        # "No" is the favorite = inverted labeling, "No" means "will happen"
+                        selected_odds = odds_no
+                
+                # Track best odds (most positive for underdogs, least negative for favorites)
+                if pd.notna(selected_odds) and selected_odds > best_odds:
+                    best_odds = selected_odds
+                    best_bookmaker = row['bookmaker']
+            
+            return (best_odds if best_odds > -999999 else None), best_bookmaker
+        
         # Get best odds and bookmaker for DD
         dd_odds_data = player_odds[player_odds['bet_type'] == 'DD']
-        if not dd_odds_data.empty:
-            best_dd_idx = dd_odds_data['odds'].idxmax()
-            dd_best = dd_odds_data.loc[best_dd_idx, 'odds']
-            dd_bookmaker = dd_odds_data.loc[best_dd_idx, 'bookmaker']
-        else:
-            dd_best = None
-            dd_bookmaker = None
+        dd_best, dd_bookmaker = pick_best_odds_side(dd_odds_data, dd_prob)
         
         # Get best odds and bookmaker for TD
         td_odds_data = player_odds[player_odds['bet_type'] == 'TD']
-        if not td_odds_data.empty:
-            best_td_idx = td_odds_data['odds'].idxmax()
-            td_best = td_odds_data.loc[best_td_idx, 'odds']
-            td_bookmaker = td_odds_data.loc[best_td_idx, 'bookmaker']
-        else:
-            td_best = None
-            td_bookmaker = None
+        td_best, td_bookmaker = pick_best_odds_side(td_odds_data, td_prob)
         
         # Get game info
         game_info = player_odds['game'].iloc[0] if not player_odds.empty else 'Unknown'
@@ -557,12 +614,17 @@ def main():
         })
     
     # Add summary
+    dd_units = dd_picks['bet_units'].sum() if not dd_picks.empty else 0
+    dd_amount = dd_picks['bet_amount'].sum() if not dd_picks.empty else 0
+    td_units = td_picks['bet_units'].sum() if not td_picks.empty else 0
+    td_amount = td_picks['bet_amount'].sum() if not td_picks.empty else 0
+    
     output['summary'] = {
         'total_recommended_dd': len(dd_picks),
         'total_recommended_td': len(td_picks),
         'total_high_probability': len(high_prob_dd),
-        'total_recommended_units': round(dd_picks['bet_units'].sum() + td_picks['bet_units'].sum(), 2) if not dd_picks.empty or not td_picks.empty else 0,
-        'total_recommended_amount': round(dd_picks['bet_amount'].sum() + td_picks['bet_amount'].sum(), 2) if not dd_picks.empty or not td_picks.empty else 0
+        'total_recommended_units': round(dd_units + td_units, 2),
+        'total_recommended_amount': round(dd_amount + td_amount, 2)
     }
     
     # Save to file
