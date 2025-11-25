@@ -1,6 +1,6 @@
 {
   "date": "2025-11-25",
-  "generated_at": "2025-11-25T17:44:27.921997+00:00",
+  "generated_at": "2025-11-25T17:56:07.399339+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -10,55 +10,19 @@
       {
         "player": "James Harden",
         "game": "Los Angeles Clippers @ Los Angeles Lakers",
-        "model_prob": 0.7967,
-        "best_odds": 166,
-        "bookmaker": "Caesars",
-        "implied_prob": 0.3759,
-        "edge": 0.4208,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
+        "model_prob": 0.4105,
+        "best_odds": 170,
+        "bookmaker": "Fanatics",
+        "implied_prob": 0.3704,
+        "edge": 0.0402,
+        "bet_units": 7.17,
+        "bet_amount": 71.75,
         "avg_minutes": 33.6,
         "l20_dd_rate": 0.15,
         "stats": {
-          "pts": 19.2,
-          "reb": 4.0,
-          "ast": 5.5
-        }
-      },
-      {
-        "player": "Jalen Johnson",
-        "game": "Atlanta Hawks @ Washington Wizards",
-        "model_prob": 0.9896,
-        "best_odds": -225,
-        "bookmaker": "BetMGM",
-        "implied_prob": 0.6923,
-        "edge": 0.2973,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 31.8,
-        "l20_dd_rate": 0.25,
-        "stats": {
-          "pts": 18.2,
-          "reb": 6.2,
-          "ast": 4.4
-        }
-      },
-      {
-        "player": "Ivica Zubac",
-        "game": "Los Angeles Clippers @ Los Angeles Lakers",
-        "model_prob": 0.8716,
-        "best_odds": -170,
-        "bookmaker": "Bovada",
-        "implied_prob": 0.6296,
-        "edge": 0.2419,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 30.4,
-        "l20_dd_rate": 0.35,
-        "stats": {
-          "pts": 8.2,
-          "reb": 7.8,
-          "ast": 2.4
+          "pts": 17.6,
+          "reb": 4.1,
+          "ast": 5.7
         }
       }
     ],
@@ -66,81 +30,64 @@
       {
         "player": "Luka Doncic",
         "game": "Los Angeles Clippers @ Los Angeles Lakers",
-        "model_prob": 0.4545,
+        "model_prob": 1.0,
         "best_odds": 475,
         "bookmaker": "Fanatics",
         "implied_prob": 0.1739,
-        "edge": 0.2806,
-        "bet_units": 0.38,
-        "bet_amount": 3.82,
-        "avg_minutes": 36.1,
-        "l20_td_rate": 0.05,
+        "edge": 0.8261,
+        "bet_units": 1.12,
+        "bet_amount": 11.25,
+        "avg_minutes": 36.0,
+        "l20_td_rate": 0.0,
         "stats": {
-          "pts": 26.8,
-          "reb": 6.6,
-          "ast": 6.2
+          "pts": 27.0,
+          "reb": 7.0,
+          "ast": 7.1
         }
       }
     ]
   },
   "high_probability": [
     {
-      "player": "Jalen Johnson",
-      "game": "Atlanta Hawks @ Washington Wizards",
-      "model_prob": 0.9896,
-      "best_odds": -225,
-      "bookmaker": "BetMGM",
-      "implied_prob": 0.6923,
-      "edge": 0.2973,
-      "has_positive_edge": true,
-      "avg_minutes": 31.8,
-      "l20_dd_rate": 0.25,
-      "stats": {
-        "pts": 18.2,
-        "reb": 6.2,
-        "ast": 4.4
-      }
-    },
-    {
-      "player": "Ivica Zubac",
+      "player": "Luka Doncic",
       "game": "Los Angeles Clippers @ Los Angeles Lakers",
-      "model_prob": 0.8716,
-      "best_odds": -170,
-      "bookmaker": "Bovada",
-      "implied_prob": 0.6296,
-      "edge": 0.2419,
-      "has_positive_edge": true,
-      "avg_minutes": 30.4,
-      "l20_dd_rate": 0.35,
+      "model_prob": 0.4783,
+      "best_odds": -155,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.6078,
+      "edge": -0.1296,
+      "has_positive_edge": false,
+      "avg_minutes": 36.0,
+      "l20_dd_rate": 0.5,
       "stats": {
-        "pts": 8.2,
-        "reb": 7.8,
-        "ast": 2.4
+        "pts": 27.0,
+        "reb": 7.0,
+        "ast": 7.1
       }
     },
     {
       "player": "James Harden",
       "game": "Los Angeles Clippers @ Los Angeles Lakers",
-      "model_prob": 0.7967,
-      "best_odds": 166,
-      "bookmaker": "Caesars",
-      "implied_prob": 0.3759,
-      "edge": 0.4208,
+      "model_prob": 0.4105,
+      "best_odds": 170,
+      "bookmaker": "Fanatics",
+      "implied_prob": 0.3704,
+      "edge": 0.0402,
       "has_positive_edge": true,
       "avg_minutes": 33.6,
       "l20_dd_rate": 0.15,
       "stats": {
-        "pts": 19.2,
-        "reb": 4.0,
-        "ast": 5.5
+        "pts": 17.6,
+        "reb": 4.1,
+        "ast": 5.7
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 3,
+    "total_recommended_dd": 1,
     "total_recommended_td": 1,
-    "total_high_probability": 3,
-    "total_recommended_units": 67.88,
-    "total_recommended_amount": 678.82
+    "total_high_probability": 2,
+    "total_recommended_units": 8.29,
+    "total_recommended_amount": 83.0
   }
 }
