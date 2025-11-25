@@ -1,6 +1,6 @@
 {
-  "date": "2025-11-24",
-  "generated_at": "2025-11-24T14:36:33.604575+00:00",
+  "date": "2025-11-25",
+  "generated_at": "2025-11-25T14:10:30.150581+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -8,21 +8,39 @@
   "recommended_picks": {
     "dd": [
       {
-        "player": "Rudy Gobert",
-        "game": "Minnesota Timberwolves @ Sacramento Kings",
-        "model_prob": 0.9896,
-        "best_odds": -135,
+        "player": "Luka Doncic",
+        "game": "Los Angeles Clippers @ Los Angeles Lakers",
+        "model_prob": 0.75,
+        "best_odds": -145,
         "bookmaker": "BetMGM",
-        "implied_prob": 0.5745,
-        "edge": 0.4152,
+        "implied_prob": 0.5918,
+        "edge": 0.1582,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 31.6,
+        "avg_minutes": 35.3,
+        "l20_dd_rate": 0.4,
+        "stats": {
+          "pts": 27.5,
+          "reb": 7.2,
+          "ast": 6.7
+        }
+      },
+      {
+        "player": "Jalen Johnson",
+        "game": "Atlanta Hawks @ Washington Wizards",
+        "model_prob": 0.6951,
+        "best_odds": -220,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.6875,
+        "edge": 0.0076,
+        "bet_units": 2.74,
+        "bet_amount": 27.44,
+        "avg_minutes": 31.8,
         "l20_dd_rate": 0.3,
         "stats": {
-          "pts": 6.3,
-          "reb": 8.8,
-          "ast": 3.5
+          "pts": 14.5,
+          "reb": 6.5,
+          "ast": 4.1
         }
       }
     ],
@@ -30,96 +48,62 @@
   },
   "high_probability": [
     {
-      "player": "Rudy Gobert",
-      "game": "Minnesota Timberwolves @ Sacramento Kings",
-      "model_prob": 0.9896,
-      "best_odds": -135,
+      "player": "Luka Doncic",
+      "game": "Los Angeles Clippers @ Los Angeles Lakers",
+      "model_prob": 0.75,
+      "best_odds": -145,
       "bookmaker": "BetMGM",
-      "implied_prob": 0.5745,
-      "edge": 0.4152,
+      "implied_prob": 0.5918,
+      "edge": 0.1582,
       "has_positive_edge": true,
-      "avg_minutes": 31.6,
-      "l20_dd_rate": 0.3,
+      "avg_minutes": 35.3,
+      "l20_dd_rate": 0.4,
       "stats": {
-        "pts": 6.3,
-        "reb": 8.8,
-        "ast": 3.5
+        "pts": 27.5,
+        "reb": 7.2,
+        "ast": 6.7
       }
     },
     {
-      "player": "Josh Giddey",
-      "game": "Chicago Bulls @ New Orleans Pelicans",
-      "model_prob": 0.4105,
-      "best_odds": null,
-      "bookmaker": null,
-      "implied_prob": null,
-      "edge": null,
-      "has_positive_edge": false,
-      "avg_minutes": 34.8,
-      "l20_dd_rate": 0.6,
-      "stats": {
-        "pts": 23.4,
-        "reb": 8.9,
-        "ast": 8.2
-      }
-    },
-    {
-      "player": "Jusuf Nurkic",
-      "game": "Utah Jazz @ Golden State Warriors",
-      "model_prob": 0.4105,
-      "best_odds": -250,
+      "player": "Jalen Johnson",
+      "game": "Atlanta Hawks @ Washington Wizards",
+      "model_prob": 0.6951,
+      "best_odds": -220,
       "bookmaker": "BetMGM",
-      "implied_prob": 0.7143,
-      "edge": -0.3038,
-      "has_positive_edge": false,
-      "avg_minutes": 27.3,
+      "implied_prob": 0.6875,
+      "edge": 0.0076,
+      "has_positive_edge": true,
+      "avg_minutes": 31.8,
       "l20_dd_rate": 0.3,
       "stats": {
-        "pts": 8.3,
-        "reb": 8.5,
-        "ast": 4.7
+        "pts": 14.5,
+        "reb": 6.5,
+        "ast": 4.1
       }
     },
     {
-      "player": "Julius Randle",
-      "game": "Minnesota Timberwolves @ Sacramento Kings",
+      "player": "Ivica Zubac",
+      "game": "Los Angeles Clippers @ Los Angeles Lakers",
       "model_prob": 0.4074,
-      "best_odds": null,
-      "bookmaker": null,
-      "implied_prob": null,
-      "edge": null,
+      "best_odds": -165,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.6226,
+      "edge": -0.2152,
       "has_positive_edge": false,
-      "avg_minutes": 32.0,
-      "l20_dd_rate": 0.25,
+      "avg_minutes": 29.6,
+      "l20_dd_rate": 0.4,
       "stats": {
-        "pts": 21.4,
-        "reb": 6.3,
-        "ast": 5.0
-      }
-    },
-    {
-      "player": "Nikola Jokic",
-      "game": "Denver Nuggets @ Memphis Grizzlies",
-      "model_prob": 0.3774,
-      "best_odds": null,
-      "bookmaker": null,
-      "implied_prob": null,
-      "edge": null,
-      "has_positive_edge": false,
-      "avg_minutes": 34.7,
-      "l20_dd_rate": 0.7,
-      "stats": {
-        "pts": 39.2,
-        "reb": 10.7,
-        "ast": 8.7
+        "pts": 8.9,
+        "reb": 8.1,
+        "ast": 3.2
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 1,
+    "total_recommended_dd": 2,
     "total_recommended_td": 0,
-    "total_high_probability": 5,
-    "total_recommended_units": 22.5,
-    "total_recommended_amount": 225.0
+    "total_high_probability": 3,
+    "total_recommended_units": 25.24,
+    "total_recommended_amount": 252.44
   }
 }

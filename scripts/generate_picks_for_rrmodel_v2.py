@@ -194,29 +194,31 @@ def fetch_player_props_odds():
                     for market in bookmaker.get('markets', []):
                         market_key = market.get('key')
                         if market_key in ['player_double_double', 'player_triple_double']:
-                            # Capture BOTH Yes and No outcomes to detect inversions
-                            outcomes_dict = {}
-                            for outcome in market.get('outcomes', []):
-                                outcome_name = outcome.get('name')
-                                if outcome_name in ['Yes', 'No']:
-                                    outcomes_dict[outcome_name] = {
-                                        'player_name': outcome.get('description'),
-                                        'odds': outcome.get('price')
-                                    }
+                            # Group outcomes by player (some bookmakers pair different players in Yes/No)
+                            player_outcomes = {}
                             
-                            # Add if we have at least one side (preferably both for validation)
-                            if outcomes_dict:
-                                # Use the player name from whichever outcome exists
-                                player_name_key = 'Yes' if 'Yes' in outcomes_dict else 'No'
+                            for outcome in market.get('outcomes', []):
+                                player_name = outcome.get('description')
+                                outcome_name = outcome.get('name')  # 'Yes' or 'No'
+                                odds = outcome.get('price')
+                                
+                                if player_name and outcome_name in ['Yes', 'No']:
+                                    if player_name not in player_outcomes:
+                                        player_outcomes[player_name] = {}
+                                    player_outcomes[player_name][outcome_name] = odds
+                            
+                            # Add each player's odds separately
+                            for player_name, outcomes in player_outcomes.items():
                                 odds_data.append({
-                                    'player_name': outcomes_dict[player_name_key]['player_name'],
+                                    'player_name': player_name,
                                     'bet_type': 'DD' if market_key == 'player_double_double' else 'TD',
-                                    'odds_yes': outcomes_dict.get('Yes', {}).get('odds'),
-                                    'odds_no': outcomes_dict.get('No', {}).get('odds'),
+                                    'odds_yes': outcomes.get('Yes'),
+                                    'odds_no': outcomes.get('No'),
                                     'bookmaker': bookmaker_name,
                                     'game': f"{away_team} @ {home_team}"
                                 })
-            except:
+            except Exception as e:
+                print(f"⚠️  Error processing event {event_id}: {e}")
                 continue
         
         return pd.DataFrame(odds_data)
@@ -243,6 +245,8 @@ def load_historical_data():
                     with open(file_path) as f:
                         game = json.load(f)
                     
+                    game_id = file_path.stem  # Use filename as game ID
+                    
                     for team_key in ['home', 'away']:
                         for player in game.get(team_key, {}).get('players', []):
                             stats = player.get('stats', {})
@@ -250,6 +254,7 @@ def load_historical_data():
                                 pts, reb, ast = stats.get('pts', 0), stats.get('reb', 0), stats.get('ast', 0)
                                 records.append({
                                     'gameDate': game.get('gameDate', ''),
+                                    'gameId': game_id,
                                     'playerId': player.get('playerId', ''),
                                     'playerName': player.get('name', ''),
                                     'minutes': stats.get('min', 0),
@@ -273,6 +278,12 @@ def load_historical_data():
     
     df = pd.DataFrame(records)
     df['gameDate'] = pd.to_datetime(df['gameDate'])
+    
+    # CRITICAL FIX: Deduplicate by playerName + gameId (not just date, multiple games per date!)
+    # Keep the entry with most minutes played (handles garbage time duplicates)
+    df = df.sort_values('minutes', ascending=False)  # Best/longest minutes first
+    df = df.drop_duplicates(subset=['playerName', 'gameId'], keep='first')  # One entry per player per game
+    
     print(f"✅ Loaded {len(df):,} player-games\n")
     
     return df
