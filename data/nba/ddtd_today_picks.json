@@ -1,6 +1,6 @@
 {
   "date": "2025-11-25",
-  "generated_at": "2025-11-25T16:37:59.901242+00:00",
+  "generated_at": "2025-11-25T17:12:24.211728+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -15,7 +15,7 @@
       "game": "Los Angeles Clippers @ Los Angeles Lakers",
       "model_prob": 0.4105,
       "best_odds": -170,
-      "bookmaker": "FanDuel",
+      "bookmaker": "Bovada",
       "implied_prob": 0.6296,
       "edge": -0.2191,
       "has_positive_edge": false,
