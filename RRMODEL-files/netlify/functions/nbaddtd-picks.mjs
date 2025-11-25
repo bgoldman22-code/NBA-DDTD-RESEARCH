@@ -8,8 +8,7 @@ import { getJson, setJson } from './_lib/blobs-nba.mjs';
 
 // URL to raw JSON file in NBA-DDTD-RESEARCH repo
 // NOTE: Repo must be public for this URL to work, or use a GitHub token
-// Replace YOUR_GITHUB_USERNAME with your actual username
-const PICKS_JSON_URL = 'https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/NBA-DDTD-RESEARCH/main/data/nba/ddtd_today_picks.json';
+const PICKS_JSON_URL = 'https://raw.githubusercontent.com/bgoldman22-code/NBA-DDTD-RESEARCH/main/data/nba/ddtd_today_picks.json';
 
 /**
  * Fetch picks from GitHub repo
