@@ -1,6 +1,6 @@
 {
   "date": "2025-11-25",
-  "generated_at": "2025-11-25T14:10:30.150581+00:00",
+  "generated_at": "2025-11-25T15:06:33.098458+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -8,102 +8,104 @@
   "recommended_picks": {
     "dd": [
       {
-        "player": "Luka Doncic",
+        "player": "Ivica Zubac",
         "game": "Los Angeles Clippers @ Los Angeles Lakers",
-        "model_prob": 0.75,
-        "best_odds": -145,
-        "bookmaker": "BetMGM",
-        "implied_prob": 0.5918,
-        "edge": 0.1582,
+        "model_prob": 1.0,
+        "best_odds": -170,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.6296,
+        "edge": 0.3704,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 35.3,
-        "l20_dd_rate": 0.4,
+        "avg_minutes": 30.1,
+        "l20_dd_rate": 0.3,
         "stats": {
-          "pts": 27.5,
-          "reb": 7.2,
-          "ast": 6.7
+          "pts": 0.0,
+          "reb": 11.2,
+          "ast": 7.9
         }
       },
       {
-        "player": "Jalen Johnson",
-        "game": "Atlanta Hawks @ Washington Wizards",
-        "model_prob": 0.6951,
-        "best_odds": -220,
-        "bookmaker": "BetMGM",
-        "implied_prob": 0.6875,
-        "edge": 0.0076,
-        "bet_units": 2.74,
-        "bet_amount": 27.44,
-        "avg_minutes": 31.8,
-        "l20_dd_rate": 0.3,
+        "player": "Wendell Carter Jr",
+        "game": "Orlando Magic @ Philadelphia 76ers",
+        "model_prob": 0.2154,
+        "best_odds": 416,
+        "bookmaker": "DraftKings",
+        "implied_prob": 0.1938,
+        "edge": 0.0216,
+        "bet_units": 3.01,
+        "bet_amount": 30.12,
+        "avg_minutes": 26.9,
+        "l20_dd_rate": 0.2,
         "stats": {
-          "pts": 14.5,
-          "reb": 6.5,
-          "ast": 4.1
+          "pts": 28.4,
+          "reb": 7.1,
+          "ast": 4.5
         }
       }
     ],
-    "td": []
+    "td": [
+      {
+        "player": "Alex Sarr",
+        "game": "Atlanta Hawks @ Washington Wizards",
+        "model_prob": 0.8333,
+        "best_odds": 2200,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.0435,
+        "edge": 0.7899,
+        "bet_units": 2.23,
+        "bet_amount": 22.3,
+        "avg_minutes": 29.2,
+        "l20_td_rate": 0.05,
+        "stats": {
+          "pts": 32.2,
+          "reb": 7.8,
+          "ast": 5.4
+        }
+      }
+    ]
   },
   "high_probability": [
     {
-      "player": "Luka Doncic",
-      "game": "Los Angeles Clippers @ Los Angeles Lakers",
-      "model_prob": 0.75,
-      "best_odds": -145,
-      "bookmaker": "BetMGM",
-      "implied_prob": 0.5918,
-      "edge": 0.1582,
-      "has_positive_edge": true,
-      "avg_minutes": 35.3,
-      "l20_dd_rate": 0.4,
-      "stats": {
-        "pts": 27.5,
-        "reb": 7.2,
-        "ast": 6.7
-      }
-    },
-    {
-      "player": "Jalen Johnson",
-      "game": "Atlanta Hawks @ Washington Wizards",
-      "model_prob": 0.6951,
-      "best_odds": -220,
-      "bookmaker": "BetMGM",
-      "implied_prob": 0.6875,
-      "edge": 0.0076,
-      "has_positive_edge": true,
-      "avg_minutes": 31.8,
-      "l20_dd_rate": 0.3,
-      "stats": {
-        "pts": 14.5,
-        "reb": 6.5,
-        "ast": 4.1
-      }
-    },
-    {
       "player": "Ivica Zubac",
       "game": "Los Angeles Clippers @ Los Angeles Lakers",
-      "model_prob": 0.4074,
-      "best_odds": -165,
+      "model_prob": 1.0,
+      "best_odds": -170,
       "bookmaker": "FanDuel",
-      "implied_prob": 0.6226,
-      "edge": -0.2152,
-      "has_positive_edge": false,
-      "avg_minutes": 29.6,
-      "l20_dd_rate": 0.4,
+      "implied_prob": 0.6296,
+      "edge": 0.3704,
+      "has_positive_edge": true,
+      "avg_minutes": 30.1,
+      "l20_dd_rate": 0.3,
       "stats": {
-        "pts": 8.9,
-        "reb": 8.1,
-        "ast": 3.2
+        "pts": 0.0,
+        "reb": 11.2,
+        "ast": 7.9
+      }
+    },
+    {
+      "player": "Andre Drummond",
+      "game": "Orlando Magic @ Philadelphia 76ers",
+      "model_prob": 0.4667,
+      "best_odds": 270,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.2703,
+      "edge": 0.1964,
+      "has_positive_edge": true,
+      "avg_minutes": 18.6,
+      "l20_dd_rate": 0.15,
+      "stats": {
+        "pts": 10.0,
+        "reb": 7.9,
+        "ast": 5.0
       }
     }
   ],
   "summary": {
     "total_recommended_dd": 2,
-    "total_recommended_td": 0,
-    "total_high_probability": 3,
-    "total_recommended_units": 25.24,
-    "total_recommended_amount": 252.44
+    "total_recommended_td": 1,
+    "total_high_probability": 2,
+    "total_recommended_units": 27.74,
+    "total_recommended_amount": 277.42
   }
 }
