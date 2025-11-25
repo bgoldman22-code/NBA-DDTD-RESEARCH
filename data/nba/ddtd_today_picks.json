@@ -1,129 +1,38 @@
 {
   "date": "2025-11-25",
-  "generated_at": "2025-11-25T16:17:02.725791+00:00",
+  "generated_at": "2025-11-25T16:30:48.578957+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
   "kelly_fraction": 0.25,
   "recommended_picks": {
-    "dd": [
-      {
-        "player": "Ivica Zubac",
-        "game": "Los Angeles Clippers @ Los Angeles Lakers",
-        "model_prob": 1.0,
-        "best_odds": -170,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.6296,
-        "edge": 0.3704,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 30.1,
-        "l20_dd_rate": 0.3,
-        "stats": {
-          "pts": 0.0,
-          "reb": 11.2,
-          "ast": 7.9
-        }
-      },
-      {
-        "player": "Wendell Carter Jr",
-        "game": "Orlando Magic @ Philadelphia 76ers",
-        "model_prob": 0.2154,
-        "best_odds": 401,
-        "bookmaker": "DraftKings",
-        "implied_prob": 0.1996,
-        "edge": 0.0158,
-        "bet_units": 2.22,
-        "bet_amount": 22.18,
-        "avg_minutes": 26.9,
-        "l20_dd_rate": 0.2,
-        "stats": {
-          "pts": 28.4,
-          "reb": 7.1,
-          "ast": 4.5
-        }
-      }
-    ],
-    "td": [
-      {
-        "player": "Luka Doncic",
-        "game": "Los Angeles Clippers @ Los Angeles Lakers",
-        "model_prob": 1.0,
-        "best_odds": 425,
-        "bookmaker": "Fanatics",
-        "implied_prob": 0.1905,
-        "edge": 0.8095,
-        "bet_units": 6.75,
-        "bet_amount": 67.5,
-        "avg_minutes": 32.5,
-        "l20_td_rate": 0.1,
-        "stats": {
-          "pts": 27.6,
-          "reb": 7.7,
-          "ast": 7.5
-        }
-      },
-      {
-        "player": "Alex Sarr",
-        "game": "Atlanta Hawks @ Washington Wizards",
-        "model_prob": 0.8333,
-        "best_odds": 2200,
-        "bookmaker": "BetMGM",
-        "implied_prob": 0.0435,
-        "edge": 0.7899,
-        "bet_units": 2.23,
-        "bet_amount": 22.3,
-        "avg_minutes": 29.2,
-        "l20_td_rate": 0.05,
-        "stats": {
-          "pts": 32.2,
-          "reb": 7.8,
-          "ast": 5.4
-        }
-      }
-    ]
+    "dd": [],
+    "td": []
   },
   "high_probability": [
     {
       "player": "Ivica Zubac",
       "game": "Los Angeles Clippers @ Los Angeles Lakers",
-      "model_prob": 1.0,
+      "model_prob": 0.4105,
       "best_odds": -170,
       "bookmaker": "FanDuel",
       "implied_prob": 0.6296,
-      "edge": 0.3704,
-      "has_positive_edge": true,
-      "avg_minutes": 30.1,
-      "l20_dd_rate": 0.3,
+      "edge": -0.2191,
+      "has_positive_edge": false,
+      "avg_minutes": 31.4,
+      "l20_dd_rate": 0.25,
       "stats": {
-        "pts": 0.0,
-        "reb": 11.2,
-        "ast": 7.9
-      }
-    },
-    {
-      "player": "Andre Drummond",
-      "game": "Orlando Magic @ Philadelphia 76ers",
-      "model_prob": 0.4667,
-      "best_odds": 250,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.2857,
-      "edge": 0.181,
-      "has_positive_edge": true,
-      "avg_minutes": 18.6,
-      "l20_dd_rate": 0.15,
-      "stats": {
-        "pts": 10.0,
-        "reb": 7.9,
-        "ast": 5.0
+        "pts": 0.8,
+        "reb": 7.8,
+        "ast": 5.5
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 2,
-    "total_recommended_td": 2,
-    "total_high_probability": 2,
-    "total_recommended_units": 33.7,
-    "total_recommended_amount": 336.98
+    "total_recommended_dd": 0,
+    "total_recommended_td": 0,
+    "total_high_probability": 1,
+    "total_recommended_units": 0,
+    "total_recommended_amount": 0
   }
 }
