@@ -32,6 +32,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       
+      - name: Fetch latest boxscores for current season
+        run: |
+          echo "📥 Fetching latest 2025-26 season boxscores..."
+          python fetch_current_season.py
+          echo "✅ Boxscores updated"
+      
       - name: Generate picks with Kelly sizing
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
