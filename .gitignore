@@ -41,4 +41,4 @@ Thumbs.db
 # Temporary files
 *.tmp
 .ipynb_checkpoints/
-data/nba/boxscores-raw/
+# data/nba/boxscores-raw/  # COMMENTED OUT - need boxscores in git for GitHub Actions
