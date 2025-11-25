@@ -1,38 +1,146 @@
 {
   "date": "2025-11-25",
-  "generated_at": "2025-11-25T17:40:12.741702+00:00",
+  "generated_at": "2025-11-25T17:44:27.921997+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
   "kelly_fraction": 0.25,
   "recommended_picks": {
-    "dd": [],
-    "td": []
+    "dd": [
+      {
+        "player": "James Harden",
+        "game": "Los Angeles Clippers @ Los Angeles Lakers",
+        "model_prob": 0.7967,
+        "best_odds": 166,
+        "bookmaker": "Caesars",
+        "implied_prob": 0.3759,
+        "edge": 0.4208,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 33.6,
+        "l20_dd_rate": 0.15,
+        "stats": {
+          "pts": 19.2,
+          "reb": 4.0,
+          "ast": 5.5
+        }
+      },
+      {
+        "player": "Jalen Johnson",
+        "game": "Atlanta Hawks @ Washington Wizards",
+        "model_prob": 0.9896,
+        "best_odds": -225,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.6923,
+        "edge": 0.2973,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 31.8,
+        "l20_dd_rate": 0.25,
+        "stats": {
+          "pts": 18.2,
+          "reb": 6.2,
+          "ast": 4.4
+        }
+      },
+      {
+        "player": "Ivica Zubac",
+        "game": "Los Angeles Clippers @ Los Angeles Lakers",
+        "model_prob": 0.8716,
+        "best_odds": -170,
+        "bookmaker": "Bovada",
+        "implied_prob": 0.6296,
+        "edge": 0.2419,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 30.4,
+        "l20_dd_rate": 0.35,
+        "stats": {
+          "pts": 8.2,
+          "reb": 7.8,
+          "ast": 2.4
+        }
+      }
+    ],
+    "td": [
+      {
+        "player": "Luka Doncic",
+        "game": "Los Angeles Clippers @ Los Angeles Lakers",
+        "model_prob": 0.4545,
+        "best_odds": 475,
+        "bookmaker": "Fanatics",
+        "implied_prob": 0.1739,
+        "edge": 0.2806,
+        "bet_units": 0.38,
+        "bet_amount": 3.82,
+        "avg_minutes": 36.1,
+        "l20_td_rate": 0.05,
+        "stats": {
+          "pts": 26.8,
+          "reb": 6.6,
+          "ast": 6.2
+        }
+      }
+    ]
   },
   "high_probability": [
     {
+      "player": "Jalen Johnson",
+      "game": "Atlanta Hawks @ Washington Wizards",
+      "model_prob": 0.9896,
+      "best_odds": -225,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.6923,
+      "edge": 0.2973,
+      "has_positive_edge": true,
+      "avg_minutes": 31.8,
+      "l20_dd_rate": 0.25,
+      "stats": {
+        "pts": 18.2,
+        "reb": 6.2,
+        "ast": 4.4
+      }
+    },
+    {
       "player": "Ivica Zubac",
       "game": "Los Angeles Clippers @ Los Angeles Lakers",
-      "model_prob": 0.4105,
+      "model_prob": 0.8716,
       "best_odds": -170,
       "bookmaker": "Bovada",
       "implied_prob": 0.6296,
-      "edge": -0.2191,
-      "has_positive_edge": false,
-      "avg_minutes": 31.4,
-      "l20_dd_rate": 0.25,
+      "edge": 0.2419,
+      "has_positive_edge": true,
+      "avg_minutes": 30.4,
+      "l20_dd_rate": 0.35,
       "stats": {
-        "pts": 0.8,
+        "pts": 8.2,
         "reb": 7.8,
+        "ast": 2.4
+      }
+    },
+    {
+      "player": "James Harden",
+      "game": "Los Angeles Clippers @ Los Angeles Lakers",
+      "model_prob": 0.7967,
+      "best_odds": 166,
+      "bookmaker": "Caesars",
+      "implied_prob": 0.3759,
+      "edge": 0.4208,
+      "has_positive_edge": true,
+      "avg_minutes": 33.6,
+      "l20_dd_rate": 0.15,
+      "stats": {
+        "pts": 19.2,
+        "reb": 4.0,
         "ast": 5.5
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 0,
-    "total_recommended_td": 0,
-    "total_high_probability": 1,
-    "total_recommended_units": 0,
-    "total_recommended_amount": 0
+    "total_recommended_dd": 3,
+    "total_recommended_td": 1,
+    "total_high_probability": 3,
+    "total_recommended_units": 67.88,
+    "total_recommended_amount": 678.82
   }
 }
