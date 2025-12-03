@@ -102,13 +102,15 @@ def fetch_player_props_odds():
                         market_key = market.get('key')
                         if market_key in ['player_double_double', 'player_triple_double']:
                             for outcome in market.get('outcomes', []):
-                                odds_data.append({
-                                    'player_name': outcome.get('description'),
-                                    'bet_type': 'DD' if market_key == 'player_double_double' else 'TD',
-                                    'odds': outcome.get('price'),
-                                    'bookmaker': bookmaker.get('title'),
-                                    'game': f"{away_team} @ {home_team}"
-                                })
+                                # CRITICAL: Only include YES bets, skip NO bets
+                                if outcome.get('name') == 'Yes':
+                                    odds_data.append({
+                                        'player_name': outcome.get('description'),
+                                        'bet_type': 'DD' if market_key == 'player_double_double' else 'TD',
+                                        'odds': outcome.get('price'),
+                                        'bookmaker': bookmaker.get('title'),
+                                        'game': f"{away_team} @ {home_team}"
+                                    })
             except Exception as e:
                 print(f"      ⚠️  Error fetching odds for event {event_id}: {e}")
                 continue
@@ -325,6 +327,9 @@ def main():
             dd_best = max(dd_odds_list) if len(dd_odds_list) > 0 else None
             td_best = max(td_odds_list) if len(td_odds_list) > 0 else None
             
+            # Get game info (away @ home)
+            game_info = player_odds['game'].iloc[0] if not player_odds.empty else ""
+            
             predictions.append({
                 'player': player_name,
                 'dd_prob': dd_prob,
@@ -333,7 +338,8 @@ def main():
                 'td_odds': td_best,
                 'avg_minutes': features['avg_minutes'],
                 'l20_dd_rate': features['dd_rate'],
-                'l20_td_rate': features['td_rate']
+                'l20_td_rate': features['td_rate'],
+                'game': game_info
             })
         
         pred_df = pd.DataFrame(predictions)
@@ -425,18 +431,18 @@ def main():
         if not dd_picks.empty:
             print("🔥 DOUBLE-DOUBLE PICKS:")
             print("-" * 60)
-            for idx, pick in dd_picks.iterrows():
-                # Flag elite exceptions
-                is_elite = pick['dd_prob'] >= dd_gate.get('elite_prob', 0.90) and \
-                          pick['avg_minutes'] < dd_gate['min_minutes']
-                elite_flag = " 🌟 ELITE EXCEPTION" if is_elite else ""
+            for pick_num, (idx, pick) in enumerate(dd_picks.iterrows(), 1):
+                # Format odds with + sign
+                odds_str = f"+{int(pick['dd_odds'])}" if pick['dd_odds'] > 0 else str(int(pick['dd_odds']))
                 
-                print(f"\n📊 {pick['player']}{elite_flag}")
-                print(f"   Model Prob: {pick['dd_prob']*100:.1f}%")
-                print(f"   Market Odds: {pick['dd_odds']:+d} (implied {pick['implied_prob']*100:.1f}%)")
-                print(f"   EDGE: {pick['edge']*100:+.1f}%")
-                print(f"   Recent form: {pick['l20_dd_rate']*100:.0f}% DD rate (L20)")
-                print(f"   Minutes: {pick['avg_minutes']:.1f} avg")
+                # Calculate Kelly stake (simplified - 5% of edge)
+                edge = pick['edge']
+                stake = min(edge * 25, 25.0)  # Cap at 25U
+                
+                print(f"\n#{pick_num} - {pick['player']} – {pick['game']}")
+                print(f"Model: {pick['dd_prob']*100:.2f}%, L20 DD: {pick['l20_dd_rate']*100:.1f}%, Avg Min: {pick['avg_minutes']:.1f}")
+                print(f"Odds: {odds_str} (DraftKings), Edge: {edge*100:+.1f}%")
+                print(f"Stake: {stake:.1f}U")
         else:
             print("❌ No DD picks passing acceptance gates today")
         
@@ -445,17 +451,18 @@ def main():
         if not td_picks.empty:
             print("⭐ TRIPLE-DOUBLE PICKS:")
             print("-" * 60)
-            for idx, pick in td_picks.iterrows():
-                is_elite = pick['td_prob'] >= td_gate.get('elite_prob', 0.80) and \
-                          pick['avg_minutes'] < td_gate['min_minutes']
-                elite_flag = " 🌟 ELITE EXCEPTION" if is_elite else ""
+            for pick_num, (idx, pick) in enumerate(td_picks.iterrows(), 1):
+                # Format odds with + sign
+                odds_str = f"+{int(pick['td_odds'])}" if pick['td_odds'] > 0 else str(int(pick['td_odds']))
                 
-                print(f"\n📊 {pick['player']}{elite_flag}")
-                print(f"   Model Prob: {pick['td_prob']*100:.1f}%")
-                print(f"   Market Odds: {pick['td_odds']:+d} (implied {pick['implied_prob']*100:.1f}%)")
-                print(f"   EDGE: {pick['edge']*100:+.1f}%")
-                print(f"   Recent form: {pick['l20_td_rate']*100:.0f}% TD rate (L20)")
-                print(f"   Minutes: {pick['avg_minutes']:.1f} avg")
+                # Calculate Kelly stake (simplified - 5% of edge)
+                edge = pick['edge']
+                stake = min(edge * 25, 25.0)  # Cap at 25U
+                
+                print(f"\n#{pick_num} - {pick['player']} – {pick['game']}")
+                print(f"Model: {pick['td_prob']*100:.2f}%, L20 TD: {pick['l20_td_rate']*100:.1f}%, Avg Min: {pick['avg_minutes']:.1f}")
+                print(f"Odds: {odds_str} (DraftKings), Edge: {edge*100:+.1f}%")
+                print(f"Stake: {stake:.1f}U")
         else:
             print("❌ No TD picks passing acceptance gates today")
         

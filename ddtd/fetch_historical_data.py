@@ -79,53 +79,64 @@ def fetch_espn_boxscore(game_id):
                 for athlete in stat_group.get('athletes', []):
                     raw_stats = athlete.get('stats', [])
                     
-                    # ESPN stats order: MIN, STL, BLK, AST, REB, FGM, FGA, 3PM, 3PA, FTM, FTA, TO, PTS
-                    # Note: Some values may be percentages (e.g., "33.3") - need to handle gracefully
+                    # ESPN stats order (as of Dec 2025):
+                    # [0] MIN, [1] PTS, [2] FG (e.g. "7-11"), [3] 3PT (e.g. "3-5"), [4] FT (e.g. "2-4"),
+                    # [5] REB, [6] AST, [7] TO, [8] STL, [9] BLK, [10] OREB, [11] DREB, [12] PF, [13] +/-
                     if len(raw_stats) >= 13:
                         def safe_int(val):
-                            """Safely convert to int, handle percentages and empty values"""
-                            if not val:
+                            """Safely convert to int"""
+                            if not val or val == '--':
                                 return 0
                             try:
-                                # Try direct int conversion first
                                 return int(float(val))
                             except (ValueError, TypeError):
-                                # If it's a percentage string or invalid, return 0
                                 return 0
                         
                         def safe_float(val):
                             """Safely convert to float"""
-                            if not val:
+                            if not val or val == '--':
                                 return 0.0
                             try:
                                 return float(val)
                             except (ValueError, TypeError):
                                 return 0.0
                         
+                        def parse_made_attempted(val):
+                            """Parse 'X-Y' format into (made, attempted)"""
+                            if not val or val == '--':
+                                return 0, 0
+                            try:
+                                parts = val.split('-')
+                                return int(parts[0]), int(parts[1])
+                            except (ValueError, IndexError):
+                                return 0, 0
+                        
+                        fgm, fga = parse_made_attempted(raw_stats[2])
+                        fg3m, fg3a = parse_made_attempted(raw_stats[3])
+                        ftm, fta = parse_made_attempted(raw_stats[4])
+                        
                         player = {
                             'playerId': athlete.get('athlete', {}).get('id', ''),
                             'name': athlete.get('athlete', {}).get('displayName', ''),
                             'stats': {
                                 'min': safe_float(raw_stats[0]),
-                                'pts': safe_int(raw_stats[12]),
-                                'reb': safe_int(raw_stats[4]),
-                                'ast': safe_int(raw_stats[3]),
-                                'stl': safe_int(raw_stats[1]),
-                                'blk': safe_int(raw_stats[2]),
-                                'fgm': safe_int(raw_stats[5]),
-                                'fga': safe_int(raw_stats[6]),
-                                'fg3m': safe_int(raw_stats[7]),
-                                'fg3a': safe_int(raw_stats[8]),
-                                'ftm': safe_int(raw_stats[9]),
-                                'fta': safe_int(raw_stats[10]),
-                                'tov': safe_int(raw_stats[11]),
-                                'pf': 0  # Not in ESPN summary stats
+                                'pts': safe_int(raw_stats[1]),
+                                'reb': safe_int(raw_stats[5]),
+                                'ast': safe_int(raw_stats[6]),
+                                'stl': safe_int(raw_stats[8]),
+                                'blk': safe_int(raw_stats[9]),
+                                'fgm': fgm,
+                                'fga': fga,
+                                'fg3m': fg3m,
+                                'fg3a': fg3a,
+                                'ftm': ftm,
+                                'fta': fta,
+                                'tov': safe_int(raw_stats[7]),
+                                'pf': safe_int(raw_stats[12]),
+                                'oreb': safe_int(raw_stats[10]),
+                                'dreb': safe_int(raw_stats[11])
                             }
                         }
-                        
-                        # Add OREB/DREB breakdown (not in basic stats, use total rebounds)
-                        player['stats']['oreb'] = int(player['stats']['reb'] * 0.3)  # Approximate
-                        player['stats']['dreb'] = player['stats']['reb'] - player['stats']['oreb']
                         
                         if is_home:
                             home_players.append(player)

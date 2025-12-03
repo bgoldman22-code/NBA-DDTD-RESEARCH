@@ -419,24 +419,15 @@ def main():
                 if pd.isna(odds_yes) and pd.isna(odds_no):
                     continue
                 elif pd.isna(odds_no):
-                    # Only Yes side - assume correct labeling
+                    # Only Yes side available - use it
                     selected_odds = odds_yes
                 elif pd.isna(odds_yes):
-                    # Only No side - assume it means "will happen" (inverted)
-                    selected_odds = odds_no
+                    # Only No side available - skip this (we only bet YES)
+                    continue
                 else:
-                    # Both sides available - detect inversion by implied probability
-                    implied_yes = american_to_prob(odds_yes)
-                    implied_no = american_to_prob(odds_no)
-                    
-                    # We ALWAYS want to bet YES (will happen)
-                    # Determine which outcome actually represents "will happen"
-                    if implied_yes > implied_no:
-                        # "Yes" is the favorite = correctly labeled as "will happen"
-                        selected_odds = odds_yes
-                    else:
-                        # "No" is the favorite = inverted labeling, "No" means "will happen"
-                        selected_odds = odds_no
+                    # Both sides available - ALWAYS use YES side
+                    # We're betting on the event happening, not on it NOT happening
+                    selected_odds = odds_yes
                 
                 # Track best odds (most positive for underdogs, least negative for favorites)
                 if pd.notna(selected_odds) and selected_odds > best_odds:
