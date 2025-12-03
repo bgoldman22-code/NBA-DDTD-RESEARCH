@@ -1,6 +1,6 @@
 {
-  "date": "2025-12-02",
-  "generated_at": "2025-12-02T15:05:34.612189+00:00",
+  "date": "2025-12-03",
+  "generated_at": "2025-12-03T15:06:08.227730+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -8,75 +8,39 @@
   "recommended_picks": {
     "dd": [
       {
-        "player": "Scottie Barnes",
-        "game": "Portland Trail Blazers @ Toronto Raptors",
-        "model_prob": 0.9565,
-        "best_odds": 176,
-        "bookmaker": "Caesars",
-        "implied_prob": 0.3623,
-        "edge": 0.5942,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 33.5,
-        "l20_dd_rate": 0.25,
-        "stats": {
-          "pts": 17.7,
-          "reb": 4.3,
-          "ast": 2.9
-        }
-      },
-      {
-        "player": "Rudy Gobert",
-        "game": "Minnesota Timberwolves @ New Orleans Pelicans",
+        "player": "Jalen Johnson",
+        "game": "Los Angeles Clippers @ Atlanta Hawks",
         "model_prob": 0.75,
-        "best_odds": 154,
-        "bookmaker": "DraftKings",
-        "implied_prob": 0.3937,
-        "edge": 0.3563,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 31.8,
-        "l20_dd_rate": 0.25,
-        "stats": {
-          "pts": 4.2,
-          "reb": 7.8,
-          "ast": 3.9
-        }
-      },
-      {
-        "player": "Chet Holmgren",
-        "game": "Oklahoma City Thunder @ Golden State Warriors",
-        "model_prob": 0.7049,
-        "best_odds": 125,
+        "best_odds": -150,
         "bookmaker": "Bovada",
-        "implied_prob": 0.4444,
-        "edge": 0.2604,
+        "implied_prob": 0.6,
+        "edge": 0.15,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 28.8,
-        "l20_dd_rate": 0.2,
+        "avg_minutes": 34.9,
+        "l20_dd_rate": 0.4,
         "stats": {
-          "pts": 15.5,
-          "reb": 5.7,
-          "ast": 2.2
+          "pts": 18.1,
+          "reb": 7.5,
+          "ast": 6.0
         }
       },
       {
-        "player": "Jakob Poeltl",
-        "game": "Portland Trail Blazers @ Toronto Raptors",
-        "model_prob": 0.3774,
-        "best_odds": 217,
-        "bookmaker": "DraftKings",
-        "implied_prob": 0.3155,
-        "edge": 0.0619,
-        "bet_units": 10.17,
-        "bet_amount": 101.73,
-        "avg_minutes": 25.6,
+        "player": "Josh Hart",
+        "game": "Charlotte Hornets @ New York Knicks",
+        "model_prob": 0.56,
+        "best_odds": 140,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.4167,
+        "edge": 0.1433,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 27.7,
         "l20_dd_rate": 0.2,
         "stats": {
-          "pts": 7.0,
-          "reb": 5.8,
-          "ast": 2.1
+          "pts": 13.5,
+          "reb": 6.5,
+          "ast": 4.2
         }
       }
     ],
@@ -84,96 +48,113 @@
   },
   "high_probability": [
     {
-      "player": "Scottie Barnes",
-      "game": "Portland Trail Blazers @ Toronto Raptors",
-      "model_prob": 0.9565,
-      "best_odds": 176,
-      "bookmaker": "Caesars",
-      "implied_prob": 0.3623,
-      "edge": 0.5942,
-      "has_positive_edge": true,
-      "avg_minutes": 33.5,
-      "l20_dd_rate": 0.25,
-      "stats": {
-        "pts": 17.7,
-        "reb": 4.3,
-        "ast": 2.9
-      }
-    },
-    {
-      "player": "Andre Drummond",
-      "game": "Washington Wizards @ Philadelphia 76ers",
-      "model_prob": 0.8462,
-      "best_odds": 410,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.1961,
-      "edge": 0.6501,
-      "has_positive_edge": true,
-      "avg_minutes": 21.4,
-      "l20_dd_rate": 0.25,
-      "stats": {
-        "pts": 12.2,
-        "reb": 5.8,
-        "ast": 1.6
-      }
-    },
-    {
-      "player": "Rudy Gobert",
-      "game": "Minnesota Timberwolves @ New Orleans Pelicans",
+      "player": "Jalen Johnson",
+      "game": "Los Angeles Clippers @ Atlanta Hawks",
       "model_prob": 0.75,
-      "best_odds": 154,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.3937,
-      "edge": 0.3563,
-      "has_positive_edge": true,
-      "avg_minutes": 31.8,
-      "l20_dd_rate": 0.25,
-      "stats": {
-        "pts": 4.2,
-        "reb": 7.8,
-        "ast": 3.9
-      }
-    },
-    {
-      "player": "Chet Holmgren",
-      "game": "Oklahoma City Thunder @ Golden State Warriors",
-      "model_prob": 0.7049,
-      "best_odds": 125,
+      "best_odds": -150,
       "bookmaker": "Bovada",
-      "implied_prob": 0.4444,
-      "edge": 0.2604,
+      "implied_prob": 0.6,
+      "edge": 0.15,
       "has_positive_edge": true,
-      "avg_minutes": 28.8,
-      "l20_dd_rate": 0.2,
+      "avg_minutes": 34.9,
+      "l20_dd_rate": 0.4,
       "stats": {
-        "pts": 15.5,
-        "reb": 5.7,
-        "ast": 2.2
+        "pts": 18.1,
+        "reb": 7.5,
+        "ast": 6.0
       }
     },
     {
-      "player": "Jakob Poeltl",
-      "game": "Portland Trail Blazers @ Toronto Raptors",
-      "model_prob": 0.3774,
-      "best_odds": 217,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.3155,
-      "edge": 0.0619,
+      "player": "Josh Hart",
+      "game": "Charlotte Hornets @ New York Knicks",
+      "model_prob": 0.56,
+      "best_odds": 140,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.4167,
+      "edge": 0.1433,
       "has_positive_edge": true,
-      "avg_minutes": 25.6,
+      "avg_minutes": 27.7,
       "l20_dd_rate": 0.2,
       "stats": {
-        "pts": 7.0,
-        "reb": 5.8,
-        "ast": 2.1
+        "pts": 13.5,
+        "reb": 6.5,
+        "ast": 4.2
+      }
+    },
+    {
+      "player": "Karl-Anthony Towns",
+      "game": "Charlotte Hornets @ New York Knicks",
+      "model_prob": 0.4783,
+      "best_odds": -300,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.75,
+      "edge": -0.2717,
+      "has_positive_edge": false,
+      "avg_minutes": 33.4,
+      "l20_dd_rate": 0.7,
+      "stats": {
+        "pts": 25.6,
+        "reb": 10.6,
+        "ast": 4.7
+      }
+    },
+    {
+      "player": "Nikola Jokic",
+      "game": "Denver Nuggets @ Indiana Pacers",
+      "model_prob": 0.4105,
+      "best_odds": -1260,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.9265,
+      "edge": -0.5159,
+      "has_positive_edge": false,
+      "avg_minutes": 34.9,
+      "l20_dd_rate": 0.7,
+      "stats": {
+        "pts": 27.3,
+        "reb": 10.5,
+        "ast": 8.6
+      }
+    },
+    {
+      "player": "Alperen Sengun",
+      "game": "Sacramento Kings @ Houston Rockets",
+      "model_prob": 0.4105,
+      "best_odds": -110,
+      "bookmaker": "Bovada",
+      "implied_prob": 0.5238,
+      "edge": -0.1133,
+      "has_positive_edge": false,
+      "avg_minutes": 34.4,
+      "l20_dd_rate": 0.4,
+      "stats": {
+        "pts": 21.6,
+        "reb": 8.4,
+        "ast": 6.2
+      }
+    },
+    {
+      "player": "Giannis Antetokounmpo",
+      "game": "Detroit Pistons @ Milwaukee Bucks",
+      "model_prob": 0.3774,
+      "best_odds": -190,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.6552,
+      "edge": -0.2778,
+      "has_positive_edge": false,
+      "avg_minutes": 30.2,
+      "l20_dd_rate": 0.5,
+      "stats": {
+        "pts": 29.4,
+        "reb": 10.2,
+        "ast": 6.3
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 4,
+    "total_recommended_dd": 2,
     "total_recommended_td": 0,
-    "total_high_probability": 5,
-    "total_recommended_units": 77.67,
-    "total_recommended_amount": 776.73
+    "total_high_probability": 6,
+    "total_recommended_units": 45.0,
+    "total_recommended_amount": 450.0
   }
 }
