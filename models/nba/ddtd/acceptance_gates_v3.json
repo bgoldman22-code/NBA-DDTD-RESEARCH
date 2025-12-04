@@ -1,18 +1,14 @@
 {
   "dd": {
     "min_prob": 0.17,
-    "min_minutes": 24,
-    "elite_prob": 0.90,
-    "elite_minutes": 20,
-    "expected_edge": 0.36030303030303024,
-    "hit_rate": 0.5303030303030303
+    "min_minutes": 30,
+    "expected_edge": 0.3558964143426294,
+    "hit_rate": 0.5258964143426295
   },
   "td": {
     "min_prob": 0.1,
-    "min_minutes": 30,
-    "elite_prob": 0.80,
-    "elite_minutes": 28,
-    "expected_edge": 0.07777777777777778,
-    "hit_rate": 0.17777777777777778
+    "min_minutes": 34,
+    "expected_edge": 0.015384615384615385,
+    "hit_rate": 0.11538461538461539
   }
 }

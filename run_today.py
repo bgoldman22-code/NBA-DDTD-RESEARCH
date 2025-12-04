@@ -344,6 +344,29 @@ def main():
         
         pred_df = pd.DataFrame(predictions)
         
+        # Show ALL players with >30% DD or TD probability
+        print(f"\n🎯 ALL PLAYERS >30% PROBABILITY:")
+        print("-" * 60)
+        
+        dd_30plus = pred_df[pred_df['dd_prob'] >= 0.30].sort_values('dd_prob', ascending=False)
+        td_30plus = pred_df[pred_df['td_prob'] >= 0.30].sort_values('td_prob', ascending=False)
+        
+        if not dd_30plus.empty:
+            print(f"\n🔥 DOUBLE-DOUBLE (>30%):")
+            for _, row in dd_30plus.iterrows():
+                odds_str = f"+{int(row['dd_odds'])}" if not pd.isna(row['dd_odds']) and row['dd_odds'] > 0 else ("N/A" if pd.isna(row['dd_odds']) else str(int(row['dd_odds'])))
+                print(f"   {row['player']:25} {row['dd_prob']*100:5.1f}% | Odds: {odds_str:7s} | Min: {row['avg_minutes']:4.1f} | L20 DD: {row['l20_dd_rate']*100:3.0f}%")
+        else:
+            print(f"\n🔥 DOUBLE-DOUBLE (>30%): None")
+        
+        if not td_30plus.empty:
+            print(f"\n⭐ TRIPLE-DOUBLE (>30%):")
+            for _, row in td_30plus.iterrows():
+                odds_str = f"+{int(row['td_odds'])}" if not pd.isna(row['td_odds']) and row['td_odds'] > 0 else ("N/A" if pd.isna(row['td_odds']) else str(int(row['td_odds'])))
+                print(f"   {row['player']:25} {row['td_prob']*100:5.1f}% | Odds: {odds_str:7s} | Min: {row['avg_minutes']:4.1f} | L20 TD: {row['l20_td_rate']*100:3.0f}%")
+        else:
+            print(f"\n⭐ TRIPLE-DOUBLE (>30%): None")
+        
         # DEBUG: Check elite players and high probability players
         elite_check = ['Luka Doncic', 'Giannis Antetokounmpo', 'Victor Wembanyama', 'Kevin Durant', 
                        'Domantas Sabonis', 'Ivica Zubac']
