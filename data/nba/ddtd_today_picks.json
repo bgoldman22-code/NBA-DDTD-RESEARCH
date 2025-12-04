@@ -1,6 +1,6 @@
 {
-  "date": "2025-12-03",
-  "generated_at": "2025-12-03T15:06:08.227730+00:00",
+  "date": "2025-12-04",
+  "generated_at": "2025-12-04T15:06:17.530783+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -8,39 +8,39 @@
   "recommended_picks": {
     "dd": [
       {
-        "player": "Jalen Johnson",
-        "game": "Los Angeles Clippers @ Atlanta Hawks",
-        "model_prob": 0.75,
-        "best_odds": -150,
-        "bookmaker": "Bovada",
-        "implied_prob": 0.6,
-        "edge": 0.15,
+        "player": "Rudy Gobert",
+        "game": "Minnesota Timberwolves @ New Orleans Pelicans",
+        "model_prob": 0.9592,
+        "best_odds": 109,
+        "bookmaker": "DraftKings",
+        "implied_prob": 0.4785,
+        "edge": 0.4807,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 34.9,
-        "l20_dd_rate": 0.4,
+        "avg_minutes": 32.1,
+        "l20_dd_rate": 0.25,
         "stats": {
-          "pts": 18.1,
-          "reb": 7.5,
-          "ast": 6.0
+          "pts": 5.7,
+          "reb": 8.7,
+          "ast": 3.9
         }
       },
       {
-        "player": "Josh Hart",
-        "game": "Charlotte Hornets @ New York Knicks",
-        "model_prob": 0.56,
-        "best_odds": 140,
-        "bookmaker": "BetMGM",
-        "implied_prob": 0.4167,
-        "edge": 0.1433,
+        "player": "Deandre Ayton",
+        "game": "Los Angeles Lakers @ Toronto Raptors",
+        "model_prob": 0.6951,
+        "best_odds": 115,
+        "bookmaker": "Bovada",
+        "implied_prob": 0.4651,
+        "edge": 0.23,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 27.7,
-        "l20_dd_rate": 0.2,
+        "avg_minutes": 29.1,
+        "l20_dd_rate": 0.25,
         "stats": {
-          "pts": 13.5,
-          "reb": 6.5,
-          "ast": 4.2
+          "pts": 8.9,
+          "reb": 6.7,
+          "ast": 2.0
         }
       }
     ],
@@ -48,112 +48,61 @@
   },
   "high_probability": [
     {
-      "player": "Jalen Johnson",
-      "game": "Los Angeles Clippers @ Atlanta Hawks",
-      "model_prob": 0.75,
-      "best_odds": -150,
-      "bookmaker": "Bovada",
-      "implied_prob": 0.6,
-      "edge": 0.15,
-      "has_positive_edge": true,
-      "avg_minutes": 34.9,
-      "l20_dd_rate": 0.4,
-      "stats": {
-        "pts": 18.1,
-        "reb": 7.5,
-        "ast": 6.0
-      }
-    },
-    {
-      "player": "Josh Hart",
-      "game": "Charlotte Hornets @ New York Knicks",
-      "model_prob": 0.56,
-      "best_odds": 140,
-      "bookmaker": "BetMGM",
-      "implied_prob": 0.4167,
-      "edge": 0.1433,
-      "has_positive_edge": true,
-      "avg_minutes": 27.7,
-      "l20_dd_rate": 0.2,
-      "stats": {
-        "pts": 13.5,
-        "reb": 6.5,
-        "ast": 4.2
-      }
-    },
-    {
-      "player": "Karl-Anthony Towns",
-      "game": "Charlotte Hornets @ New York Knicks",
-      "model_prob": 0.4783,
-      "best_odds": -300,
-      "bookmaker": "BetMGM",
-      "implied_prob": 0.75,
-      "edge": -0.2717,
-      "has_positive_edge": false,
-      "avg_minutes": 33.4,
-      "l20_dd_rate": 0.7,
-      "stats": {
-        "pts": 25.6,
-        "reb": 10.6,
-        "ast": 4.7
-      }
-    },
-    {
-      "player": "Nikola Jokic",
-      "game": "Denver Nuggets @ Indiana Pacers",
-      "model_prob": 0.4105,
-      "best_odds": -1260,
+      "player": "Rudy Gobert",
+      "game": "Minnesota Timberwolves @ New Orleans Pelicans",
+      "model_prob": 0.9592,
+      "best_odds": 109,
       "bookmaker": "DraftKings",
-      "implied_prob": 0.9265,
-      "edge": -0.5159,
-      "has_positive_edge": false,
-      "avg_minutes": 34.9,
-      "l20_dd_rate": 0.7,
+      "implied_prob": 0.4785,
+      "edge": 0.4807,
+      "has_positive_edge": true,
+      "avg_minutes": 32.1,
+      "l20_dd_rate": 0.25,
       "stats": {
-        "pts": 27.3,
-        "reb": 10.5,
-        "ast": 8.6
+        "pts": 5.7,
+        "reb": 8.7,
+        "ast": 3.9
       }
     },
     {
-      "player": "Alperen Sengun",
-      "game": "Sacramento Kings @ Houston Rockets",
-      "model_prob": 0.4105,
-      "best_odds": -110,
+      "player": "Deandre Ayton",
+      "game": "Los Angeles Lakers @ Toronto Raptors",
+      "model_prob": 0.6951,
+      "best_odds": 115,
       "bookmaker": "Bovada",
-      "implied_prob": 0.5238,
-      "edge": -0.1133,
-      "has_positive_edge": false,
-      "avg_minutes": 34.4,
-      "l20_dd_rate": 0.4,
+      "implied_prob": 0.4651,
+      "edge": 0.23,
+      "has_positive_edge": true,
+      "avg_minutes": 29.1,
+      "l20_dd_rate": 0.25,
       "stats": {
-        "pts": 21.6,
-        "reb": 8.4,
-        "ast": 6.2
+        "pts": 8.9,
+        "reb": 6.7,
+        "ast": 2.0
       }
     },
     {
-      "player": "Giannis Antetokounmpo",
-      "game": "Detroit Pistons @ Milwaukee Bucks",
-      "model_prob": 0.3774,
-      "best_odds": -190,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.6552,
-      "edge": -0.2778,
-      "has_positive_edge": false,
-      "avg_minutes": 30.2,
-      "l20_dd_rate": 0.5,
+      "player": "Andre Drummond",
+      "game": "Golden State Warriors @ Philadelphia 76ers",
+      "model_prob": 0.4105,
+      "best_odds": 185,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.3509,
+      "edge": 0.0596,
+      "has_positive_edge": true,
+      "avg_minutes": 21.6,
+      "l20_dd_rate": 0.3,
       "stats": {
-        "pts": 29.4,
-        "reb": 10.2,
-        "ast": 6.3
+        "pts": 13.0,
+        "reb": 7.3,
+        "ast": 1.6
       }
     }
   ],
   "summary": {
     "total_recommended_dd": 2,
     "total_recommended_td": 0,
-    "total_high_probability": 6,
+    "total_high_probability": 3,
     "total_recommended_units": 45.0,
     "total_recommended_amount": 450.0
   }
