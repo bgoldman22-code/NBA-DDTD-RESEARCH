@@ -1,6 +1,6 @@
 {
   "date": "2025-12-08",
-  "generated_at": "2025-12-08T14:53:41.526277+00:00",
+  "generated_at": "2025-12-08T15:06:09.401081+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -11,12 +11,12 @@
         "player": "Julius Randle",
         "game": "Phoenix Suns @ Minnesota Timberwolves",
         "model_prob": 0.3193,
-        "best_odds": 306,
+        "best_odds": 308,
         "bookmaker": "DraftKings",
-        "implied_prob": 0.2463,
-        "edge": 0.073,
-        "bet_units": 10.89,
-        "bet_amount": 108.92,
+        "implied_prob": 0.2451,
+        "edge": 0.0742,
+        "bet_units": 11.05,
+        "bet_amount": 110.55,
         "avg_minutes": 33.4,
         "l20_dd_rate": 0.3,
         "stats": {
@@ -33,10 +33,10 @@
       "player": "Mark Williams",
       "game": "Phoenix Suns @ Minnesota Timberwolves",
       "model_prob": 0.8471,
-      "best_odds": 221,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.3115,
-      "edge": 0.5355,
+      "best_odds": 220,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.3125,
+      "edge": 0.5346,
       "has_positive_edge": true,
       "avg_minutes": 24.1,
       "l20_dd_rate": 0.25,
@@ -51,7 +51,7 @@
     "total_recommended_dd": 1,
     "total_recommended_td": 0,
     "total_high_probability": 1,
-    "total_recommended_units": 10.89,
-    "total_recommended_amount": 108.92
+    "total_recommended_units": 11.05,
+    "total_recommended_amount": 110.55
   }
 }
