@@ -1,6 +1,6 @@
 {
-  "date": "2025-12-08",
-  "generated_at": "2025-12-08T15:06:09.401081+00:00",
+  "date": "2025-12-09",
+  "generated_at": "2025-12-09T06:26:09.134779+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -8,21 +8,39 @@
   "recommended_picks": {
     "dd": [
       {
-        "player": "Julius Randle",
-        "game": "Phoenix Suns @ Minnesota Timberwolves",
-        "model_prob": 0.3193,
-        "best_odds": 308,
-        "bookmaker": "DraftKings",
-        "implied_prob": 0.2451,
-        "edge": 0.0742,
-        "bet_units": 11.05,
-        "bet_amount": 110.55,
-        "avg_minutes": 33.4,
-        "l20_dd_rate": 0.3,
+        "player": "Karl-Anthony Towns",
+        "game": "New York Knicks @ Toronto Raptors",
+        "model_prob": 0.9832,
+        "best_odds": -260,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.7222,
+        "edge": 0.261,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 33.2,
+        "l20_dd_rate": 0.6,
         "stats": {
-          "pts": 20.4,
-          "reb": 6.5,
-          "ast": 5.0
+          "pts": 24.1,
+          "reb": 10.8,
+          "ast": 5.2
+        }
+      },
+      {
+        "player": "Scottie Barnes",
+        "game": "New York Knicks @ Toronto Raptors",
+        "model_prob": 0.5789,
+        "best_odds": 185,
+        "bookmaker": "Fanatics",
+        "implied_prob": 0.3509,
+        "edge": 0.2281,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 34.0,
+        "l20_dd_rate": 0.45,
+        "stats": {
+          "pts": 18.6,
+          "reb": 7.3,
+          "ast": 4.8
         }
       }
     ],
@@ -30,28 +48,62 @@
   },
   "high_probability": [
     {
-      "player": "Mark Williams",
-      "game": "Phoenix Suns @ Minnesota Timberwolves",
-      "model_prob": 0.8471,
-      "best_odds": 220,
+      "player": "Karl-Anthony Towns",
+      "game": "New York Knicks @ Toronto Raptors",
+      "model_prob": 0.9832,
+      "best_odds": -260,
       "bookmaker": "FanDuel",
-      "implied_prob": 0.3125,
-      "edge": 0.5346,
+      "implied_prob": 0.7222,
+      "edge": 0.261,
       "has_positive_edge": true,
-      "avg_minutes": 24.1,
+      "avg_minutes": 33.2,
+      "l20_dd_rate": 0.6,
+      "stats": {
+        "pts": 24.1,
+        "reb": 10.8,
+        "ast": 5.2
+      }
+    },
+    {
+      "player": "Kel'el Ware",
+      "game": "Miami Heat @ Orlando Magic",
+      "model_prob": 0.5909,
+      "best_odds": 326,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.2347,
+      "edge": 0.3562,
+      "has_positive_edge": true,
+      "avg_minutes": 25.4,
       "l20_dd_rate": 0.25,
       "stats": {
-        "pts": 7.5,
-        "reb": 6.9,
+        "pts": 9.3,
+        "reb": 8.2,
         "ast": 1.9
+      }
+    },
+    {
+      "player": "Scottie Barnes",
+      "game": "New York Knicks @ Toronto Raptors",
+      "model_prob": 0.5789,
+      "best_odds": 185,
+      "bookmaker": "Fanatics",
+      "implied_prob": 0.3509,
+      "edge": 0.2281,
+      "has_positive_edge": true,
+      "avg_minutes": 34.0,
+      "l20_dd_rate": 0.45,
+      "stats": {
+        "pts": 18.6,
+        "reb": 7.3,
+        "ast": 4.8
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 1,
+    "total_recommended_dd": 2,
     "total_recommended_td": 0,
-    "total_high_probability": 1,
-    "total_recommended_units": 11.05,
-    "total_recommended_amount": 110.55
+    "total_high_probability": 3,
+    "total_recommended_units": 45.0,
+    "total_recommended_amount": 450.0
   }
 }
