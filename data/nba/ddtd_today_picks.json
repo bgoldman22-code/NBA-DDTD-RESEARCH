@@ -1,6 +1,6 @@
 {
-  "date": "2025-12-09",
-  "generated_at": "2025-12-09T15:06:24.231880+00:00",
+  "date": "2025-12-10",
+  "generated_at": "2025-12-10T13:22:59.681759+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -9,38 +9,92 @@
     "dd": [
       {
         "player": "Karl-Anthony Towns",
-        "game": "New York Knicks @ Toronto Raptors",
-        "model_prob": 0.9832,
-        "best_odds": -250,
-        "bookmaker": "BetMGM",
-        "implied_prob": 0.7143,
-        "edge": 0.2689,
+        "game": "New York Knicks @ Orlando Magic",
+        "model_prob": 1.0,
+        "best_odds": -240,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.7059,
+        "edge": 0.2941,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 33.2,
+        "avg_minutes": 33.0,
         "l20_dd_rate": 0.6,
         "stats": {
-          "pts": 24.1,
-          "reb": 10.8,
-          "ast": 5.2
+          "pts": 20.6,
+          "reb": 9.9,
+          "ast": 3.6
         }
       },
       {
-        "player": "Scottie Barnes",
-        "game": "New York Knicks @ Toronto Raptors",
-        "model_prob": 0.5789,
-        "best_odds": 185,
+        "player": "LeBron James",
+        "game": "San Antonio Spurs @ Los Angeles Lakers",
+        "model_prob": 0.4615,
+        "best_odds": 300,
         "bookmaker": "BetMGM",
-        "implied_prob": 0.3509,
-        "edge": 0.2281,
+        "implied_prob": 0.25,
+        "edge": 0.2115,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 34.0,
-        "l20_dd_rate": 0.45,
+        "avg_minutes": 33.8,
+        "l20_dd_rate": 0.25,
         "stats": {
-          "pts": 18.6,
-          "reb": 7.3,
-          "ast": 4.8
+          "pts": 20.6,
+          "reb": 6.4,
+          "ast": 5.8
+        }
+      },
+      {
+        "player": "Austin Reaves",
+        "game": "San Antonio Spurs @ Los Angeles Lakers",
+        "model_prob": 0.2373,
+        "best_odds": 1050,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.087,
+        "edge": 0.1503,
+        "bet_units": 18.52,
+        "bet_amount": 185.23,
+        "avg_minutes": 36.7,
+        "l20_dd_rate": 0.15,
+        "stats": {
+          "pts": 25.7,
+          "reb": 4.4,
+          "ast": 5.0
+        }
+      },
+      {
+        "player": "Paolo Banchero",
+        "game": "New York Knicks @ Orlando Magic",
+        "model_prob": 0.3386,
+        "best_odds": 270,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.2703,
+        "edge": 0.0683,
+        "bet_units": 10.53,
+        "bet_amount": 105.31,
+        "avg_minutes": 30.4,
+        "l20_dd_rate": 0.25,
+        "stats": {
+          "pts": 19.9,
+          "reb": 7.5,
+          "ast": 4.4
+        }
+      },
+      {
+        "player": "Luka Doncic",
+        "game": "San Antonio Spurs @ Los Angeles Lakers",
+        "model_prob": 0.7188,
+        "best_odds": -200,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.6667,
+        "edge": 0.0521,
+        "bet_units": 17.58,
+        "bet_amount": 175.78,
+        "avg_minutes": 36.9,
+        "l20_dd_rate": 0.55,
+        "stats": {
+          "pts": 31.0,
+          "reb": 7.7,
+          "ast": 7.2
         }
       }
     ],
@@ -49,61 +103,78 @@
   "high_probability": [
     {
       "player": "Karl-Anthony Towns",
-      "game": "New York Knicks @ Toronto Raptors",
-      "model_prob": 0.9832,
-      "best_odds": -250,
-      "bookmaker": "BetMGM",
-      "implied_prob": 0.7143,
-      "edge": 0.2689,
+      "game": "New York Knicks @ Orlando Magic",
+      "model_prob": 1.0,
+      "best_odds": -240,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.7059,
+      "edge": 0.2941,
       "has_positive_edge": true,
-      "avg_minutes": 33.2,
+      "avg_minutes": 33.0,
       "l20_dd_rate": 0.6,
       "stats": {
-        "pts": 24.1,
-        "reb": 10.8,
-        "ast": 5.2
+        "pts": 20.6,
+        "reb": 9.9,
+        "ast": 3.6
       }
     },
     {
-      "player": "Kel'el Ware",
-      "game": "Miami Heat @ Orlando Magic",
-      "model_prob": 0.5909,
-      "best_odds": 342,
+      "player": "Chet Holmgren",
+      "game": "Phoenix Suns @ Oklahoma City Thunder",
+      "model_prob": 0.9536,
+      "best_odds": 149,
       "bookmaker": "DraftKings",
-      "implied_prob": 0.2262,
-      "edge": 0.3647,
+      "implied_prob": 0.4016,
+      "edge": 0.552,
       "has_positive_edge": true,
-      "avg_minutes": 25.4,
+      "avg_minutes": 27.9,
+      "l20_dd_rate": 0.15,
+      "stats": {
+        "pts": 19.4,
+        "reb": 6.3,
+        "ast": 2.7
+      }
+    },
+    {
+      "player": "Luka Doncic",
+      "game": "San Antonio Spurs @ Los Angeles Lakers",
+      "model_prob": 0.7188,
+      "best_odds": -200,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.6667,
+      "edge": 0.0521,
+      "has_positive_edge": true,
+      "avg_minutes": 36.9,
+      "l20_dd_rate": 0.55,
+      "stats": {
+        "pts": 31.0,
+        "reb": 7.7,
+        "ast": 7.2
+      }
+    },
+    {
+      "player": "LeBron James",
+      "game": "San Antonio Spurs @ Los Angeles Lakers",
+      "model_prob": 0.4615,
+      "best_odds": 300,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.25,
+      "edge": 0.2115,
+      "has_positive_edge": true,
+      "avg_minutes": 33.8,
       "l20_dd_rate": 0.25,
       "stats": {
-        "pts": 9.3,
-        "reb": 8.2,
-        "ast": 1.9
-      }
-    },
-    {
-      "player": "Scottie Barnes",
-      "game": "New York Knicks @ Toronto Raptors",
-      "model_prob": 0.5789,
-      "best_odds": 185,
-      "bookmaker": "BetMGM",
-      "implied_prob": 0.3509,
-      "edge": 0.2281,
-      "has_positive_edge": true,
-      "avg_minutes": 34.0,
-      "l20_dd_rate": 0.45,
-      "stats": {
-        "pts": 18.6,
-        "reb": 7.3,
-        "ast": 4.8
+        "pts": 20.6,
+        "reb": 6.4,
+        "ast": 5.8
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 2,
+    "total_recommended_dd": 5,
     "total_recommended_td": 0,
-    "total_high_probability": 3,
-    "total_recommended_units": 45.0,
-    "total_recommended_amount": 450.0
+    "total_high_probability": 4,
+    "total_recommended_units": 91.63,
+    "total_recommended_amount": 916.32
   }
 }
