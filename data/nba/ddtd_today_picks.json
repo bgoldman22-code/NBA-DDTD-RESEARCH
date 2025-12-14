@@ -1,6 +1,6 @@
 {
-  "date": "2025-12-13",
-  "generated_at": "2025-12-13T15:05:31.171101+00:00",
+  "date": "2025-12-14",
+  "generated_at": "2025-12-14T15:05:35.219787+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -8,349 +8,276 @@
   "recommended_picks": {
     "dd": [
       {
-        "player": "Deni Avdija",
-        "game": "Golden State Warriors @ Portland Trail Blazers",
-        "model_prob": 0.9536,
-        "best_odds": -135,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.5745,
-        "edge": 0.3792,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 34.8,
-        "l20_dd_rate": 0.25,
-        "stats": {
-          "pts": 22.4,
-          "reb": 6.0,
-          "ast": 5.0
-        }
-      },
-      {
         "player": "Josh Giddey",
         "game": "New Orleans Pelicans @ Chicago Bulls",
         "model_prob": 0.9832,
-        "best_odds": -155,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.6078,
-        "edge": 0.3754,
+        "best_odds": -191,
+        "bookmaker": "DraftKings",
+        "implied_prob": 0.6564,
+        "edge": 0.3268,
         "bet_units": 22.5,
         "bet_amount": 225.0,
         "avg_minutes": 34.5,
-        "l20_dd_rate": 0.55,
+        "l20_dd_rate": 0.5,
         "stats": {
-          "pts": 17.8,
-          "reb": 7.9,
-          "ast": 7.5
+          "pts": 21.8,
+          "reb": 8.6,
+          "ast": 7.6
         }
       },
       {
         "player": "Karl-Anthony Towns",
-        "game": "New York Knicks @ Orlando Magic",
-        "model_prob": 0.9536,
-        "best_odds": -190,
-        "bookmaker": "BetMGM",
-        "implied_prob": 0.6552,
-        "edge": 0.2985,
+        "game": "San Antonio Spurs @ New York Knicks",
+        "model_prob": 0.9832,
+        "best_odds": -195,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.661,
+        "edge": 0.3222,
         "bet_units": 22.5,
         "bet_amount": 225.0,
         "avg_minutes": 33.0,
         "l20_dd_rate": 0.65,
         "stats": {
-          "pts": 25.1,
-          "reb": 10.7,
-          "ast": 4.2
-        }
-      },
-      {
-        "player": "Quentin Grimes",
-        "game": "Philadelphia 76ers @ Atlanta Hawks",
-        "model_prob": 0.3193,
-        "best_odds": 2200,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.0435,
-        "edge": 0.2758,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 33.9,
-        "l20_dd_rate": 0.1,
-        "stats": {
-          "pts": 16.7,
-          "reb": 3.9,
-          "ast": 3.8
-        }
-      },
-      {
-        "player": "LeBron James",
-        "game": "Los Angeles Lakers @ Phoenix Suns",
-        "model_prob": 0.6615,
-        "best_odds": 125,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.4444,
-        "edge": 0.2171,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 33.8,
-        "l20_dd_rate": 0.25,
-        "stats": {
-          "pts": 19.7,
-          "reb": 6.7,
-          "ast": 5.5
+          "pts": 21.4,
+          "reb": 10.4,
+          "ast": 3.4
         }
       },
       {
         "player": "Luka Doncic",
         "game": "Los Angeles Lakers @ Phoenix Suns",
-        "model_prob": 0.8471,
+        "model_prob": 0.9536,
         "best_odds": -220,
-        "bookmaker": "FanDuel",
+        "bookmaker": "BetMGM",
         "implied_prob": 0.6875,
-        "edge": 0.1596,
+        "edge": 0.2661,
         "bet_units": 22.5,
         "bet_amount": 225.0,
         "avg_minutes": 36.6,
-        "l20_dd_rate": 0.55,
+        "l20_dd_rate": 0.5,
         "stats": {
-          "pts": 30.6,
-          "reb": 7.8,
-          "ast": 7.5
+          "pts": 30.2,
+          "reb": 8.0,
+          "ast": 7.3
         }
       },
       {
-        "player": "Paolo Banchero",
-        "game": "New York Knicks @ Orlando Magic",
-        "model_prob": 0.3386,
-        "best_odds": 250,
+        "player": "Donovan Mitchell",
+        "game": "Charlotte Hornets @ Cleveland Cavaliers",
+        "model_prob": 0.3193,
+        "best_odds": 875,
         "bookmaker": "BetMGM",
-        "implied_prob": 0.2857,
-        "edge": 0.0529,
-        "bet_units": 8.33,
-        "bet_amount": 83.27,
-        "avg_minutes": 30.4,
+        "implied_prob": 0.1026,
+        "edge": 0.2167,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 34.5,
+        "l20_dd_rate": 0.05,
+        "stats": {
+          "pts": 29.4,
+          "reb": 4.0,
+          "ast": 4.2
+        }
+      },
+      {
+        "player": "Deni Avdija",
+        "game": "Golden State Warriors @ Portland Trail Blazers",
+        "model_prob": 0.7188,
+        "best_odds": -115,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.5349,
+        "edge": 0.1839,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 34.8,
         "l20_dd_rate": 0.25,
         "stats": {
-          "pts": 18.7,
-          "reb": 7.5,
-          "ast": 4.9
-        }
-      },
-      {
-        "player": "Miles Bridges",
-        "game": "Charlotte Hornets @ Cleveland Cavaliers",
-        "model_prob": 0.3386,
-        "best_odds": 250,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.2857,
-        "edge": 0.0529,
-        "bet_units": 8.33,
-        "bet_amount": 83.27,
-        "avg_minutes": 35.2,
-        "l20_dd_rate": 0.0,
-        "stats": {
-          "pts": 16.9,
-          "reb": 4.5,
-          "ast": 3.5
+          "pts": 22.3,
+          "reb": 5.7,
+          "ast": 5.0
         }
       },
       {
         "player": "Michael Porter Jr",
         "game": "Milwaukee Bucks @ Brooklyn Nets",
-        "model_prob": 0.2373,
-        "best_odds": 390,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.2041,
-        "edge": 0.0332,
-        "bet_units": 4.69,
-        "bet_amount": 46.94,
+        "model_prob": 0.3193,
+        "best_odds": 375,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.2105,
+        "edge": 0.1088,
+        "bet_units": 15.5,
+        "bet_amount": 154.97,
         "avg_minutes": 32.9,
-        "l20_dd_rate": 0.2,
+        "l20_dd_rate": 0.15,
         "stats": {
-          "pts": 23.4,
-          "reb": 6.4,
-          "ast": 3.2
+          "pts": 25.6,
+          "reb": 6.2,
+          "ast": 3.5
         }
       }
     ],
-    "td": [
-      {
-        "player": "Josh Giddey",
-        "game": "New Orleans Pelicans @ Chicago Bulls",
-        "model_prob": 0.5,
-        "best_odds": 310,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.2439,
-        "edge": 0.2561,
-        "bet_units": 1.03,
-        "bet_amount": 10.29,
-        "avg_minutes": 34.5,
-        "l20_td_rate": 0.15,
-        "stats": {
-          "pts": 17.8,
-          "reb": 7.9,
-          "ast": 7.5
-        }
-      }
-    ]
+    "td": []
   },
   "high_probability": [
     {
       "player": "Josh Giddey",
       "game": "New Orleans Pelicans @ Chicago Bulls",
       "model_prob": 0.9832,
-      "best_odds": -155,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.6078,
-      "edge": 0.3754,
+      "best_odds": -191,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.6564,
+      "edge": 0.3268,
       "has_positive_edge": true,
       "avg_minutes": 34.5,
-      "l20_dd_rate": 0.55,
+      "l20_dd_rate": 0.5,
       "stats": {
-        "pts": 17.8,
-        "reb": 7.9,
-        "ast": 7.5
+        "pts": 21.8,
+        "reb": 8.6,
+        "ast": 7.6
       }
     },
     {
       "player": "Karl-Anthony Towns",
-      "game": "New York Knicks @ Orlando Magic",
-      "model_prob": 0.9536,
-      "best_odds": -190,
-      "bookmaker": "BetMGM",
-      "implied_prob": 0.6552,
-      "edge": 0.2985,
+      "game": "San Antonio Spurs @ New York Knicks",
+      "model_prob": 0.9832,
+      "best_odds": -195,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.661,
+      "edge": 0.3222,
       "has_positive_edge": true,
       "avg_minutes": 33.0,
       "l20_dd_rate": 0.65,
       "stats": {
-        "pts": 25.1,
-        "reb": 10.7,
-        "ast": 4.2
-      }
-    },
-    {
-      "player": "Deni Avdija",
-      "game": "Golden State Warriors @ Portland Trail Blazers",
-      "model_prob": 0.9536,
-      "best_odds": -135,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.5745,
-      "edge": 0.3792,
-      "has_positive_edge": true,
-      "avg_minutes": 34.8,
-      "l20_dd_rate": 0.25,
-      "stats": {
-        "pts": 22.4,
-        "reb": 6.0,
-        "ast": 5.0
+        "pts": 21.4,
+        "reb": 10.4,
+        "ast": 3.4
       }
     },
     {
       "player": "Luka Doncic",
       "game": "Los Angeles Lakers @ Phoenix Suns",
-      "model_prob": 0.8471,
+      "model_prob": 0.9536,
       "best_odds": -220,
-      "bookmaker": "FanDuel",
+      "bookmaker": "BetMGM",
       "implied_prob": 0.6875,
-      "edge": 0.1596,
+      "edge": 0.2661,
       "has_positive_edge": true,
       "avg_minutes": 36.6,
-      "l20_dd_rate": 0.55,
+      "l20_dd_rate": 0.5,
       "stats": {
-        "pts": 30.6,
-        "reb": 7.8,
-        "ast": 7.5
+        "pts": 30.2,
+        "reb": 8.0,
+        "ast": 7.3
       }
     },
     {
       "player": "Victor Wembanyama",
-      "game": "San Antonio Spurs @ Oklahoma City Thunder",
+      "game": "San Antonio Spurs @ New York Knicks",
       "model_prob": 0.8471,
-      "best_odds": 138,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.4202,
-      "edge": 0.4269,
+      "best_odds": -180,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.6429,
+      "edge": 0.2042,
       "has_positive_edge": true,
-      "avg_minutes": 27.1,
+      "avg_minutes": 27.2,
       "l20_dd_rate": 0.5,
       "stats": {
-        "pts": 18.9,
-        "reb": 10.3,
-        "ast": 4.5
+        "pts": 20.9,
+        "reb": 10.0,
+        "ast": 5.3
+      }
+    },
+    {
+      "player": "Deni Avdija",
+      "game": "Golden State Warriors @ Portland Trail Blazers",
+      "model_prob": 0.7188,
+      "best_odds": -115,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.5349,
+      "edge": 0.1839,
+      "has_positive_edge": true,
+      "avg_minutes": 34.8,
+      "l20_dd_rate": 0.25,
+      "stats": {
+        "pts": 22.3,
+        "reb": 5.7,
+        "ast": 5.0
+      }
+    },
+    {
+      "player": "Jalen Johnson",
+      "game": "Philadelphia 76ers @ Atlanta Hawks",
+      "model_prob": 0.5909,
+      "best_odds": -289,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.7429,
+      "edge": -0.152,
+      "has_positive_edge": false,
+      "avg_minutes": 35.8,
+      "l20_dd_rate": 0.5,
+      "stats": {
+        "pts": 17.1,
+        "reb": 7.7,
+        "ast": 5.9
       }
     },
     {
       "player": "Mark Williams",
       "game": "Los Angeles Lakers @ Phoenix Suns",
-      "model_prob": 0.7188,
-      "best_odds": 230,
+      "model_prob": 0.5588,
+      "best_odds": 227,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.3058,
+      "edge": 0.253,
+      "has_positive_edge": true,
+      "avg_minutes": 24.9,
+      "l20_dd_rate": 0.15,
+      "stats": {
+        "pts": 7.5,
+        "reb": 7.0,
+        "ast": 2.0
+      }
+    },
+    {
+      "player": "Donovan Clingan",
+      "game": "Golden State Warriors @ Portland Trail Blazers",
+      "model_prob": 0.5588,
+      "best_odds": 190,
       "bookmaker": "FanDuel",
-      "implied_prob": 0.303,
-      "edge": 0.4157,
+      "implied_prob": 0.3448,
+      "edge": 0.214,
       "has_positive_edge": true,
       "avg_minutes": 24.9,
       "l20_dd_rate": 0.2,
       "stats": {
-        "pts": 9.3,
-        "reb": 7.3,
-        "ast": 2.1
+        "pts": 8.6,
+        "reb": 7.8,
+        "ast": 2.5
       }
     },
     {
-      "player": "LeBron James",
-      "game": "Los Angeles Lakers @ Phoenix Suns",
-      "model_prob": 0.6615,
-      "best_odds": 125,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.4444,
-      "edge": 0.2171,
+      "player": "Joel Embiid",
+      "game": "Philadelphia 76ers @ Atlanta Hawks",
+      "model_prob": 0.4615,
+      "best_odds": 173,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.3663,
+      "edge": 0.0952,
       "has_positive_edge": true,
-      "avg_minutes": 33.8,
+      "avg_minutes": 28.5,
       "l20_dd_rate": 0.25,
       "stats": {
-        "pts": 19.7,
-        "reb": 6.7,
-        "ast": 5.5
-      }
-    },
-    {
-      "player": "Nikola Vucevic",
-      "game": "New Orleans Pelicans @ Chicago Bulls",
-      "model_prob": 0.6364,
-      "best_odds": 200,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.3333,
-      "edge": 0.303,
-      "has_positive_edge": true,
-      "avg_minutes": 29.6,
-      "l20_dd_rate": 0.35,
-      "stats": {
-        "pts": 18.4,
-        "reb": 7.3,
-        "ast": 3.0
-      }
-    },
-    {
-      "player": "Deandre Ayton",
-      "game": "Los Angeles Lakers @ Phoenix Suns",
-      "model_prob": 0.4857,
-      "best_odds": 135,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.4255,
-      "edge": 0.0602,
-      "has_positive_edge": true,
-      "avg_minutes": 29.1,
-      "l20_dd_rate": 0.3,
-      "stats": {
-        "pts": 9.6,
-        "reb": 8.1,
-        "ast": 2.1
+        "pts": 28.6,
+        "reb": 7.7,
+        "ast": 3.5
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 9,
-    "total_recommended_td": 1,
+    "total_recommended_dd": 6,
+    "total_recommended_td": 0,
     "total_high_probability": 9,
-    "total_recommended_units": 157.38,
-    "total_recommended_amount": 1573.77
+    "total_recommended_units": 128.0,
+    "total_recommended_amount": 1279.97
   }
 }
