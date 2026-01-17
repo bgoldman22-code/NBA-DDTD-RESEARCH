@@ -1,6 +1,6 @@
 {
-  "date": "2026-01-16",
-  "generated_at": "2026-01-16T15:10:05.776047+00:00",
+  "date": "2026-01-17",
+  "generated_at": "2026-01-17T15:09:05.314416+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -8,278 +8,223 @@
   "recommended_picks": {
     "dd": [
       {
-        "player": "Scottie Barnes",
-        "game": "Los Angeles Clippers @ Toronto Raptors",
-        "model_prob": 1.0,
-        "best_odds": 130,
-        "bookmaker": "Fanatics",
-        "implied_prob": 0.4348,
-        "edge": 0.5652,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 35.3,
-        "l20_dd_rate": 0.45,
-        "stats": {
-          "pts": 18.9,
-          "reb": 8.6,
-          "ast": 6.0
-        }
-      },
-      {
-        "player": "Amen Thompson",
-        "game": "Minnesota Timberwolves @ Houston Rockets",
-        "model_prob": 0.875,
-        "best_odds": 190,
-        "bookmaker": "Fanatics",
-        "implied_prob": 0.3448,
-        "edge": 0.5302,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 37.8,
-        "l20_dd_rate": 0.25,
-        "stats": {
-          "pts": 20.1,
-          "reb": 8.3,
-          "ast": 5.0
-        }
-      },
-      {
-        "player": "Alperen Sengun",
-        "game": "Minnesota Timberwolves @ Houston Rockets",
-        "model_prob": 0.9536,
-        "best_odds": 108,
+        "player": "Paolo Banchero",
+        "game": "Orlando Magic @ Memphis Grizzlies",
+        "model_prob": 0.7391,
+        "best_odds": 107,
         "bookmaker": "DraftKings",
-        "implied_prob": 0.4808,
-        "edge": 0.4729,
+        "implied_prob": 0.4831,
+        "edge": 0.256,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 33.4,
-        "l20_dd_rate": 0.5,
+        "avg_minutes": 33.3,
+        "l20_dd_rate": 0.4,
         "stats": {
-          "pts": 19.3,
-          "reb": 7.6,
-          "ast": 5.4
-        }
-      },
-      {
-        "player": "Domantas Sabonis",
-        "game": "Washington Wizards @ Sacramento Kings",
-        "model_prob": 0.5588,
-        "best_odds": 155,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.3922,
-        "edge": 0.1667,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 31.1,
-        "l20_dd_rate": 0.45,
-        "stats": {
-          "pts": 13.1,
-          "reb": 9.9,
-          "ast": 6.3
-        }
-      },
-      {
-        "player": "Kevin Durant",
-        "game": "Minnesota Timberwolves @ Houston Rockets",
-        "model_prob": 0.2373,
-        "best_odds": 710,
-        "bookmaker": "DraftKings",
-        "implied_prob": 0.1235,
-        "edge": 0.1138,
-        "bet_units": 14.61,
-        "bet_amount": 146.1,
-        "avg_minutes": 36.9,
-        "l20_dd_rate": 0.25,
-        "stats": {
-          "pts": 26.6,
-          "reb": 5.7,
+          "pts": 19.6,
+          "reb": 8.7,
           "ast": 5.2
         }
       },
       {
+        "player": "Franz Wagner",
+        "game": "Orlando Magic @ Memphis Grizzlies",
+        "model_prob": 0.2373,
+        "best_odds": 1540,
+        "bookmaker": "DraftKings",
+        "implied_prob": 0.061,
+        "edge": 0.1763,
+        "bet_units": 21.12,
+        "bet_amount": 211.23,
+        "avg_minutes": 32.6,
+        "l20_dd_rate": 0.0,
+        "stats": {
+          "pts": 21.9,
+          "reb": 5.0,
+          "ast": 2.7
+        }
+      },
+      {
         "player": "Rudy Gobert",
-        "game": "Minnesota Timberwolves @ Houston Rockets",
-        "model_prob": 0.4615,
+        "game": "Minnesota Timberwolves @ San Antonio Spurs",
+        "model_prob": 0.5588,
         "best_odds": 125,
         "bookmaker": "FanDuel",
         "implied_prob": 0.4444,
-        "edge": 0.0171,
-        "bet_units": 3.46,
-        "bet_amount": 34.62,
-        "avg_minutes": 31.5,
+        "edge": 0.1144,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 31.2,
         "l20_dd_rate": 0.5,
         "stats": {
-          "pts": 11.7,
+          "pts": 10.8,
           "reb": 12.6,
           "ast": 1.8
         }
-      }
-    ],
-    "td": [
+      },
       {
-        "player": "James Harden",
-        "game": "Los Angeles Clippers @ Toronto Raptors",
-        "model_prob": 0.7391,
-        "best_odds": 3000,
+        "player": "Andrew Nembhard",
+        "game": "Indiana Pacers @ Detroit Pistons",
+        "model_prob": 0.3193,
+        "best_odds": 341,
         "bookmaker": "DraftKings",
-        "implied_prob": 0.0323,
-        "edge": 0.7069,
-        "bet_units": 0.82,
-        "bet_amount": 8.22,
-        "avg_minutes": 35.6,
-        "l20_td_rate": 0.0,
+        "implied_prob": 0.2268,
+        "edge": 0.0925,
+        "bet_units": 13.46,
+        "bet_amount": 134.61,
+        "avg_minutes": 32.2,
+        "l20_dd_rate": 0.25,
         "stats": {
-          "pts": 23.8,
-          "reb": 4.0,
-          "ast": 7.7
+          "pts": 17.4,
+          "reb": 3.1,
+          "ast": 7.8
         }
       }
-    ]
+    ],
+    "td": []
   },
   "high_probability": [
     {
-      "player": "Scottie Barnes",
-      "game": "Los Angeles Clippers @ Toronto Raptors",
+      "player": "Jalen Duren",
+      "game": "Indiana Pacers @ Detroit Pistons",
       "model_prob": 1.0,
+      "best_odds": -230,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.697,
+      "edge": 0.303,
+      "has_positive_edge": true,
+      "avg_minutes": 28.0,
+      "l20_dd_rate": 0.55,
+      "stats": {
+        "pts": 14.4,
+        "reb": 9.3,
+        "ast": 1.3
+      }
+    },
+    {
+      "player": "Victor Wembanyama",
+      "game": "Minnesota Timberwolves @ San Antonio Spurs",
+      "model_prob": 1.0,
+      "best_odds": -120,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.5455,
+      "edge": 0.4545,
+      "has_positive_edge": true,
+      "avg_minutes": 26.3,
+      "l20_dd_rate": 0.55,
+      "stats": {
+        "pts": 25.1,
+        "reb": 10.2,
+        "ast": 3.0
+      }
+    },
+    {
+      "player": "Donovan Clingan",
+      "game": "Los Angeles Lakers @ Portland Trail Blazers",
+      "model_prob": 0.9536,
       "best_odds": 130,
       "bookmaker": "Fanatics",
       "implied_prob": 0.4348,
-      "edge": 0.5652,
+      "edge": 0.5189,
       "has_positive_edge": true,
-      "avg_minutes": 35.3,
-      "l20_dd_rate": 0.45,
-      "stats": {
-        "pts": 18.9,
-        "reb": 8.6,
-        "ast": 6.0
-      }
-    },
-    {
-      "player": "Alperen Sengun",
-      "game": "Minnesota Timberwolves @ Houston Rockets",
-      "model_prob": 0.9536,
-      "best_odds": 108,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.4808,
-      "edge": 0.4729,
-      "has_positive_edge": true,
-      "avg_minutes": 33.4,
-      "l20_dd_rate": 0.5,
-      "stats": {
-        "pts": 19.3,
-        "reb": 7.6,
-        "ast": 5.4
-      }
-    },
-    {
-      "player": "Amen Thompson",
-      "game": "Minnesota Timberwolves @ Houston Rockets",
-      "model_prob": 0.875,
-      "best_odds": 190,
-      "bookmaker": "Fanatics",
-      "implied_prob": 0.3448,
-      "edge": 0.5302,
-      "has_positive_edge": true,
-      "avg_minutes": 37.8,
-      "l20_dd_rate": 0.25,
-      "stats": {
-        "pts": 20.1,
-        "reb": 8.3,
-        "ast": 5.0
-      }
-    },
-    {
-      "player": "Derik Queen",
-      "game": "New Orleans Pelicans @ Indiana Pacers",
-      "model_prob": 0.8471,
-      "best_odds": 230,
-      "bookmaker": "Fanatics",
-      "implied_prob": 0.303,
-      "edge": 0.544,
-      "has_positive_edge": true,
-      "avg_minutes": 27.9,
+      "avg_minutes": 28.6,
       "l20_dd_rate": 0.4,
       "stats": {
-        "pts": 12.8,
-        "reb": 8.8,
-        "ast": 5.2
+        "pts": 11.4,
+        "reb": 11.4,
+        "ast": 1.9
       }
     },
     {
       "player": "Alex Sarr",
-      "game": "Washington Wizards @ Sacramento Kings",
-      "model_prob": 0.5588,
-      "best_odds": 286,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.2591,
-      "edge": 0.2998,
+      "game": "Washington Wizards @ Denver Nuggets",
+      "model_prob": 0.9536,
+      "best_odds": 350,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.2222,
+      "edge": 0.7314,
       "has_positive_edge": true,
-      "avg_minutes": 27.4,
-      "l20_dd_rate": 0.3,
+      "avg_minutes": 26.9,
+      "l20_dd_rate": 0.25,
       "stats": {
-        "pts": 17.1,
-        "reb": 6.8,
-        "ast": 2.1
+        "pts": 17.4,
+        "reb": 6.4,
+        "ast": 2.2
       }
     },
     {
-      "player": "Domantas Sabonis",
-      "game": "Washington Wizards @ Sacramento Kings",
-      "model_prob": 0.5588,
-      "best_odds": 155,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.3922,
-      "edge": 0.1667,
+      "player": "Paolo Banchero",
+      "game": "Orlando Magic @ Memphis Grizzlies",
+      "model_prob": 0.7391,
+      "best_odds": 107,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.4831,
+      "edge": 0.256,
       "has_positive_edge": true,
-      "avg_minutes": 31.1,
-      "l20_dd_rate": 0.45,
+      "avg_minutes": 33.3,
+      "l20_dd_rate": 0.4,
       "stats": {
-        "pts": 13.1,
-        "reb": 9.9,
-        "ast": 6.3
+        "pts": 19.6,
+        "reb": 8.7,
+        "ast": 5.2
+      }
+    },
+    {
+      "player": "Karl-Anthony Towns",
+      "game": "Phoenix Suns @ New York Knicks",
+      "model_prob": 0.5588,
+      "best_odds": -222,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.6894,
+      "edge": -0.1306,
+      "has_positive_edge": false,
+      "avg_minutes": 31.2,
+      "l20_dd_rate": 0.65,
+      "stats": {
+        "pts": 19.9,
+        "reb": 11.0,
+        "ast": 2.5
+      }
+    },
+    {
+      "player": "Chet Holmgren",
+      "game": "Oklahoma City Thunder @ Miami Heat",
+      "model_prob": 0.5588,
+      "best_odds": -105,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.5122,
+      "edge": 0.0466,
+      "has_positive_edge": true,
+      "avg_minutes": 28.6,
+      "l20_dd_rate": 0.25,
+      "stats": {
+        "pts": 17.6,
+        "reb": 8.8,
+        "ast": 1.4
       }
     },
     {
       "player": "Rudy Gobert",
-      "game": "Minnesota Timberwolves @ Houston Rockets",
-      "model_prob": 0.4615,
+      "game": "Minnesota Timberwolves @ San Antonio Spurs",
+      "model_prob": 0.5588,
       "best_odds": 125,
       "bookmaker": "FanDuel",
       "implied_prob": 0.4444,
-      "edge": 0.0171,
+      "edge": 0.1144,
       "has_positive_edge": true,
-      "avg_minutes": 31.5,
+      "avg_minutes": 31.2,
       "l20_dd_rate": 0.5,
       "stats": {
-        "pts": 11.7,
+        "pts": 10.8,
         "reb": 12.6,
         "ast": 1.8
-      }
-    },
-    {
-      "player": "Ivica Zubac",
-      "game": "Los Angeles Clippers @ Toronto Raptors",
-      "model_prob": 0.3871,
-      "best_odds": 100,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.5,
-      "edge": -0.1129,
-      "has_positive_edge": false,
-      "avg_minutes": 31.3,
-      "l20_dd_rate": 0.4,
-      "stats": {
-        "pts": 11.1,
-        "reb": 8.3,
-        "ast": 2.1
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 6,
-    "total_recommended_td": 1,
+    "total_recommended_dd": 4,
+    "total_recommended_td": 0,
     "total_high_probability": 8,
-    "total_recommended_units": 108.89,
-    "total_recommended_amount": 1088.94
+    "total_recommended_units": 79.58,
+    "total_recommended_amount": 795.84
   }
 }
