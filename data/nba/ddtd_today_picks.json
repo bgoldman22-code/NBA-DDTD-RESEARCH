@@ -1,6 +1,6 @@
 {
-  "date": "2026-01-19",
-  "generated_at": "2026-01-19T15:11:21.861859+00:00",
+  "date": "2026-01-20",
+  "generated_at": "2026-01-20T15:12:48.836019+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -8,113 +8,203 @@
   "recommended_picks": {
     "dd": [
       {
-        "player": "Onyeka Okongwu",
-        "game": "Milwaukee Bucks @ Atlanta Hawks",
+        "player": "Domantas Sabonis",
+        "game": "Miami Heat @ Sacramento Kings",
+        "model_prob": 1.0,
+        "best_odds": 170,
+        "bookmaker": "Fanatics",
+        "implied_prob": 0.3704,
+        "edge": 0.6296,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 31.2,
+        "l20_dd_rate": 0.5,
+        "stats": {
+          "pts": 11.7,
+          "reb": 10.8,
+          "ast": 6.0
+        }
+      },
+      {
+        "player": "Amen Thompson",
+        "game": "San Antonio Spurs @ Houston Rockets",
         "model_prob": 0.7391,
+        "best_odds": 286,
+        "bookmaker": "DraftKings",
+        "implied_prob": 0.2591,
+        "edge": 0.4801,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 38.1,
+        "l20_dd_rate": 0.2,
+        "stats": {
+          "pts": 19.2,
+          "reb": 8.2,
+          "ast": 5.1
+        }
+      },
+      {
+        "player": "Scottie Barnes",
+        "game": "Toronto Raptors @ Golden State Warriors",
+        "model_prob": 0.875,
+        "best_odds": 135,
+        "bookmaker": "Fanatics",
+        "implied_prob": 0.4255,
+        "edge": 0.4495,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 35.4,
+        "l20_dd_rate": 0.4,
+        "stats": {
+          "pts": 18.6,
+          "reb": 8.5,
+          "ast": 5.6
+        }
+      },
+      {
+        "player": "Jamal Murray",
+        "game": "Los Angeles Lakers @ Denver Nuggets",
+        "model_prob": 0.7391,
+        "best_odds": 130,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.4348,
+        "edge": 0.3043,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 36.0,
+        "l20_dd_rate": 0.3,
+        "stats": {
+          "pts": 28.5,
+          "reb": 4.3,
+          "ast": 7.8
+        }
+      },
+      {
+        "player": "Kevin Durant",
+        "game": "San Antonio Spurs @ Houston Rockets",
+        "model_prob": 0.3386,
+        "best_odds": 700,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.125,
+        "edge": 0.2136,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 37.5,
+        "l20_dd_rate": 0.25,
+        "stats": {
+          "pts": 26.9,
+          "reb": 5.8,
+          "ast": 5.2
+        }
+      },
+      {
+        "player": "Ivica Zubac",
+        "game": "Los Angeles Clippers @ Chicago Bulls",
+        "model_prob": 0.8471,
+        "best_odds": -190,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.6552,
+        "edge": 0.1919,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 31.6,
+        "l20_dd_rate": 0.5,
+        "stats": {
+          "pts": 12.4,
+          "reb": 9.7,
+          "ast": 2.3
+        }
+      },
+      {
+        "player": "Nikola Vucevic",
+        "game": "Los Angeles Clippers @ Chicago Bulls",
+        "model_prob": 0.4857,
         "best_odds": 155,
         "bookmaker": "Fanatics",
         "implied_prob": 0.3922,
-        "edge": 0.347,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 33.5,
-        "l20_dd_rate": 0.25,
+        "edge": 0.0936,
+        "bet_units": 17.32,
+        "bet_amount": 173.16,
+        "avg_minutes": 30.6,
+        "l20_dd_rate": 0.35,
         "stats": {
-          "pts": 16.9,
-          "reb": 8.4,
-          "ast": 3.9
+          "pts": 17.8,
+          "reb": 8.7,
+          "ast": 4.2
         }
       },
       {
-        "player": "Evan Mobley",
-        "game": "Oklahoma City Thunder @ Cleveland Cavaliers",
+        "player": "Alperen Sengun",
+        "game": "San Antonio Spurs @ Houston Rockets",
         "model_prob": 0.5588,
-        "best_odds": 120,
+        "best_odds": 110,
         "bookmaker": "FanDuel",
-        "implied_prob": 0.4545,
-        "edge": 0.1043,
-        "bet_units": 21.51,
-        "bet_amount": 215.07,
-        "avg_minutes": 32.4,
-        "l20_dd_rate": 0.4,
+        "implied_prob": 0.4762,
+        "edge": 0.0826,
+        "bet_units": 17.75,
+        "bet_amount": 177.47,
+        "avg_minutes": 32.5,
+        "l20_dd_rate": 0.5,
         "stats": {
-          "pts": 16.9,
-          "reb": 8.3,
-          "ast": 4.3
+          "pts": 19.9,
+          "reb": 8.1,
+          "ast": 5.3
         }
       },
       {
-        "player": "Andrew Nembhard",
-        "game": "Indiana Pacers @ Philadelphia 76ers",
-        "model_prob": 0.3193,
-        "best_odds": 261,
-        "bookmaker": "DraftKings",
-        "implied_prob": 0.277,
-        "edge": 0.0423,
-        "bet_units": 6.58,
-        "bet_amount": 65.77,
-        "avg_minutes": 32.2,
-        "l20_dd_rate": 0.25,
+        "player": "Rudy Gobert",
+        "game": "Minnesota Timberwolves @ Utah Jazz",
+        "model_prob": 0.5588,
+        "best_odds": -125,
+        "bookmaker": "Bovada",
+        "implied_prob": 0.5556,
+        "edge": 0.0033,
+        "bet_units": 0.83,
+        "bet_amount": 8.27,
+        "avg_minutes": 31.2,
+        "l20_dd_rate": 0.5,
         "stats": {
-          "pts": 17.4,
-          "reb": 3.1,
-          "ast": 7.8
+          "pts": 10.8,
+          "reb": 12.6,
+          "ast": 1.8
         }
       }
     ],
     "td": [
       {
-        "player": "Kevin Porter Jr.",
-        "game": "Milwaukee Bucks @ Atlanta Hawks",
-        "model_prob": 0.3571,
-        "best_odds": 3400,
+        "player": "Jamal Murray",
+        "game": "Los Angeles Lakers @ Denver Nuggets",
+        "model_prob": 0.2558,
+        "best_odds": 2700,
         "bookmaker": "DraftKings",
-        "implied_prob": 0.0286,
-        "edge": 0.3286,
-        "bet_units": 0.38,
-        "bet_amount": 3.81,
-        "avg_minutes": 35.5,
-        "l20_td_rate": 0.05,
+        "implied_prob": 0.0357,
+        "edge": 0.2201,
+        "bet_units": 0.26,
+        "bet_amount": 2.57,
+        "avg_minutes": 36.0,
+        "l20_td_rate": 0.0,
         "stats": {
-          "pts": 17.7,
-          "reb": 5.3,
+          "pts": 28.5,
+          "reb": 4.3,
           "ast": 7.8
         }
       },
       {
-        "player": "James Harden",
-        "game": "Los Angeles Clippers @ Washington Wizards",
+        "player": "Luka Doncic",
+        "game": "Los Angeles Lakers @ Denver Nuggets",
         "model_prob": 0.2558,
-        "best_odds": 1940,
-        "bookmaker": "DraftKings",
-        "implied_prob": 0.049,
-        "edge": 0.2068,
-        "bet_units": 0.24,
-        "bet_amount": 2.45,
+        "best_odds": 800,
+        "bookmaker": "Fanatics",
+        "implied_prob": 0.1111,
+        "edge": 0.1447,
+        "bet_units": 0.18,
+        "bet_amount": 1.83,
         "avg_minutes": 35.8,
-        "l20_td_rate": 0.0,
+        "l20_td_rate": 0.15,
         "stats": {
-          "pts": 24.1,
-          "reb": 3.8,
-          "ast": 7.6
-        }
-      },
-      {
-        "player": "Cade Cunningham",
-        "game": "Boston Celtics @ Detroit Pistons",
-        "model_prob": 0.1667,
-        "best_odds": 1360,
-        "bookmaker": "DraftKings",
-        "implied_prob": 0.0685,
-        "edge": 0.0982,
-        "bet_units": 0.12,
-        "bet_amount": 1.19,
-        "avg_minutes": 34.5,
-        "l20_td_rate": 0.1,
-        "stats": {
-          "pts": 24.3,
-          "reb": 6.0,
-          "ast": 9.8
+          "pts": 32.1,
+          "reb": 6.8,
+          "ast": 8.2
         }
       }
     ]
@@ -122,146 +212,197 @@
   "high_probability": [
     {
       "player": "Victor Wembanyama",
-      "game": "Utah Jazz @ San Antonio Spurs",
+      "game": "San Antonio Spurs @ Houston Rockets",
       "model_prob": 1.0,
-      "best_odds": -175,
-      "bookmaker": "Fanatics",
-      "implied_prob": 0.6364,
-      "edge": 0.3636,
-      "has_positive_edge": true,
-      "avg_minutes": 26.2,
-      "l20_dd_rate": 0.45,
-      "stats": {
-        "pts": 24.4,
-        "reb": 9.1,
-        "ast": 2.9
-      }
-    },
-    {
-      "player": "Giannis Antetokounmpo",
-      "game": "Milwaukee Bucks @ Atlanta Hawks",
-      "model_prob": 0.9536,
-      "best_odds": -170,
-      "bookmaker": "Fanatics",
-      "implied_prob": 0.6296,
-      "edge": 0.324,
-      "has_positive_edge": true,
-      "avg_minutes": 28.2,
-      "l20_dd_rate": 0.45,
-      "stats": {
-        "pts": 26.3,
-        "reb": 8.4,
-        "ast": 5.3
-      }
-    },
-    {
-      "player": "Jalen Duren",
-      "game": "Boston Celtics @ Detroit Pistons",
-      "model_prob": 0.9536,
-      "best_odds": -130,
-      "bookmaker": "BetMGM",
-      "implied_prob": 0.5652,
-      "edge": 0.3884,
-      "has_positive_edge": true,
-      "avg_minutes": 27.7,
-      "l20_dd_rate": 0.55,
-      "stats": {
-        "pts": 15.0,
-        "reb": 9.8,
-        "ast": 1.5
-      }
-    },
-    {
-      "player": "Onyeka Okongwu",
-      "game": "Milwaukee Bucks @ Atlanta Hawks",
-      "model_prob": 0.7391,
-      "best_odds": 155,
-      "bookmaker": "Fanatics",
-      "implied_prob": 0.3922,
-      "edge": 0.347,
-      "has_positive_edge": true,
-      "avg_minutes": 33.5,
-      "l20_dd_rate": 0.25,
-      "stats": {
-        "pts": 16.9,
-        "reb": 8.4,
-        "ast": 3.9
-      }
-    },
-    {
-      "player": "Alex Sarr",
-      "game": "Los Angeles Clippers @ Washington Wizards",
-      "model_prob": 0.7391,
-      "best_odds": 316,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.2404,
-      "edge": 0.4987,
-      "has_positive_edge": true,
-      "avg_minutes": 26.8,
-      "l20_dd_rate": 0.2,
-      "stats": {
-        "pts": 14.8,
-        "reb": 6.1,
-        "ast": 1.9
-      }
-    },
-    {
-      "player": "Evan Mobley",
-      "game": "Oklahoma City Thunder @ Cleveland Cavaliers",
-      "model_prob": 0.5588,
       "best_odds": 120,
-      "bookmaker": "FanDuel",
+      "bookmaker": "Bovada",
       "implied_prob": 0.4545,
-      "edge": 0.1043,
+      "edge": 0.5455,
       "has_positive_edge": true,
-      "avg_minutes": 32.4,
-      "l20_dd_rate": 0.4,
+      "avg_minutes": 25.8,
+      "l20_dd_rate": 0.5,
       "stats": {
-        "pts": 16.9,
-        "reb": 8.3,
-        "ast": 4.3
-      }
-    },
-    {
-      "player": "Karl-Anthony Towns",
-      "game": "Dallas Mavericks @ New York Knicks",
-      "model_prob": 0.4468,
-      "best_odds": -225,
-      "bookmaker": "BetMGM",
-      "implied_prob": 0.6923,
-      "edge": -0.2455,
-      "has_positive_edge": false,
-      "avg_minutes": 31.3,
-      "l20_dd_rate": 0.7,
-      "stats": {
-        "pts": 19.6,
-        "reb": 11.2,
+        "pts": 23.9,
+        "reb": 9.6,
         "ast": 2.5
       }
     },
     {
-      "player": "Bam Adebayo",
-      "game": "Miami Heat @ Golden State Warriors",
-      "model_prob": 0.4138,
-      "best_odds": -125,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.5556,
-      "edge": -0.1418,
-      "has_positive_edge": false,
-      "avg_minutes": 31.4,
+      "player": "Domantas Sabonis",
+      "game": "Miami Heat @ Sacramento Kings",
+      "model_prob": 1.0,
+      "best_odds": 170,
+      "bookmaker": "Fanatics",
+      "implied_prob": 0.3704,
+      "edge": 0.6296,
+      "has_positive_edge": true,
+      "avg_minutes": 31.2,
+      "l20_dd_rate": 0.5,
+      "stats": {
+        "pts": 11.7,
+        "reb": 10.8,
+        "ast": 6.0
+      }
+    },
+    {
+      "player": "Scottie Barnes",
+      "game": "Toronto Raptors @ Golden State Warriors",
+      "model_prob": 0.875,
+      "best_odds": 135,
+      "bookmaker": "Fanatics",
+      "implied_prob": 0.4255,
+      "edge": 0.4495,
+      "has_positive_edge": true,
+      "avg_minutes": 35.4,
+      "l20_dd_rate": 0.4,
+      "stats": {
+        "pts": 18.6,
+        "reb": 8.5,
+        "ast": 5.6
+      }
+    },
+    {
+      "player": "Ivica Zubac",
+      "game": "Los Angeles Clippers @ Chicago Bulls",
+      "model_prob": 0.8471,
+      "best_odds": -190,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.6552,
+      "edge": 0.1919,
+      "has_positive_edge": true,
+      "avg_minutes": 31.6,
+      "l20_dd_rate": 0.5,
+      "stats": {
+        "pts": 12.4,
+        "reb": 9.7,
+        "ast": 2.3
+      }
+    },
+    {
+      "player": "Jamal Murray",
+      "game": "Los Angeles Lakers @ Denver Nuggets",
+      "model_prob": 0.7391,
+      "best_odds": 130,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.4348,
+      "edge": 0.3043,
+      "has_positive_edge": true,
+      "avg_minutes": 36.0,
+      "l20_dd_rate": 0.3,
+      "stats": {
+        "pts": 28.5,
+        "reb": 4.3,
+        "ast": 7.8
+      }
+    },
+    {
+      "player": "Amen Thompson",
+      "game": "San Antonio Spurs @ Houston Rockets",
+      "model_prob": 0.7391,
+      "best_odds": 286,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.2591,
+      "edge": 0.4801,
+      "has_positive_edge": true,
+      "avg_minutes": 38.1,
+      "l20_dd_rate": 0.2,
+      "stats": {
+        "pts": 19.2,
+        "reb": 8.2,
+        "ast": 5.1
+      }
+    },
+    {
+      "player": "Jusuf Nurkic",
+      "game": "Minnesota Timberwolves @ Utah Jazz",
+      "model_prob": 0.7391,
+      "best_odds": 150,
+      "bookmaker": "Fanatics",
+      "implied_prob": 0.4,
+      "edge": 0.3391,
+      "has_positive_edge": true,
+      "avg_minutes": 27.1,
       "l20_dd_rate": 0.35,
       "stats": {
-        "pts": 16.3,
-        "reb": 10.3,
+        "pts": 12.5,
+        "reb": 9.2,
+        "ast": 4.5
+      }
+    },
+    {
+      "player": "Rudy Gobert",
+      "game": "Minnesota Timberwolves @ Utah Jazz",
+      "model_prob": 0.5588,
+      "best_odds": -125,
+      "bookmaker": "Bovada",
+      "implied_prob": 0.5556,
+      "edge": 0.0033,
+      "has_positive_edge": true,
+      "avg_minutes": 31.2,
+      "l20_dd_rate": 0.5,
+      "stats": {
+        "pts": 10.8,
+        "reb": 12.6,
+        "ast": 1.8
+      }
+    },
+    {
+      "player": "Alperen Sengun",
+      "game": "San Antonio Spurs @ Houston Rockets",
+      "model_prob": 0.5588,
+      "best_odds": 110,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.4762,
+      "edge": 0.0826,
+      "has_positive_edge": true,
+      "avg_minutes": 32.5,
+      "l20_dd_rate": 0.5,
+      "stats": {
+        "pts": 19.9,
+        "reb": 8.1,
+        "ast": 5.3
+      }
+    },
+    {
+      "player": "Nikola Vucevic",
+      "game": "Los Angeles Clippers @ Chicago Bulls",
+      "model_prob": 0.4857,
+      "best_odds": 155,
+      "bookmaker": "Fanatics",
+      "implied_prob": 0.3922,
+      "edge": 0.0936,
+      "has_positive_edge": true,
+      "avg_minutes": 30.6,
+      "l20_dd_rate": 0.35,
+      "stats": {
+        "pts": 17.8,
+        "reb": 8.7,
+        "ast": 4.2
+      }
+    },
+    {
+      "player": "Bam Adebayo",
+      "game": "Miami Heat @ Sacramento Kings",
+      "model_prob": 0.4138,
+      "best_odds": -115,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.5349,
+      "edge": -0.1211,
+      "has_positive_edge": false,
+      "avg_minutes": 31.1,
+      "l20_dd_rate": 0.3,
+      "stats": {
+        "pts": 15.2,
+        "reb": 10.2,
         "ast": 2.9
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 3,
-    "total_recommended_td": 3,
-    "total_high_probability": 8,
-    "total_recommended_units": 51.33,
-    "total_recommended_amount": 513.29
+    "total_recommended_dd": 9,
+    "total_recommended_td": 2,
+    "total_high_probability": 11,
+    "total_recommended_units": 171.34,
+    "total_recommended_amount": 1713.3
   }
 }
