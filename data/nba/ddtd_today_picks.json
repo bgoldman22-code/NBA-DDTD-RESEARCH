@@ -1,6 +1,6 @@
 {
-  "date": "2026-02-20",
-  "generated_at": "2026-02-20T15:23:09.821207+00:00",
+  "date": "2026-02-21",
+  "generated_at": "2026-02-21T15:11:48.183882+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -8,209 +8,101 @@
   "recommended_picks": {
     "dd": [
       {
-        "player": "Rudy Gobert",
-        "game": "Dallas Mavericks @ Minnesota Timberwolves",
-        "model_prob": 0.9832,
-        "best_odds": 115,
-        "bookmaker": "Bovada",
-        "implied_prob": 0.4651,
-        "edge": 0.5181,
+        "player": "Alperen Sengun",
+        "game": "Houston Rockets @ New York Knicks",
+        "model_prob": 0.9536,
+        "best_odds": 100,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.5,
+        "edge": 0.4536,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 30.6,
-        "l20_dd_rate": 0.55,
-        "stats": {
-          "pts": 10.9,
-          "reb": 11.4,
-          "ast": 1.4
-        }
-      },
-      {
-        "player": "Jalen Johnson",
-        "game": "Miami Heat @ Atlanta Hawks",
-        "model_prob": 1.0,
-        "best_odds": -297,
-        "bookmaker": "DraftKings",
-        "implied_prob": 0.7481,
-        "edge": 0.2519,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 31.8,
-        "l20_dd_rate": 0.55,
-        "stats": {
-          "pts": 20.2,
-          "reb": 9.7,
-          "ast": 6.5
-        }
-      },
-      {
-        "player": "Michael Porter Jr",
-        "game": "Brooklyn Nets @ Oklahoma City Thunder",
-        "model_prob": 0.3193,
-        "best_odds": 340,
-        "bookmaker": "Fanatics",
-        "implied_prob": 0.2273,
-        "edge": 0.092,
-        "bet_units": 13.39,
-        "bet_amount": 133.95,
-        "avg_minutes": 32.8,
-        "l20_dd_rate": 0.25,
-        "stats": {
-          "pts": 23.7,
-          "reb": 7.0,
-          "ast": 3.0
-        }
-      },
-      {
-        "player": "Onyeka Okongwu",
-        "game": "Miami Heat @ Atlanta Hawks",
-        "model_prob": 0.3871,
-        "best_odds": 225,
-        "bookmaker": "BetMGM",
-        "implied_prob": 0.3077,
-        "edge": 0.0794,
-        "bet_units": 12.9,
-        "bet_amount": 129.03,
-        "avg_minutes": 32.1,
-        "l20_dd_rate": 0.25,
+        "avg_minutes": 30.2,
+        "l20_dd_rate": 0.4,
         "stats": {
           "pts": 16.9,
-          "reb": 8.2,
-          "ast": 3.2
-        }
-      },
-      {
-        "player": "Cooper Flagg",
-        "game": "Dallas Mavericks @ Minnesota Timberwolves",
-        "model_prob": 0.2373,
-        "best_odds": 400,
-        "bookmaker": "Fanatics",
-        "implied_prob": 0.2,
-        "edge": 0.0373,
-        "bet_units": 5.24,
-        "bet_amount": 52.44,
-        "avg_minutes": 33.8,
-        "l20_dd_rate": 0.2,
-        "stats": {
-          "pts": 22.9,
-          "reb": 6.8,
-          "ast": 4.8
+          "reb": 8.9,
+          "ast": 5.7
         }
       }
     ],
-    "td": [
-      {
-        "player": "James Harden",
-        "game": "Cleveland Cavaliers @ Charlotte Hornets",
-        "model_prob": 0.1087,
-        "best_odds": 4700,
-        "bookmaker": "DraftKings",
-        "implied_prob": 0.0208,
-        "edge": 0.0879,
-        "bet_units": 0.1,
-        "bet_amount": 1.01,
-        "avg_minutes": 34.3,
-        "l20_td_rate": 0.0,
-        "stats": {
-          "pts": 22.9,
-          "reb": 4.6,
-          "ast": 8.4
-        }
-      }
-    ]
+    "td": []
   },
   "high_probability": [
     {
-      "player": "Jalen Johnson",
-      "game": "Miami Heat @ Atlanta Hawks",
+      "player": "Victor Wembanyama",
+      "game": "Sacramento Kings @ San Antonio Spurs",
       "model_prob": 1.0,
-      "best_odds": -297,
+      "best_odds": -235,
       "bookmaker": "DraftKings",
-      "implied_prob": 0.7481,
-      "edge": 0.2519,
+      "implied_prob": 0.7015,
+      "edge": 0.2985,
       "has_positive_edge": true,
+      "avg_minutes": 26.8,
+      "l20_dd_rate": 0.55,
+      "stats": {
+        "pts": 23.4,
+        "reb": 9.8,
+        "ast": 1.9
+      }
+    },
+    {
+      "player": "Alperen Sengun",
+      "game": "Houston Rockets @ New York Knicks",
+      "model_prob": 0.9536,
+      "best_odds": 100,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.5,
+      "edge": 0.4536,
+      "has_positive_edge": true,
+      "avg_minutes": 30.2,
+      "l20_dd_rate": 0.4,
+      "stats": {
+        "pts": 16.9,
+        "reb": 8.9,
+        "ast": 5.7
+      }
+    },
+    {
+      "player": "Bam Adebayo",
+      "game": "Memphis Grizzlies @ Miami Heat",
+      "model_prob": 0.3871,
+      "best_odds": -195,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.661,
+      "edge": -0.2739,
+      "has_positive_edge": false,
       "avg_minutes": 31.8,
-      "l20_dd_rate": 0.55,
+      "l20_dd_rate": 0.45,
       "stats": {
-        "pts": 20.2,
-        "reb": 9.7,
-        "ast": 6.5
-      }
-    },
-    {
-      "player": "Chet Holmgren",
-      "game": "Brooklyn Nets @ Oklahoma City Thunder",
-      "model_prob": 1.0,
-      "best_odds": 189,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.346,
-      "edge": 0.654,
-      "has_positive_edge": true,
-      "avg_minutes": 26.6,
-      "l20_dd_rate": 0.5,
-      "stats": {
-        "pts": 14.3,
-        "reb": 8.4,
-        "ast": 1.4
-      }
-    },
-    {
-      "player": "Rudy Gobert",
-      "game": "Dallas Mavericks @ Minnesota Timberwolves",
-      "model_prob": 0.9832,
-      "best_odds": 115,
-      "bookmaker": "Bovada",
-      "implied_prob": 0.4651,
-      "edge": 0.5181,
-      "has_positive_edge": true,
-      "avg_minutes": 30.6,
-      "l20_dd_rate": 0.55,
-      "stats": {
-        "pts": 10.9,
-        "reb": 11.4,
-        "ast": 1.4
+        "pts": 20.6,
+        "reb": 10.2,
+        "ast": 3.2
       }
     },
     {
       "player": "Derik Queen",
-      "game": "Milwaukee Bucks @ New Orleans Pelicans",
-      "model_prob": 0.5588,
-      "best_odds": 255,
-      "bookmaker": "Caesars",
-      "implied_prob": 0.2817,
-      "edge": 0.2771,
-      "has_positive_edge": true,
-      "avg_minutes": 26.6,
-      "l20_dd_rate": 0.2,
-      "stats": {
-        "pts": 10.6,
-        "reb": 7.5,
-        "ast": 4.3
-      }
-    },
-    {
-      "player": "Onyeka Okongwu",
-      "game": "Miami Heat @ Atlanta Hawks",
+      "game": "Philadelphia 76ers @ New Orleans Pelicans",
       "model_prob": 0.3871,
       "best_odds": 225,
-      "bookmaker": "BetMGM",
+      "bookmaker": "Fanatics",
       "implied_prob": 0.3077,
       "edge": 0.0794,
       "has_positive_edge": true,
-      "avg_minutes": 32.1,
-      "l20_dd_rate": 0.25,
+      "avg_minutes": 26.4,
+      "l20_dd_rate": 0.2,
       "stats": {
-        "pts": 16.9,
-        "reb": 8.2,
-        "ast": 3.2
+        "pts": 10.8,
+        "reb": 7.7,
+        "ast": 4.3
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 5,
-    "total_recommended_td": 1,
-    "total_high_probability": 5,
-    "total_recommended_units": 76.63,
-    "total_recommended_amount": 766.43
+    "total_recommended_dd": 1,
+    "total_recommended_td": 0,
+    "total_high_probability": 4,
+    "total_recommended_units": 22.5,
+    "total_recommended_amount": 225.0
   }
 }
