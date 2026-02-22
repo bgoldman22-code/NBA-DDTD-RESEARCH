@@ -1,6 +1,6 @@
 {
-  "date": "2026-02-21",
-  "generated_at": "2026-02-21T15:11:48.183882+00:00",
+  "date": "2026-02-22",
+  "generated_at": "2026-02-22T15:12:47.398429+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -8,101 +8,243 @@
   "recommended_picks": {
     "dd": [
       {
-        "player": "Alperen Sengun",
-        "game": "Houston Rockets @ New York Knicks",
-        "model_prob": 0.9536,
-        "best_odds": 100,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.5,
-        "edge": 0.4536,
+        "player": "Paolo Banchero",
+        "game": "Orlando Magic @ Los Angeles Clippers",
+        "model_prob": 1.0,
+        "best_odds": 200,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.3333,
+        "edge": 0.6667,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 30.2,
+        "avg_minutes": 36.4,
         "l20_dd_rate": 0.4,
         "stats": {
-          "pts": 16.9,
-          "reb": 8.9,
-          "ast": 5.7
+          "pts": 22.7,
+          "reb": 8.5,
+          "ast": 5.2
+        }
+      },
+      {
+        "player": "Nikola Vucevic",
+        "game": "Boston Celtics @ Los Angeles Lakers",
+        "model_prob": 0.5,
+        "best_odds": 430,
+        "bookmaker": "DraftKings",
+        "implied_prob": 0.1887,
+        "edge": 0.3113,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 31.1,
+        "l20_dd_rate": 0.45,
+        "stats": {
+          "pts": 17.2,
+          "reb": 9.0,
+          "ast": 4.0
+        }
+      },
+      {
+        "player": "Jalen Johnson",
+        "game": "Brooklyn Nets @ Atlanta Hawks",
+        "model_prob": 1.0,
+        "best_odds": -270,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.7297,
+        "edge": 0.2703,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 31.7,
+        "l20_dd_rate": 0.6,
+        "stats": {
+          "pts": 20.1,
+          "reb": 10.1,
+          "ast": 6.8
+        }
+      },
+      {
+        "player": "Deni Avdija",
+        "game": "Portland Trail Blazers @ Phoenix Suns",
+        "model_prob": 0.4468,
+        "best_odds": 300,
+        "bookmaker": "Bovada",
+        "implied_prob": 0.25,
+        "edge": 0.1968,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 30.6,
+        "l20_dd_rate": 0.35,
+        "stats": {
+          "pts": 21.9,
+          "reb": 6.7,
+          "ast": 6.7
+        }
+      },
+      {
+        "player": "Kevin Porter Jr.",
+        "game": "Toronto Raptors @ Milwaukee Bucks",
+        "model_prob": 0.3193,
+        "best_odds": 300,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.25,
+        "edge": 0.0693,
+        "bet_units": 10.39,
+        "bet_amount": 103.92,
+        "avg_minutes": 35.0,
+        "l20_dd_rate": 0.25,
+        "stats": {
+          "pts": 16.7,
+          "reb": 5.5,
+          "ast": 7.6
         }
       }
     ],
-    "td": []
+    "td": [
+      {
+        "player": "James Harden",
+        "game": "Cleveland Cavaliers @ Oklahoma City Thunder",
+        "model_prob": 0.1765,
+        "best_odds": 3000,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.0323,
+        "edge": 0.1442,
+        "bet_units": 0.17,
+        "bet_amount": 1.68,
+        "avg_minutes": 34.0,
+        "l20_td_rate": 0.0,
+        "stats": {
+          "pts": 22.4,
+          "reb": 4.6,
+          "ast": 8.4
+        }
+      }
+    ]
   },
   "high_probability": [
     {
-      "player": "Victor Wembanyama",
-      "game": "Sacramento Kings @ San Antonio Spurs",
+      "player": "Jalen Johnson",
+      "game": "Brooklyn Nets @ Atlanta Hawks",
       "model_prob": 1.0,
-      "best_odds": -235,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.7015,
-      "edge": 0.2985,
+      "best_odds": -270,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.7297,
+      "edge": 0.2703,
       "has_positive_edge": true,
-      "avg_minutes": 26.8,
-      "l20_dd_rate": 0.55,
+      "avg_minutes": 31.7,
+      "l20_dd_rate": 0.6,
       "stats": {
-        "pts": 23.4,
-        "reb": 9.8,
-        "ast": 1.9
+        "pts": 20.1,
+        "reb": 10.1,
+        "ast": 6.8
       }
     },
     {
-      "player": "Alperen Sengun",
-      "game": "Houston Rockets @ New York Knicks",
-      "model_prob": 0.9536,
-      "best_odds": 100,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.5,
-      "edge": 0.4536,
+      "player": "Paolo Banchero",
+      "game": "Orlando Magic @ Los Angeles Clippers",
+      "model_prob": 1.0,
+      "best_odds": 200,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.3333,
+      "edge": 0.6667,
       "has_positive_edge": true,
-      "avg_minutes": 30.2,
+      "avg_minutes": 36.4,
       "l20_dd_rate": 0.4,
       "stats": {
-        "pts": 16.9,
-        "reb": 8.9,
-        "ast": 5.7
+        "pts": 22.7,
+        "reb": 8.5,
+        "ast": 5.2
       }
     },
     {
-      "player": "Bam Adebayo",
-      "game": "Memphis Grizzlies @ Miami Heat",
-      "model_prob": 0.3871,
-      "best_odds": -195,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.661,
-      "edge": -0.2739,
-      "has_positive_edge": false,
-      "avg_minutes": 31.8,
+      "player": "Karl-Anthony Towns",
+      "game": "New York Knicks @ Chicago Bulls",
+      "model_prob": 0.9536,
+      "best_odds": -325,
+      "bookmaker": "Fanatics",
+      "implied_prob": 0.7647,
+      "edge": 0.1889,
+      "has_positive_edge": true,
+      "avg_minutes": 27.1,
+      "l20_dd_rate": 0.65,
+      "stats": {
+        "pts": 16.4,
+        "reb": 11.3,
+        "ast": 2.4
+      }
+    },
+    {
+      "player": "Chet Holmgren",
+      "game": "Cleveland Cavaliers @ Oklahoma City Thunder",
+      "model_prob": 0.7333,
+      "best_odds": 160,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.3846,
+      "edge": 0.3487,
+      "has_positive_edge": true,
+      "avg_minutes": 25.9,
       "l20_dd_rate": 0.45,
       "stats": {
-        "pts": 20.6,
-        "reb": 10.2,
-        "ast": 3.2
+        "pts": 13.9,
+        "reb": 8.2,
+        "ast": 1.5
       }
     },
     {
-      "player": "Derik Queen",
-      "game": "Philadelphia 76ers @ New Orleans Pelicans",
-      "model_prob": 0.3871,
-      "best_odds": 225,
-      "bookmaker": "Fanatics",
-      "implied_prob": 0.3077,
-      "edge": 0.0794,
+      "player": "Nikola Vucevic",
+      "game": "Boston Celtics @ Los Angeles Lakers",
+      "model_prob": 0.5,
+      "best_odds": 430,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.1887,
+      "edge": 0.3113,
       "has_positive_edge": true,
-      "avg_minutes": 26.4,
-      "l20_dd_rate": 0.2,
+      "avg_minutes": 31.1,
+      "l20_dd_rate": 0.45,
       "stats": {
-        "pts": 10.8,
-        "reb": 7.7,
-        "ast": 4.3
+        "pts": 17.2,
+        "reb": 9.0,
+        "ast": 4.0
+      }
+    },
+    {
+      "player": "Deni Avdija",
+      "game": "Portland Trail Blazers @ Phoenix Suns",
+      "model_prob": 0.4468,
+      "best_odds": 300,
+      "bookmaker": "Bovada",
+      "implied_prob": 0.25,
+      "edge": 0.1968,
+      "has_positive_edge": true,
+      "avg_minutes": 30.6,
+      "l20_dd_rate": 0.35,
+      "stats": {
+        "pts": 21.9,
+        "reb": 6.7,
+        "ast": 6.7
+      }
+    },
+    {
+      "player": "Donovan Clingan",
+      "game": "Portland Trail Blazers @ Phoenix Suns",
+      "model_prob": 0.4138,
+      "best_odds": -110,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.5238,
+      "edge": -0.11,
+      "has_positive_edge": false,
+      "avg_minutes": 28.2,
+      "l20_dd_rate": 0.4,
+      "stats": {
+        "pts": 12.4,
+        "reb": 12.5,
+        "ast": 2.5
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 1,
-    "total_recommended_td": 0,
-    "total_high_probability": 4,
-    "total_recommended_units": 22.5,
-    "total_recommended_amount": 225.0
+    "total_recommended_dd": 5,
+    "total_recommended_td": 1,
+    "total_high_probability": 7,
+    "total_recommended_units": 100.56,
+    "total_recommended_amount": 1005.6
   }
 }
