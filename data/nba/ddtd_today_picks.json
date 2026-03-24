@@ -1,6 +1,6 @@
 {
-  "date": "2026-03-23",
-  "generated_at": "2026-03-23T15:32:42.571261+00:00",
+  "date": "2026-03-24",
+  "generated_at": "2026-03-24T15:35:09.661867+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -8,188 +8,155 @@
   "recommended_picks": {
     "dd": [
       {
-        "player": "Amen Thompson",
-        "game": "Houston Rockets @ Chicago Bulls",
-        "model_prob": 0.7188,
+        "player": "James Harden",
+        "game": "Orlando Magic @ Cleveland Cavaliers",
+        "model_prob": 0.5789,
         "best_odds": 210,
         "bookmaker": "BetMGM",
         "implied_prob": 0.3226,
-        "edge": 0.3962,
+        "edge": 0.2564,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 36.4,
-        "l20_dd_rate": 0.4,
+        "avg_minutes": 33.5,
+        "l20_dd_rate": 0.25,
         "stats": {
-          "pts": 17.6,
-          "reb": 8.2,
-          "ast": 4.7
+          "pts": 20.8,
+          "reb": 5.2,
+          "ast": 8.0
         }
       },
       {
-        "player": "Paolo Banchero",
-        "game": "Indiana Pacers @ Orlando Magic",
-        "model_prob": 0.7391,
-        "best_odds": 120,
-        "bookmaker": "Bovada",
-        "implied_prob": 0.4545,
-        "edge": 0.2846,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 36.0,
-        "l20_dd_rate": 0.4,
-        "stats": {
-          "pts": 23.4,
-          "reb": 8.3,
-          "ast": 5.5
-        }
-      },
-      {
-        "player": "Jalen Johnson",
-        "game": "Memphis Grizzlies @ Atlanta Hawks",
-        "model_prob": 0.7391,
-        "best_odds": -250,
+        "player": "Maxime Raynaud",
+        "game": "Sacramento Kings @ Charlotte Hornets",
+        "model_prob": 0.4615,
+        "best_odds": 145,
         "bookmaker": "FanDuel",
-        "implied_prob": 0.7143,
-        "edge": 0.0248,
-        "bet_units": 9.78,
-        "bet_amount": 97.83,
-        "avg_minutes": 30.1,
-        "l20_dd_rate": 0.5,
+        "implied_prob": 0.4082,
+        "edge": 0.0534,
+        "bet_units": 10.15,
+        "bet_amount": 101.46,
+        "avg_minutes": 31.8,
+        "l20_dd_rate": 0.45,
         "stats": {
-          "pts": 19.1,
-          "reb": 8.7,
-          "ast": 7.2
+          "pts": 17.1,
+          "reb": 9.2,
+          "ast": 1.9
         }
       }
     ],
-    "td": []
+    "td": [
+      {
+        "player": "James Harden",
+        "game": "Orlando Magic @ Cleveland Cavaliers",
+        "model_prob": 0.9756,
+        "best_odds": 2700,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.0357,
+        "edge": 0.9399,
+        "bet_units": 1.1,
+        "bet_amount": 10.97,
+        "avg_minutes": 33.5,
+        "l20_td_rate": 0.0,
+        "stats": {
+          "pts": 20.8,
+          "reb": 5.2,
+          "ast": 8.0
+        }
+      }
+    ]
   },
   "high_probability": [
     {
-      "player": "Chet Holmgren",
-      "game": "Oklahoma City Thunder @ Philadelphia 76ers",
-      "model_prob": 0.9832,
-      "best_odds": 230,
+      "player": "Nikola Jokic",
+      "game": "Denver Nuggets @ Phoenix Suns",
+      "model_prob": 0.8471,
+      "best_odds": -1500,
       "bookmaker": "Fanatics",
-      "implied_prob": 0.303,
-      "edge": 0.6802,
-      "has_positive_edge": true,
-      "avg_minutes": 25.8,
-      "l20_dd_rate": 0.45,
+      "implied_prob": 0.9375,
+      "edge": -0.0904,
+      "has_positive_edge": false,
+      "avg_minutes": 34.0,
+      "l20_dd_rate": 0.75,
       "stats": {
-        "pts": 14.1,
-        "reb": 8.8,
-        "ast": 1.6
+        "pts": 24.9,
+        "reb": 12.8,
+        "ast": 9.8
       }
     },
     {
-      "player": "Jalen Johnson",
-      "game": "Memphis Grizzlies @ Atlanta Hawks",
-      "model_prob": 0.7391,
-      "best_odds": -250,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.7143,
-      "edge": 0.0248,
+      "player": "James Harden",
+      "game": "Orlando Magic @ Cleveland Cavaliers",
+      "model_prob": 0.5789,
+      "best_odds": 210,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.3226,
+      "edge": 0.2564,
       "has_positive_edge": true,
-      "avg_minutes": 30.1,
-      "l20_dd_rate": 0.5,
+      "avg_minutes": 33.5,
+      "l20_dd_rate": 0.25,
       "stats": {
-        "pts": 19.1,
-        "reb": 8.7,
-        "ast": 7.2
+        "pts": 20.8,
+        "reb": 5.2,
+        "ast": 8.0
+      }
+    },
+    {
+      "player": "Karl-Anthony Towns",
+      "game": "New Orleans Pelicans @ New York Knicks",
+      "model_prob": 0.5588,
+      "best_odds": -300,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.75,
+      "edge": -0.1912,
+      "has_positive_edge": false,
+      "avg_minutes": 28.3,
+      "l20_dd_rate": 0.75,
+      "stats": {
+        "pts": 20.1,
+        "reb": 11.1,
+        "ast": 2.6
+      }
+    },
+    {
+      "player": "Maxime Raynaud",
+      "game": "Sacramento Kings @ Charlotte Hornets",
+      "model_prob": 0.4615,
+      "best_odds": 145,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.4082,
+      "edge": 0.0534,
+      "has_positive_edge": true,
+      "avg_minutes": 31.8,
+      "l20_dd_rate": 0.45,
+      "stats": {
+        "pts": 17.1,
+        "reb": 9.2,
+        "ast": 1.9
       }
     },
     {
       "player": "Paolo Banchero",
-      "game": "Indiana Pacers @ Orlando Magic",
-      "model_prob": 0.7391,
-      "best_odds": 120,
-      "bookmaker": "Bovada",
-      "implied_prob": 0.4545,
-      "edge": 0.2846,
-      "has_positive_edge": true,
+      "game": "Orlando Magic @ Cleveland Cavaliers",
+      "model_prob": 0.3871,
+      "best_odds": 155,
+      "bookmaker": "Fanatics",
+      "implied_prob": 0.3922,
+      "edge": -0.0051,
+      "has_positive_edge": false,
       "avg_minutes": 36.0,
       "l20_dd_rate": 0.4,
       "stats": {
-        "pts": 23.4,
-        "reb": 8.3,
-        "ast": 5.5
-      }
-    },
-    {
-      "player": "Amen Thompson",
-      "game": "Houston Rockets @ Chicago Bulls",
-      "model_prob": 0.7188,
-      "best_odds": 210,
-      "bookmaker": "BetMGM",
-      "implied_prob": 0.3226,
-      "edge": 0.3962,
-      "has_positive_edge": true,
-      "avg_minutes": 36.4,
-      "l20_dd_rate": 0.4,
-      "stats": {
-        "pts": 17.6,
+        "pts": 24.2,
         "reb": 8.2,
-        "ast": 4.7
-      }
-    },
-    {
-      "player": "Victor Wembanyama",
-      "game": "San Antonio Spurs @ Miami Heat",
-      "model_prob": 0.6615,
-      "best_odds": -350,
-      "bookmaker": "Fanatics",
-      "implied_prob": 0.7778,
-      "edge": -0.1162,
-      "has_positive_edge": false,
-      "avg_minutes": 28.0,
-      "l20_dd_rate": 0.55,
-      "stats": {
-        "pts": 24.1,
-        "reb": 10.3,
-        "ast": 3.1
-      }
-    },
-    {
-      "player": "Jalen Duren",
-      "game": "Los Angeles Lakers @ Detroit Pistons",
-      "model_prob": 0.5789,
-      "best_odds": -160,
-      "bookmaker": "BetMGM",
-      "implied_prob": 0.6154,
-      "edge": -0.0364,
-      "has_positive_edge": false,
-      "avg_minutes": 24.1,
-      "l20_dd_rate": 0.6,
-      "stats": {
-        "pts": 20.2,
-        "reb": 9.5,
-        "ast": 1.4
-      }
-    },
-    {
-      "player": "Kyle Filipowski",
-      "game": "Toronto Raptors @ Utah Jazz",
-      "model_prob": 0.4468,
-      "best_odds": 210,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.3226,
-      "edge": 0.1242,
-      "has_positive_edge": true,
-      "avg_minutes": 24.8,
-      "l20_dd_rate": 0.3,
-      "stats": {
-        "pts": 13.6,
-        "reb": 8.6,
-        "ast": 3.2
+        "ast": 5.4
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 3,
-    "total_recommended_td": 0,
-    "total_high_probability": 7,
-    "total_recommended_units": 54.78,
-    "total_recommended_amount": 547.83
+    "total_recommended_dd": 2,
+    "total_recommended_td": 1,
+    "total_high_probability": 5,
+    "total_recommended_units": 33.75,
+    "total_recommended_amount": 337.43
   }
 }
