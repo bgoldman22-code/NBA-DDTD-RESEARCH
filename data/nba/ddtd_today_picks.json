@@ -1,6 +1,6 @@
 {
-  "date": "2026-03-28",
-  "generated_at": "2026-03-28T15:18:50.827272+00:00",
+  "date": "2026-03-29",
+  "generated_at": "2026-03-29T15:19:18.945793+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -8,15 +8,51 @@
   "recommended_picks": {
     "dd": [
       {
+        "player": "Paolo Banchero",
+        "game": "Orlando Magic @ Toronto Raptors",
+        "model_prob": 0.9832,
+        "best_odds": 175,
+        "bookmaker": "Fanatics",
+        "implied_prob": 0.3636,
+        "edge": 0.6196,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 36.2,
+        "l20_dd_rate": 0.4,
+        "stats": {
+          "pts": 26.1,
+          "reb": 8.2,
+          "ast": 5.8
+        }
+      },
+      {
+        "player": "Amen Thompson",
+        "game": "Houston Rockets @ New Orleans Pelicans",
+        "model_prob": 0.875,
+        "best_odds": 200,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.3333,
+        "edge": 0.5417,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 37.6,
+        "l20_dd_rate": 0.45,
+        "stats": {
+          "pts": 18.4,
+          "reb": 8.5,
+          "ast": 4.8
+        }
+      },
+      {
         "player": "Jalen Brunson",
         "game": "New York Knicks @ Oklahoma City Thunder",
         "model_prob": 0.3193,
-        "best_odds": 335,
-        "bookmaker": "DraftKings",
-        "implied_prob": 0.2299,
-        "edge": 0.0894,
-        "bet_units": 13.06,
-        "bet_amount": 130.59,
+        "best_odds": 320,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.2381,
+        "edge": 0.0812,
+        "bet_units": 11.99,
+        "bet_amount": 119.87,
         "avg_minutes": 33.6,
         "l20_dd_rate": 0.15,
         "stats": {
@@ -24,37 +60,36 @@
           "reb": 3.2,
           "ast": 7.6
         }
-      },
-      {
-        "player": "Maxime Raynaud",
-        "game": "Sacramento Kings @ Atlanta Hawks",
-        "model_prob": 0.4615,
-        "best_odds": 130,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.4348,
-        "edge": 0.0268,
-        "bet_units": 5.33,
-        "bet_amount": 53.25,
-        "avg_minutes": 32.8,
-        "l20_dd_rate": 0.45,
-        "stats": {
-          "pts": 17.1,
-          "reb": 9.3,
-          "ast": 1.9
-        }
       }
     ],
     "td": []
   },
   "high_probability": [
     {
+      "player": "Paolo Banchero",
+      "game": "Orlando Magic @ Toronto Raptors",
+      "model_prob": 0.9832,
+      "best_odds": 175,
+      "bookmaker": "Fanatics",
+      "implied_prob": 0.3636,
+      "edge": 0.6196,
+      "has_positive_edge": true,
+      "avg_minutes": 36.2,
+      "l20_dd_rate": 0.4,
+      "stats": {
+        "pts": 26.1,
+        "reb": 8.2,
+        "ast": 5.8
+      }
+    },
+    {
       "player": "Chet Holmgren",
       "game": "New York Knicks @ Oklahoma City Thunder",
       "model_prob": 0.9536,
-      "best_odds": 198,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.3356,
-      "edge": 0.6181,
+      "best_odds": 195,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.339,
+      "edge": 0.6147,
       "has_positive_edge": true,
       "avg_minutes": 25.4,
       "l20_dd_rate": 0.35,
@@ -65,96 +100,62 @@
       }
     },
     {
-      "player": "Jalen Johnson",
-      "game": "Sacramento Kings @ Atlanta Hawks",
-      "model_prob": 0.5909,
-      "best_odds": -195,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.661,
-      "edge": -0.0701,
-      "has_positive_edge": false,
-      "avg_minutes": 30.4,
+      "player": "Amen Thompson",
+      "game": "Houston Rockets @ New Orleans Pelicans",
+      "model_prob": 0.875,
+      "best_odds": 200,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.3333,
+      "edge": 0.5417,
+      "has_positive_edge": true,
+      "avg_minutes": 37.6,
       "l20_dd_rate": 0.45,
       "stats": {
-        "pts": 19.4,
-        "reb": 8.1,
-        "ast": 6.8
-      }
-    },
-    {
-      "player": "Rudy Gobert",
-      "game": "Detroit Pistons @ Minnesota Timberwolves",
-      "model_prob": 0.5588,
-      "best_odds": -135,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.5745,
-      "edge": -0.0156,
-      "has_positive_edge": false,
-      "avg_minutes": 31.8,
-      "l20_dd_rate": 0.35,
-      "stats": {
-        "pts": 11.8,
-        "reb": 12.0,
-        "ast": 1.8
-      }
-    },
-    {
-      "player": "Jalen Duren",
-      "game": "Detroit Pistons @ Minnesota Timberwolves",
-      "model_prob": 0.5588,
-      "best_odds": -160,
-      "bookmaker": "BetMGM",
-      "implied_prob": 0.6154,
-      "edge": -0.0566,
-      "has_positive_edge": false,
-      "avg_minutes": 27.8,
-      "l20_dd_rate": 0.75,
-      "stats": {
-        "pts": 22.8,
-        "reb": 10.7,
-        "ast": 1.8
+        "pts": 18.4,
+        "reb": 8.5,
+        "ast": 4.8
       }
     },
     {
       "player": "Precious Achiuwa",
-      "game": "Sacramento Kings @ Atlanta Hawks",
-      "model_prob": 0.4857,
-      "best_odds": 220,
+      "game": "Sacramento Kings @ Brooklyn Nets",
+      "model_prob": 0.6615,
+      "best_odds": 175,
       "bookmaker": "BetMGM",
-      "implied_prob": 0.3125,
-      "edge": 0.1732,
+      "implied_prob": 0.3636,
+      "edge": 0.2979,
       "has_positive_edge": true,
-      "avg_minutes": 29.8,
+      "avg_minutes": 29.9,
       "l20_dd_rate": 0.35,
       "stats": {
-        "pts": 14.2,
-        "reb": 8.7,
+        "pts": 14.9,
+        "reb": 8.8,
         "ast": 1.6
       }
     },
     {
-      "player": "Maxime Raynaud",
-      "game": "Sacramento Kings @ Atlanta Hawks",
-      "model_prob": 0.4615,
-      "best_odds": 130,
+      "player": "Donovan Clingan",
+      "game": "Washington Wizards @ Portland Trail Blazers",
+      "model_prob": 0.4138,
+      "best_odds": -400,
       "bookmaker": "FanDuel",
-      "implied_prob": 0.4348,
-      "edge": 0.0268,
-      "has_positive_edge": true,
-      "avg_minutes": 32.8,
-      "l20_dd_rate": 0.45,
+      "implied_prob": 0.8,
+      "edge": -0.3862,
+      "has_positive_edge": false,
+      "avg_minutes": 26.9,
+      "l20_dd_rate": 0.65,
       "stats": {
-        "pts": 17.1,
-        "reb": 9.3,
-        "ast": 1.9
+        "pts": 14.3,
+        "reb": 12.9,
+        "ast": 2.5
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 2,
+    "total_recommended_dd": 3,
     "total_recommended_td": 0,
-    "total_high_probability": 6,
-    "total_recommended_units": 18.39,
-    "total_recommended_amount": 183.84
+    "total_high_probability": 5,
+    "total_recommended_units": 56.99,
+    "total_recommended_amount": 569.87
   }
 }
