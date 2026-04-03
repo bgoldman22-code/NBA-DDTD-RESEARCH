@@ -1,6 +1,6 @@
 {
-  "date": "2026-04-02",
-  "generated_at": "2026-04-02T15:32:14.856412+00:00",
+  "date": "2026-04-03",
+  "generated_at": "2026-04-03T15:27:02.057484+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -8,172 +8,313 @@
   "recommended_picks": {
     "dd": [
       {
-        "player": "Rudy Gobert",
-        "game": "Minnesota Timberwolves @ Detroit Pistons",
-        "model_prob": 0.5789,
-        "best_odds": 135,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.4255,
-        "edge": 0.1534,
+        "player": "Alperen Sengun",
+        "game": "Utah Jazz @ Houston Rockets",
+        "model_prob": 0.875,
+        "best_odds": 125,
+        "bookmaker": "Bovada",
+        "implied_prob": 0.4444,
+        "edge": 0.4306,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 31.6,
+        "avg_minutes": 32.6,
+        "l20_dd_rate": 0.45,
+        "stats": {
+          "pts": 20.8,
+          "reb": 8.2,
+          "ast": 6.0
+        }
+      },
+      {
+        "player": "Precious Achiuwa",
+        "game": "New Orleans Pelicans @ Sacramento Kings",
+        "model_prob": 0.7391,
+        "best_odds": 200,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.3333,
+        "edge": 0.4058,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 31.8,
         "l20_dd_rate": 0.4,
         "stats": {
-          "pts": 12.2,
-          "reb": 11.9,
+          "pts": 16.4,
+          "reb": 9.8,
           "ast": 1.6
         }
       },
       {
-        "player": "Luka Doncic",
-        "game": "Los Angeles Lakers @ Oklahoma City Thunder",
-        "model_prob": 0.5,
-        "best_odds": 130,
-        "bookmaker": "BetMGM",
-        "implied_prob": 0.4348,
-        "edge": 0.0652,
-        "bet_units": 12.98,
-        "bet_amount": 129.81,
-        "avg_minutes": 36.8,
+        "player": "Karl-Anthony Towns",
+        "game": "Chicago Bulls @ New York Knicks",
+        "model_prob": 1.0,
+        "best_odds": -220,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.6875,
+        "edge": 0.3125,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 30.1,
+        "l20_dd_rate": 0.75,
+        "stats": {
+          "pts": 20.7,
+          "reb": 11.8,
+          "ast": 3.0
+        }
+      },
+      {
+        "player": "Amen Thompson",
+        "game": "Utah Jazz @ Houston Rockets",
+        "model_prob": 0.5713,
+        "best_odds": 240,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.2941,
+        "edge": 0.2772,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 37.4,
         "l20_dd_rate": 0.4,
         "stats": {
-          "pts": 35.7,
-          "reb": 7.8,
-          "ast": 7.6
+          "pts": 19.2,
+          "reb": 8.3,
+          "ast": 5.0
+        }
+      },
+      {
+        "player": "Rudy Gobert",
+        "game": "Minnesota Timberwolves @ Philadelphia 76ers",
+        "model_prob": 0.7391,
+        "best_odds": 110,
+        "bookmaker": "Bovada",
+        "implied_prob": 0.4762,
+        "edge": 0.2629,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 31.3,
+        "l20_dd_rate": 0.4,
+        "stats": {
+          "pts": 11.6,
+          "reb": 12.0,
+          "ast": 1.6
+        }
+      },
+      {
+        "player": "Jalen Brunson",
+        "game": "Chicago Bulls @ New York Knicks",
+        "model_prob": 0.4468,
+        "best_odds": 300,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.25,
+        "edge": 0.1968,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 36.4,
+        "l20_dd_rate": 0.15,
+        "stats": {
+          "pts": 23.8,
+          "reb": 3.6,
+          "ast": 8.2
+        }
+      },
+      {
+        "player": "Maxime Raynaud",
+        "game": "New Orleans Pelicans @ Sacramento Kings",
+        "model_prob": 0.4857,
+        "best_odds": 170,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.3704,
+        "edge": 0.1153,
+        "bet_units": 20.61,
+        "bet_amount": 206.09,
+        "avg_minutes": 31.8,
+        "l20_dd_rate": 0.4,
+        "stats": {
+          "pts": 16.6,
+          "reb": 8.8,
+          "ast": 1.7
         }
       }
     ],
     "td": [
       {
-        "player": "Luka Doncic",
-        "game": "Los Angeles Lakers @ Oklahoma City Thunder",
-        "model_prob": 1.0,
-        "best_odds": 850,
-        "bookmaker": "BetMGM",
-        "implied_prob": 0.1053,
-        "edge": 0.8947,
-        "bet_units": 6.75,
-        "bet_amount": 67.5,
-        "avg_minutes": 36.8,
-        "l20_td_rate": 0.1,
+        "player": "Jalen Brunson",
+        "game": "Chicago Bulls @ New York Knicks",
+        "model_prob": 0.1667,
+        "best_odds": 7500,
+        "bookmaker": "DraftKings",
+        "implied_prob": 0.0132,
+        "edge": 0.1535,
+        "bet_units": 0.17,
+        "bet_amount": 1.75,
+        "avg_minutes": 36.4,
+        "l20_td_rate": 0.0,
         "stats": {
-          "pts": 35.7,
-          "reb": 7.8,
-          "ast": 7.6
+          "pts": 23.8,
+          "reb": 3.6,
+          "ast": 8.2
         }
       }
     ]
   },
   "high_probability": [
     {
-      "player": "Donovan Clingan",
-      "game": "New Orleans Pelicans @ Portland Trail Blazers",
+      "player": "Karl-Anthony Towns",
+      "game": "Chicago Bulls @ New York Knicks",
       "model_prob": 1.0,
-      "best_odds": -175,
+      "best_odds": -220,
       "bookmaker": "FanDuel",
-      "implied_prob": 0.6364,
-      "edge": 0.3636,
+      "implied_prob": 0.6875,
+      "edge": 0.3125,
       "has_positive_edge": true,
-      "avg_minutes": 26.4,
-      "l20_dd_rate": 0.6,
+      "avg_minutes": 30.1,
+      "l20_dd_rate": 0.75,
       "stats": {
-        "pts": 13.3,
-        "reb": 12.0,
-        "ast": 2.2
+        "pts": 20.7,
+        "reb": 11.8,
+        "ast": 3.0
       }
     },
     {
-      "player": "Jarrett Allen",
-      "game": "Cleveland Cavaliers @ Golden State Warriors",
-      "model_prob": 1.0,
-      "best_odds": 434,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.1873,
-      "edge": 0.8127,
+      "player": "Alperen Sengun",
+      "game": "Utah Jazz @ Houston Rockets",
+      "model_prob": 0.875,
+      "best_odds": 125,
+      "bookmaker": "Bovada",
+      "implied_prob": 0.4444,
+      "edge": 0.4306,
       "has_positive_edge": true,
-      "avg_minutes": 27.7,
-      "l20_dd_rate": 0.5,
+      "avg_minutes": 32.6,
+      "l20_dd_rate": 0.45,
       "stats": {
-        "pts": 18.5,
-        "reb": 9.2,
-        "ast": 1.6
+        "pts": 20.8,
+        "reb": 8.2,
+        "ast": 6.0
       }
     },
     {
       "player": "Rudy Gobert",
-      "game": "Minnesota Timberwolves @ Detroit Pistons",
-      "model_prob": 0.5789,
-      "best_odds": 135,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.4255,
-      "edge": 0.1534,
+      "game": "Minnesota Timberwolves @ Philadelphia 76ers",
+      "model_prob": 0.7391,
+      "best_odds": 110,
+      "bookmaker": "Bovada",
+      "implied_prob": 0.4762,
+      "edge": 0.2629,
       "has_positive_edge": true,
-      "avg_minutes": 31.6,
+      "avg_minutes": 31.3,
       "l20_dd_rate": 0.4,
       "stats": {
-        "pts": 12.2,
-        "reb": 11.9,
+        "pts": 11.6,
+        "reb": 12.0,
         "ast": 1.6
       }
     },
     {
-      "player": "Luka Doncic",
-      "game": "Los Angeles Lakers @ Oklahoma City Thunder",
-      "model_prob": 0.5,
-      "best_odds": 130,
-      "bookmaker": "BetMGM",
-      "implied_prob": 0.4348,
-      "edge": 0.0652,
+      "player": "Precious Achiuwa",
+      "game": "New Orleans Pelicans @ Sacramento Kings",
+      "model_prob": 0.7391,
+      "best_odds": 200,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.3333,
+      "edge": 0.4058,
       "has_positive_edge": true,
-      "avg_minutes": 36.8,
+      "avg_minutes": 31.8,
       "l20_dd_rate": 0.4,
       "stats": {
-        "pts": 35.7,
-        "reb": 7.8,
-        "ast": 7.6
+        "pts": 16.4,
+        "reb": 9.8,
+        "ast": 1.6
       }
     },
     {
-      "player": "Evan Mobley",
-      "game": "Cleveland Cavaliers @ Golden State Warriors",
-      "model_prob": 0.4615,
-      "best_odds": 203,
+      "player": "Kyle Filipowski",
+      "game": "Utah Jazz @ Houston Rockets",
+      "model_prob": 0.721,
+      "best_odds": 196,
       "bookmaker": "DraftKings",
-      "implied_prob": 0.33,
-      "edge": 0.1315,
+      "implied_prob": 0.3378,
+      "edge": 0.3832,
       "has_positive_edge": true,
-      "avg_minutes": 29.6,
-      "l20_dd_rate": 0.4,
-      "stats": {
-        "pts": 19.0,
-        "reb": 9.3,
-        "ast": 2.6
-      }
-    },
-    {
-      "player": "Deni Avdija",
-      "game": "New Orleans Pelicans @ Portland Trail Blazers",
-      "model_prob": 0.4615,
-      "best_odds": 160,
-      "bookmaker": "Fanatics",
-      "implied_prob": 0.3846,
-      "edge": 0.0769,
-      "has_positive_edge": true,
-      "avg_minutes": 26.9,
+      "avg_minutes": 26.4,
       "l20_dd_rate": 0.25,
       "stats": {
-        "pts": 17.6,
-        "reb": 5.8,
-        "ast": 6.0
+        "pts": 15.7,
+        "reb": 8.4,
+        "ast": 3.8
+      }
+    },
+    {
+      "player": "Amen Thompson",
+      "game": "Utah Jazz @ Houston Rockets",
+      "model_prob": 0.5713,
+      "best_odds": 240,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.2941,
+      "edge": 0.2772,
+      "has_positive_edge": true,
+      "avg_minutes": 37.4,
+      "l20_dd_rate": 0.4,
+      "stats": {
+        "pts": 19.2,
+        "reb": 8.3,
+        "ast": 5.0
+      }
+    },
+    {
+      "player": "Maxime Raynaud",
+      "game": "New Orleans Pelicans @ Sacramento Kings",
+      "model_prob": 0.4857,
+      "best_odds": 170,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.3704,
+      "edge": 0.1153,
+      "has_positive_edge": true,
+      "avg_minutes": 31.8,
+      "l20_dd_rate": 0.4,
+      "stats": {
+        "pts": 16.6,
+        "reb": 8.8,
+        "ast": 1.7
+      }
+    },
+    {
+      "player": "Jalen Brunson",
+      "game": "Chicago Bulls @ New York Knicks",
+      "model_prob": 0.4468,
+      "best_odds": 300,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.25,
+      "edge": 0.1968,
+      "has_positive_edge": true,
+      "avg_minutes": 36.4,
+      "l20_dd_rate": 0.15,
+      "stats": {
+        "pts": 23.8,
+        "reb": 3.6,
+        "ast": 8.2
+      }
+    },
+    {
+      "player": "Jayson Tatum",
+      "game": "Boston Celtics @ Milwaukee Bucks",
+      "model_prob": 0.3925,
+      "best_odds": 110,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.4762,
+      "edge": -0.0837,
+      "has_positive_edge": false,
+      "avg_minutes": 33.5,
+      "l20_dd_rate": 0.5,
+      "stats": {
+        "pts": 23.4,
+        "reb": 9.3,
+        "ast": 4.8
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 2,
+    "total_recommended_dd": 7,
     "total_recommended_td": 1,
-    "total_high_probability": 6,
-    "total_recommended_units": 42.23,
-    "total_recommended_amount": 422.31
+    "total_high_probability": 9,
+    "total_recommended_units": 155.78,
+    "total_recommended_amount": 1557.84
   }
 }
