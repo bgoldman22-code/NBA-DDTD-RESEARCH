@@ -1,6 +1,6 @@
 {
-  "date": "2026-04-14",
-  "generated_at": "2026-04-14T15:38:34.278851+00:00",
+  "date": "2026-04-15",
+  "generated_at": "2026-04-15T15:40:29.903154+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -29,10 +29,10 @@
         "player": "Alperen Sengun",
         "game": "Houston Rockets @ Los Angeles Lakers",
         "model_prob": 0.7391,
-        "best_odds": 115,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.4651,
-        "edge": 0.274,
+        "best_odds": 110,
+        "bookmaker": "Bovada",
+        "implied_prob": 0.4762,
+        "edge": 0.2629,
         "bet_units": 22.5,
         "bet_amount": 225.0,
         "avg_minutes": 32.1,
@@ -44,31 +44,13 @@
         }
       },
       {
-        "player": "Deni Avdija",
-        "game": "Portland Trail Blazers @ Phoenix Suns",
-        "model_prob": 0.5588,
-        "best_odds": 210,
-        "bookmaker": "Fanatics",
-        "implied_prob": 0.3226,
-        "edge": 0.2362,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 31.2,
-        "l20_dd_rate": 0.25,
-        "stats": {
-          "pts": 22.0,
-          "reb": 6.2,
-          "ast": 6.8
-        }
-      },
-      {
         "player": "Scottie Barnes",
         "game": "Toronto Raptors @ Cleveland Cavaliers",
         "model_prob": 0.5588,
-        "best_odds": 206,
+        "best_odds": 202,
         "bookmaker": "DraftKings",
-        "implied_prob": 0.3268,
-        "edge": 0.232,
+        "implied_prob": 0.3311,
+        "edge": 0.2277,
         "bet_units": 22.5,
         "bet_amount": 225.0,
         "avg_minutes": 31.3,
@@ -77,6 +59,24 @@
           "pts": 15.7,
           "reb": 6.0,
           "ast": 7.5
+        }
+      },
+      {
+        "player": "Deni Avdija",
+        "game": "Portland Trail Blazers @ San Antonio Spurs",
+        "model_prob": 0.4615,
+        "best_odds": 225,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.3077,
+        "edge": 0.1538,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 31.6,
+        "l20_dd_rate": 0.25,
+        "stats": {
+          "pts": 23.3,
+          "reb": 6.2,
+          "ast": 6.8
         }
       },
       {
@@ -101,12 +101,12 @@
         "player": "Rudy Gobert",
         "game": "Minnesota Timberwolves @ Denver Nuggets",
         "model_prob": 0.4468,
-        "best_odds": 165,
+        "best_odds": 155,
         "bookmaker": "FanDuel",
-        "implied_prob": 0.3774,
-        "edge": 0.0695,
-        "bet_units": 12.55,
-        "bet_amount": 125.48,
+        "implied_prob": 0.3922,
+        "edge": 0.0547,
+        "bet_units": 10.11,
+        "bet_amount": 101.15,
         "avg_minutes": 31.1,
         "l20_dd_rate": 0.35,
         "stats": {
@@ -157,10 +157,10 @@
       "player": "Alperen Sengun",
       "game": "Houston Rockets @ Los Angeles Lakers",
       "model_prob": 0.7391,
-      "best_odds": 115,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.4651,
-      "edge": 0.274,
+      "best_odds": 110,
+      "bookmaker": "Bovada",
+      "implied_prob": 0.4762,
+      "edge": 0.2629,
       "has_positive_edge": true,
       "avg_minutes": 32.1,
       "l20_dd_rate": 0.45,
@@ -171,30 +171,13 @@
       }
     },
     {
-      "player": "Deni Avdija",
-      "game": "Portland Trail Blazers @ Phoenix Suns",
-      "model_prob": 0.5588,
-      "best_odds": 210,
-      "bookmaker": "Fanatics",
-      "implied_prob": 0.3226,
-      "edge": 0.2362,
-      "has_positive_edge": true,
-      "avg_minutes": 31.2,
-      "l20_dd_rate": 0.25,
-      "stats": {
-        "pts": 22.0,
-        "reb": 6.2,
-        "ast": 6.8
-      }
-    },
-    {
       "player": "Scottie Barnes",
       "game": "Toronto Raptors @ Cleveland Cavaliers",
       "model_prob": 0.5588,
-      "best_odds": 206,
+      "best_odds": 202,
       "bookmaker": "DraftKings",
-      "implied_prob": 0.3268,
-      "edge": 0.232,
+      "implied_prob": 0.3311,
+      "edge": 0.2277,
       "has_positive_edge": true,
       "avg_minutes": 31.3,
       "l20_dd_rate": 0.3,
@@ -205,30 +188,47 @@
       }
     },
     {
-      "player": "Donovan Clingan",
-      "game": "Portland Trail Blazers @ Phoenix Suns",
+      "player": "Deni Avdija",
+      "game": "Portland Trail Blazers @ San Antonio Spurs",
       "model_prob": 0.4615,
-      "best_odds": -165,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.6226,
-      "edge": -0.1611,
+      "best_odds": 225,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.3077,
+      "edge": 0.1538,
+      "has_positive_edge": true,
+      "avg_minutes": 31.6,
+      "l20_dd_rate": 0.25,
+      "stats": {
+        "pts": 23.3,
+        "reb": 6.2,
+        "ast": 6.8
+      }
+    },
+    {
+      "player": "Donovan Clingan",
+      "game": "Portland Trail Blazers @ San Antonio Spurs",
+      "model_prob": 0.4615,
+      "best_odds": 115,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.4651,
+      "edge": -0.0036,
       "has_positive_edge": false,
-      "avg_minutes": 25.9,
+      "avg_minutes": 26.8,
       "l20_dd_rate": 0.65,
       "stats": {
-        "pts": 12.9,
-        "reb": 11.7,
-        "ast": 1.9
+        "pts": 12.7,
+        "reb": 11.8,
+        "ast": 2.0
       }
     },
     {
       "player": "Rudy Gobert",
       "game": "Minnesota Timberwolves @ Denver Nuggets",
       "model_prob": 0.4468,
-      "best_odds": 165,
+      "best_odds": 155,
       "bookmaker": "FanDuel",
-      "implied_prob": 0.3774,
-      "edge": 0.0695,
+      "implied_prob": 0.3922,
+      "edge": 0.0547,
       "has_positive_edge": true,
       "avg_minutes": 31.1,
       "l20_dd_rate": 0.35,
@@ -260,7 +260,7 @@
     "total_recommended_dd": 6,
     "total_recommended_td": 0,
     "total_high_probability": 8,
-    "total_recommended_units": 123.32,
-    "total_recommended_amount": 1233.19
+    "total_recommended_units": 120.88,
+    "total_recommended_amount": 1208.86
   }
 }
