@@ -1,6 +1,6 @@
 {
-  "date": "2026-04-30",
-  "generated_at": "2026-04-30T15:45:47.363460+00:00",
+  "date": "2026-05-01",
+  "generated_at": "2026-05-01T15:34:23.859350+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -8,31 +8,13 @@
   "recommended_picks": {
     "dd": [
       {
-        "player": "Rudy Gobert",
-        "game": "Denver Nuggets @ Minnesota Timberwolves",
-        "model_prob": 0.875,
-        "best_odds": 180,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.3571,
-        "edge": 0.5179,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 31.1,
-        "l20_dd_rate": 0.4,
-        "stats": {
-          "pts": 9.8,
-          "reb": 11.2,
-          "ast": 1.6
-        }
-      },
-      {
         "player": "Cade Cunningham",
         "game": "Detroit Pistons @ Orlando Magic",
         "model_prob": 1.0,
-        "best_odds": -110,
+        "best_odds": 105,
         "bookmaker": "BetMGM",
-        "implied_prob": 0.5238,
-        "edge": 0.4762,
+        "implied_prob": 0.4878,
+        "edge": 0.5122,
         "bet_units": 22.5,
         "bet_amount": 225.0,
         "avg_minutes": 33.1,
@@ -44,13 +26,31 @@
         }
       },
       {
+        "player": "VJ Edgecombe",
+        "game": "Philadelphia 76ers @ Boston Celtics",
+        "model_prob": 0.4615,
+        "best_odds": 1200,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.0769,
+        "edge": 0.3846,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 36.5,
+        "l20_dd_rate": 0.3,
+        "stats": {
+          "pts": 17.7,
+          "reb": 6.6,
+          "ast": 4.6
+        }
+      },
+      {
         "player": "Jalen Duren",
         "game": "Detroit Pistons @ Orlando Magic",
         "model_prob": 0.7391,
-        "best_odds": 170,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.3704,
-        "edge": 0.3688,
+        "best_odds": 165,
+        "bookmaker": "Bovada",
+        "implied_prob": 0.3774,
+        "edge": 0.3618,
         "bet_units": 22.5,
         "bet_amount": 225.0,
         "avg_minutes": 30.6,
@@ -65,10 +65,10 @@
         "player": "Amen Thompson",
         "game": "Los Angeles Lakers @ Houston Rockets",
         "model_prob": 0.6615,
-        "best_odds": 230,
+        "best_odds": 220,
         "bookmaker": "FanDuel",
-        "implied_prob": 0.303,
-        "edge": 0.3585,
+        "implied_prob": 0.3125,
+        "edge": 0.349,
         "bet_units": 22.5,
         "bet_amount": 225.0,
         "avg_minutes": 40.2,
@@ -80,31 +80,49 @@
         }
       },
       {
-        "player": "Karl-Anthony Towns",
-        "game": "New York Knicks @ Atlanta Hawks",
-        "model_prob": 0.9832,
-        "best_odds": -286,
+        "player": "Joel Embiid",
+        "game": "Philadelphia 76ers @ Boston Celtics",
+        "model_prob": 0.7188,
+        "best_odds": 164,
         "bookmaker": "DraftKings",
-        "implied_prob": 0.7409,
-        "edge": 0.2423,
+        "implied_prob": 0.3788,
+        "edge": 0.34,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 30.9,
-        "l20_dd_rate": 0.75,
+        "avg_minutes": 34.5,
+        "l20_dd_rate": 0.4,
         "stats": {
-          "pts": 21.1,
-          "reb": 11.7,
-          "ast": 4.2
+          "pts": 30.2,
+          "reb": 8.6,
+          "ast": 5.2
+        }
+      },
+      {
+        "player": "Rudy Gobert",
+        "game": "Minnesota Timberwolves @ San Antonio Spurs",
+        "model_prob": 0.5588,
+        "best_odds": 200,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.3333,
+        "edge": 0.2255,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 31.9,
+        "l20_dd_rate": 0.45,
+        "stats": {
+          "pts": 10.1,
+          "reb": 11.3,
+          "ast": 1.9
         }
       },
       {
         "player": "Alperen Sengun",
         "game": "Los Angeles Lakers @ Houston Rockets",
         "model_prob": 0.7391,
-        "best_odds": -105,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.5122,
-        "edge": 0.2269,
+        "best_odds": -120,
+        "bookmaker": "Bovada",
+        "implied_prob": 0.5455,
+        "edge": 0.1937,
         "bet_units": 22.5,
         "bet_amount": 225.0,
         "avg_minutes": 34.0,
@@ -114,92 +132,19 @@
           "reb": 8.7,
           "ast": 6.2
         }
-      },
-      {
-        "player": "Joel Embiid",
-        "game": "Boston Celtics @ Philadelphia 76ers",
-        "model_prob": 0.5588,
-        "best_odds": 170,
-        "bookmaker": "Fanatics",
-        "implied_prob": 0.3704,
-        "edge": 0.1885,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 34.1,
-        "l20_dd_rate": 0.35,
-        "stats": {
-          "pts": 30.3,
-          "reb": 8.2,
-          "ast": 4.9
-        }
-      },
-      {
-        "player": "Jalen Brunson",
-        "game": "New York Knicks @ Atlanta Hawks",
-        "model_prob": 0.3386,
-        "best_odds": 500,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.1667,
-        "edge": 0.1719,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 36.2,
-        "l20_dd_rate": 0.2,
-        "stats": {
-          "pts": 26.1,
-          "reb": 3.0,
-          "ast": 7.5
-        }
-      },
-      {
-        "player": "Jalen Johnson",
-        "game": "New York Knicks @ Atlanta Hawks",
-        "model_prob": 0.5588,
-        "best_odds": 100,
-        "bookmaker": "Bovada",
-        "implied_prob": 0.5,
-        "edge": 0.0588,
-        "bet_units": 13.24,
-        "bet_amount": 132.35,
-        "avg_minutes": 35.6,
-        "l20_dd_rate": 0.6,
-        "stats": {
-          "pts": 20.6,
-          "reb": 9.1,
-          "ast": 6.9
-        }
       }
     ],
-    "td": [
-      {
-        "player": "Jalen Johnson",
-        "game": "New York Knicks @ Atlanta Hawks",
-        "model_prob": 0.7391,
-        "best_odds": 1200,
-        "bookmaker": "Bovada",
-        "implied_prob": 0.0769,
-        "edge": 0.6622,
-        "bet_units": 4.84,
-        "bet_amount": 48.42,
-        "avg_minutes": 35.6,
-        "l20_td_rate": 0.1,
-        "stats": {
-          "pts": 20.6,
-          "reb": 9.1,
-          "ast": 6.9
-        }
-      }
-    ]
+    "td": []
   },
   "high_probability": [
     {
       "player": "Cade Cunningham",
       "game": "Detroit Pistons @ Orlando Magic",
       "model_prob": 1.0,
-      "best_odds": -110,
+      "best_odds": 105,
       "bookmaker": "BetMGM",
-      "implied_prob": 0.5238,
-      "edge": 0.4762,
+      "implied_prob": 0.4878,
+      "edge": 0.5122,
       "has_positive_edge": true,
       "avg_minutes": 33.1,
       "l20_dd_rate": 0.5,
@@ -210,47 +155,13 @@
       }
     },
     {
-      "player": "Karl-Anthony Towns",
-      "game": "New York Knicks @ Atlanta Hawks",
-      "model_prob": 0.9832,
-      "best_odds": -286,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.7409,
-      "edge": 0.2423,
-      "has_positive_edge": true,
-      "avg_minutes": 30.9,
-      "l20_dd_rate": 0.75,
-      "stats": {
-        "pts": 21.1,
-        "reb": 11.7,
-        "ast": 4.2
-      }
-    },
-    {
-      "player": "Rudy Gobert",
-      "game": "Denver Nuggets @ Minnesota Timberwolves",
-      "model_prob": 0.875,
-      "best_odds": 180,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.3571,
-      "edge": 0.5179,
-      "has_positive_edge": true,
-      "avg_minutes": 31.1,
-      "l20_dd_rate": 0.4,
-      "stats": {
-        "pts": 9.8,
-        "reb": 11.2,
-        "ast": 1.6
-      }
-    },
-    {
       "player": "Jarrett Allen",
       "game": "Cleveland Cavaliers @ Toronto Raptors",
       "model_prob": 0.8471,
-      "best_odds": 348,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.2232,
-      "edge": 0.6238,
+      "best_odds": 350,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.2222,
+      "edge": 0.6248,
       "has_positive_edge": true,
       "avg_minutes": 26.9,
       "l20_dd_rate": 0.4,
@@ -261,30 +172,13 @@
       }
     },
     {
-      "player": "Alperen Sengun",
-      "game": "Los Angeles Lakers @ Houston Rockets",
-      "model_prob": 0.7391,
-      "best_odds": -105,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.5122,
-      "edge": 0.2269,
-      "has_positive_edge": true,
-      "avg_minutes": 34.0,
-      "l20_dd_rate": 0.45,
-      "stats": {
-        "pts": 20.6,
-        "reb": 8.7,
-        "ast": 6.2
-      }
-    },
-    {
       "player": "Jalen Duren",
       "game": "Detroit Pistons @ Orlando Magic",
       "model_prob": 0.7391,
-      "best_odds": 170,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.3704,
-      "edge": 0.3688,
+      "best_odds": 165,
+      "bookmaker": "Bovada",
+      "implied_prob": 0.3774,
+      "edge": 0.3618,
       "has_positive_edge": true,
       "avg_minutes": 30.6,
       "l20_dd_rate": 0.45,
@@ -295,13 +189,47 @@
       }
     },
     {
+      "player": "Alperen Sengun",
+      "game": "Los Angeles Lakers @ Houston Rockets",
+      "model_prob": 0.7391,
+      "best_odds": -120,
+      "bookmaker": "Bovada",
+      "implied_prob": 0.5455,
+      "edge": 0.1937,
+      "has_positive_edge": true,
+      "avg_minutes": 34.0,
+      "l20_dd_rate": 0.45,
+      "stats": {
+        "pts": 20.6,
+        "reb": 8.7,
+        "ast": 6.2
+      }
+    },
+    {
+      "player": "Joel Embiid",
+      "game": "Philadelphia 76ers @ Boston Celtics",
+      "model_prob": 0.7188,
+      "best_odds": 164,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.3788,
+      "edge": 0.34,
+      "has_positive_edge": true,
+      "avg_minutes": 34.5,
+      "l20_dd_rate": 0.4,
+      "stats": {
+        "pts": 30.2,
+        "reb": 8.6,
+        "ast": 5.2
+      }
+    },
+    {
       "player": "Amen Thompson",
       "game": "Los Angeles Lakers @ Houston Rockets",
       "model_prob": 0.6615,
-      "best_odds": 230,
+      "best_odds": 220,
       "bookmaker": "FanDuel",
-      "implied_prob": 0.303,
-      "edge": 0.3585,
+      "implied_prob": 0.3125,
+      "edge": 0.349,
       "has_positive_edge": true,
       "avg_minutes": 40.2,
       "l20_dd_rate": 0.3,
@@ -312,47 +240,47 @@
       }
     },
     {
-      "player": "Jalen Johnson",
-      "game": "New York Knicks @ Atlanta Hawks",
+      "player": "Rudy Gobert",
+      "game": "Minnesota Timberwolves @ San Antonio Spurs",
       "model_prob": 0.5588,
-      "best_odds": 100,
-      "bookmaker": "Bovada",
-      "implied_prob": 0.5,
-      "edge": 0.0588,
+      "best_odds": 200,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.3333,
+      "edge": 0.2255,
       "has_positive_edge": true,
-      "avg_minutes": 35.6,
-      "l20_dd_rate": 0.6,
+      "avg_minutes": 31.9,
+      "l20_dd_rate": 0.45,
       "stats": {
-        "pts": 20.6,
-        "reb": 9.1,
-        "ast": 6.9
+        "pts": 10.1,
+        "reb": 11.3,
+        "ast": 1.9
       }
     },
     {
-      "player": "Joel Embiid",
-      "game": "Boston Celtics @ Philadelphia 76ers",
-      "model_prob": 0.5588,
-      "best_odds": 170,
-      "bookmaker": "Fanatics",
-      "implied_prob": 0.3704,
-      "edge": 0.1885,
+      "player": "VJ Edgecombe",
+      "game": "Philadelphia 76ers @ Boston Celtics",
+      "model_prob": 0.4615,
+      "best_odds": 1200,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.0769,
+      "edge": 0.3846,
       "has_positive_edge": true,
-      "avg_minutes": 34.1,
-      "l20_dd_rate": 0.35,
+      "avg_minutes": 36.5,
+      "l20_dd_rate": 0.3,
       "stats": {
-        "pts": 30.3,
-        "reb": 8.2,
-        "ast": 4.9
+        "pts": 17.7,
+        "reb": 6.6,
+        "ast": 4.6
       }
     },
     {
       "player": "Evan Mobley",
       "game": "Cleveland Cavaliers @ Toronto Raptors",
       "model_prob": 0.3871,
-      "best_odds": 140,
+      "best_odds": 145,
       "bookmaker": "FanDuel",
-      "implied_prob": 0.4167,
-      "edge": -0.0296,
+      "implied_prob": 0.4082,
+      "edge": -0.0211,
       "has_positive_edge": false,
       "avg_minutes": 30.8,
       "l20_dd_rate": 0.4,
@@ -364,10 +292,10 @@
     }
   ],
   "summary": {
-    "total_recommended_dd": 9,
-    "total_recommended_td": 1,
-    "total_high_probability": 10,
-    "total_recommended_units": 198.08,
-    "total_recommended_amount": 1980.77
+    "total_recommended_dd": 7,
+    "total_recommended_td": 0,
+    "total_high_probability": 9,
+    "total_recommended_units": 157.5,
+    "total_recommended_amount": 1575.0
   }
 }
