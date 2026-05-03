@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-02",
-  "generated_at": "2026-05-02T15:28:50.235867+00:00",
+  "date": "2026-05-03",
+  "generated_at": "2026-05-03T15:28:07.714843+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -12,7 +12,7 @@
         "game": "Orlando Magic @ Detroit Pistons",
         "model_prob": 0.9832,
         "best_odds": 140,
-        "bookmaker": "FanDuel",
+        "bookmaker": "Bovada",
         "implied_prob": 0.4167,
         "edge": 0.5665,
         "bet_units": 22.5,
@@ -30,7 +30,7 @@
         "game": "Orlando Magic @ Detroit Pistons",
         "model_prob": 0.9832,
         "best_odds": 110,
-        "bookmaker": "Bovada",
+        "bookmaker": "Fanatics",
         "implied_prob": 0.4762,
         "edge": 0.507,
         "bet_units": 22.5,
@@ -47,10 +47,10 @@
         "player": "Evan Mobley",
         "game": "Toronto Raptors @ Cleveland Cavaliers",
         "model_prob": 0.8471,
-        "best_odds": 140,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.4167,
-        "edge": 0.4304,
+        "best_odds": 145,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.4082,
+        "edge": 0.4389,
         "bet_units": 22.5,
         "bet_amount": 225.0,
         "avg_minutes": 31.2,
@@ -62,13 +62,31 @@
         }
       },
       {
+        "player": "VJ Edgecombe",
+        "game": "Philadelphia 76ers @ New York Knicks",
+        "model_prob": 0.5588,
+        "best_odds": 700,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.125,
+        "edge": 0.4338,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 36.8,
+        "l20_dd_rate": 0.25,
+        "stats": {
+          "pts": 16.9,
+          "reb": 6.5,
+          "ast": 4.2
+        }
+      },
+      {
         "player": "Paolo Banchero",
         "game": "Orlando Magic @ Detroit Pistons",
         "model_prob": 0.8471,
-        "best_odds": 136,
-        "bookmaker": "Caesars",
-        "implied_prob": 0.4237,
-        "edge": 0.4233,
+        "best_odds": 140,
+        "bookmaker": "Fanatics",
+        "implied_prob": 0.4167,
+        "edge": 0.4304,
         "bet_units": 22.5,
         "bet_amount": 225.0,
         "avg_minutes": 35.5,
@@ -80,39 +98,21 @@
         }
       },
       {
-        "player": "VJ Edgecombe",
-        "game": "Philadelphia 76ers @ Boston Celtics",
-        "model_prob": 0.4615,
-        "best_odds": 910,
-        "bookmaker": "DraftKings",
-        "implied_prob": 0.099,
-        "edge": 0.3625,
+        "player": "Karl-Anthony Towns",
+        "game": "Philadelphia 76ers @ New York Knicks",
+        "model_prob": 1.0,
+        "best_odds": -250,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.7143,
+        "edge": 0.2857,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 36.5,
-        "l20_dd_rate": 0.3,
+        "avg_minutes": 30.6,
+        "l20_dd_rate": 0.75,
         "stats": {
-          "pts": 17.7,
-          "reb": 6.6,
+          "pts": 20.4,
+          "reb": 11.4,
           "ast": 4.6
-        }
-      },
-      {
-        "player": "Joel Embiid",
-        "game": "Philadelphia 76ers @ Boston Celtics",
-        "model_prob": 0.7188,
-        "best_odds": 150,
-        "bookmaker": "Fanatics",
-        "implied_prob": 0.4,
-        "edge": 0.3187,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 34.5,
-        "l20_dd_rate": 0.4,
-        "stats": {
-          "pts": 30.2,
-          "reb": 8.6,
-          "ast": 5.2
         }
       },
       {
@@ -132,35 +132,34 @@
           "reb": 11.3,
           "ast": 1.9
         }
-      },
-      {
-        "player": "Scottie Barnes",
-        "game": "Toronto Raptors @ Cleveland Cavaliers",
-        "model_prob": 0.4468,
-        "best_odds": 128,
-        "bookmaker": "DraftKings",
-        "implied_prob": 0.4386,
-        "edge": 0.0082,
-        "bet_units": 1.65,
-        "bet_amount": 16.46,
-        "avg_minutes": 33.0,
-        "l20_dd_rate": 0.4,
-        "stats": {
-          "pts": 18.1,
-          "reb": 5.8,
-          "ast": 8.8
-        }
       }
     ],
     "td": []
   },
   "high_probability": [
     {
+      "player": "Karl-Anthony Towns",
+      "game": "Philadelphia 76ers @ New York Knicks",
+      "model_prob": 1.0,
+      "best_odds": -250,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.7143,
+      "edge": 0.2857,
+      "has_positive_edge": true,
+      "avg_minutes": 30.6,
+      "l20_dd_rate": 0.75,
+      "stats": {
+        "pts": 20.4,
+        "reb": 11.4,
+        "ast": 4.6
+      }
+    },
+    {
       "player": "Jalen Duren",
       "game": "Orlando Magic @ Detroit Pistons",
       "model_prob": 0.9832,
       "best_odds": 140,
-      "bookmaker": "FanDuel",
+      "bookmaker": "Bovada",
       "implied_prob": 0.4167,
       "edge": 0.5665,
       "has_positive_edge": true,
@@ -177,7 +176,7 @@
       "game": "Orlando Magic @ Detroit Pistons",
       "model_prob": 0.9832,
       "best_odds": 110,
-      "bookmaker": "Bovada",
+      "bookmaker": "Fanatics",
       "implied_prob": 0.4762,
       "edge": 0.507,
       "has_positive_edge": true,
@@ -193,10 +192,10 @@
       "player": "Paolo Banchero",
       "game": "Orlando Magic @ Detroit Pistons",
       "model_prob": 0.8471,
-      "best_odds": 136,
-      "bookmaker": "Caesars",
-      "implied_prob": 0.4237,
-      "edge": 0.4233,
+      "best_odds": 140,
+      "bookmaker": "Fanatics",
+      "implied_prob": 0.4167,
+      "edge": 0.4304,
       "has_positive_edge": true,
       "avg_minutes": 35.5,
       "l20_dd_rate": 0.2,
@@ -210,10 +209,10 @@
       "player": "Evan Mobley",
       "game": "Toronto Raptors @ Cleveland Cavaliers",
       "model_prob": 0.8471,
-      "best_odds": 140,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.4167,
-      "edge": 0.4304,
+      "best_odds": 145,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.4082,
+      "edge": 0.4389,
       "has_positive_edge": true,
       "avg_minutes": 31.2,
       "l20_dd_rate": 0.4,
@@ -221,40 +220,6 @@
         "pts": 19.5,
         "reb": 9.7,
         "ast": 3.4
-      }
-    },
-    {
-      "player": "Joel Embiid",
-      "game": "Philadelphia 76ers @ Boston Celtics",
-      "model_prob": 0.7188,
-      "best_odds": 150,
-      "bookmaker": "Fanatics",
-      "implied_prob": 0.4,
-      "edge": 0.3187,
-      "has_positive_edge": true,
-      "avg_minutes": 34.5,
-      "l20_dd_rate": 0.4,
-      "stats": {
-        "pts": 30.2,
-        "reb": 8.6,
-        "ast": 5.2
-      }
-    },
-    {
-      "player": "Chet Holmgren",
-      "game": "Los Angeles Lakers @ Oklahoma City Thunder",
-      "model_prob": 0.5588,
-      "best_odds": 133,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.4292,
-      "edge": 0.1296,
-      "has_positive_edge": true,
-      "avg_minutes": 28.0,
-      "l20_dd_rate": 0.3,
-      "stats": {
-        "pts": 17.1,
-        "reb": 8.6,
-        "ast": 1.4
       }
     },
     {
@@ -276,30 +241,47 @@
     },
     {
       "player": "VJ Edgecombe",
-      "game": "Philadelphia 76ers @ Boston Celtics",
-      "model_prob": 0.4615,
-      "best_odds": 910,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.099,
-      "edge": 0.3625,
+      "game": "Philadelphia 76ers @ New York Knicks",
+      "model_prob": 0.5588,
+      "best_odds": 700,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.125,
+      "edge": 0.4338,
       "has_positive_edge": true,
-      "avg_minutes": 36.5,
+      "avg_minutes": 36.8,
+      "l20_dd_rate": 0.25,
+      "stats": {
+        "pts": 16.9,
+        "reb": 6.5,
+        "ast": 4.2
+      }
+    },
+    {
+      "player": "Chet Holmgren",
+      "game": "Los Angeles Lakers @ Oklahoma City Thunder",
+      "model_prob": 0.5588,
+      "best_odds": 132,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.431,
+      "edge": 0.1278,
+      "has_positive_edge": true,
+      "avg_minutes": 28.0,
       "l20_dd_rate": 0.3,
       "stats": {
-        "pts": 17.7,
-        "reb": 6.6,
-        "ast": 4.6
+        "pts": 17.1,
+        "reb": 8.6,
+        "ast": 1.4
       }
     },
     {
       "player": "Scottie Barnes",
       "game": "Toronto Raptors @ Cleveland Cavaliers",
       "model_prob": 0.4468,
-      "best_odds": 128,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.4386,
-      "edge": 0.0082,
-      "has_positive_edge": true,
+      "best_odds": 120,
+      "bookmaker": "Fanatics",
+      "implied_prob": 0.4545,
+      "edge": -0.0077,
+      "has_positive_edge": false,
       "avg_minutes": 33.0,
       "l20_dd_rate": 0.4,
       "stats": {
@@ -312,10 +294,10 @@
       "player": "Jarrett Allen",
       "game": "Toronto Raptors @ Cleveland Cavaliers",
       "model_prob": 0.4138,
-      "best_odds": 350,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.2222,
-      "edge": 0.1916,
+      "best_odds": 380,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.2083,
+      "edge": 0.2055,
       "has_positive_edge": true,
       "avg_minutes": 26.9,
       "l20_dd_rate": 0.35,
@@ -324,13 +306,30 @@
         "reb": 8.4,
         "ast": 1.0
       }
+    },
+    {
+      "player": "Joel Embiid",
+      "game": "Philadelphia 76ers @ New York Knicks",
+      "model_prob": 0.4138,
+      "best_odds": 106,
+      "bookmaker": "Caesars",
+      "implied_prob": 0.4854,
+      "edge": -0.0716,
+      "has_positive_edge": false,
+      "avg_minutes": 34.9,
+      "l20_dd_rate": 0.45,
+      "stats": {
+        "pts": 30.3,
+        "reb": 8.9,
+        "ast": 5.3
+      }
     }
   ],
   "summary": {
-    "total_recommended_dd": 8,
+    "total_recommended_dd": 7,
     "total_recommended_td": 0,
-    "total_high_probability": 10,
-    "total_recommended_units": 159.15,
-    "total_recommended_amount": 1591.46
+    "total_high_probability": 11,
+    "total_recommended_units": 157.5,
+    "total_recommended_amount": 1575.0
   }
 }
