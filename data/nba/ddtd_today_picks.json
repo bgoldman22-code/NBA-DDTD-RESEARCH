@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-08",
-  "generated_at": "2026-05-08T15:45:25.488624+00:00",
+  "date": "2026-05-09",
+  "generated_at": "2026-05-09T15:34:21.312037+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -10,67 +10,49 @@
       {
         "player": "Rudy Gobert",
         "game": "San Antonio Spurs @ Minnesota Timberwolves",
-        "model_prob": 0.5909,
-        "best_odds": 250,
+        "model_prob": 0.8471,
+        "best_odds": 260,
         "bookmaker": "FanDuel",
-        "implied_prob": 0.2857,
-        "edge": 0.3052,
+        "implied_prob": 0.2778,
+        "edge": 0.5693,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 31.6,
+        "avg_minutes": 31.8,
         "l20_dd_rate": 0.45,
         "stats": {
-          "pts": 9.3,
+          "pts": 9.9,
           "reb": 11.6,
           "ast": 1.8
         }
       },
       {
-        "player": "Stephon Castle",
-        "game": "San Antonio Spurs @ Minnesota Timberwolves",
-        "model_prob": 0.4138,
-        "best_odds": 460,
-        "bookmaker": "Bovada",
-        "implied_prob": 0.1786,
-        "edge": 0.2352,
+        "player": "Karl-Anthony Towns",
+        "game": "New York Knicks @ Philadelphia 76ers",
+        "model_prob": 1.0,
+        "best_odds": -209,
+        "bookmaker": "Caesars",
+        "implied_prob": 0.6764,
+        "edge": 0.3236,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 30.9,
-        "l20_dd_rate": 0.35,
+        "avg_minutes": 29.4,
+        "l20_dd_rate": 0.7,
         "stats": {
-          "pts": 18.4,
-          "reb": 6.0,
-          "ast": 8.1
-        }
-      },
-      {
-        "player": "Joel Embiid",
-        "game": "New York Knicks @ Philadelphia 76ers",
-        "model_prob": 0.4857,
-        "best_odds": 155,
-        "bookmaker": "Fanatics",
-        "implied_prob": 0.3922,
-        "edge": 0.0936,
-        "bet_units": 17.32,
-        "bet_amount": 173.16,
-        "avg_minutes": 34.5,
-        "l20_dd_rate": 0.45,
-        "stats": {
-          "pts": 29.5,
-          "reb": 8.7,
-          "ast": 5.2
+          "pts": 19.1,
+          "reb": 11.3,
+          "ast": 4.8
         }
       },
       {
         "player": "Jalen Duren",
         "game": "Detroit Pistons @ Cleveland Cavaliers",
         "model_prob": 0.6615,
-        "best_odds": -155,
+        "best_odds": -125,
         "bookmaker": "FanDuel",
-        "implied_prob": 0.6078,
-        "edge": 0.0537,
-        "bet_units": 15.4,
-        "bet_amount": 154.04,
+        "implied_prob": 0.5556,
+        "edge": 0.106,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
         "avg_minutes": 31.4,
         "l20_dd_rate": 0.35,
         "stats": {
@@ -86,28 +68,45 @@
     {
       "player": "Karl-Anthony Towns",
       "game": "New York Knicks @ Philadelphia 76ers",
-      "model_prob": 0.8471,
-      "best_odds": -285,
-      "bookmaker": "BetMGM",
-      "implied_prob": 0.7403,
-      "edge": 0.1068,
+      "model_prob": 1.0,
+      "best_odds": -209,
+      "bookmaker": "Caesars",
+      "implied_prob": 0.6764,
+      "edge": 0.3236,
       "has_positive_edge": true,
-      "avg_minutes": 29.6,
-      "l20_dd_rate": 0.75,
+      "avg_minutes": 29.4,
+      "l20_dd_rate": 0.7,
       "stats": {
-        "pts": 19.5,
+        "pts": 19.1,
         "reb": 11.3,
-        "ast": 4.5
+        "ast": 4.8
+      }
+    },
+    {
+      "player": "Rudy Gobert",
+      "game": "San Antonio Spurs @ Minnesota Timberwolves",
+      "model_prob": 0.8471,
+      "best_odds": 260,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.2778,
+      "edge": 0.5693,
+      "has_positive_edge": true,
+      "avg_minutes": 31.8,
+      "l20_dd_rate": 0.45,
+      "stats": {
+        "pts": 9.9,
+        "reb": 11.6,
+        "ast": 1.8
       }
     },
     {
       "player": "Jalen Duren",
       "game": "Detroit Pistons @ Cleveland Cavaliers",
       "model_prob": 0.6615,
-      "best_odds": -155,
+      "best_odds": -125,
       "bookmaker": "FanDuel",
-      "implied_prob": 0.6078,
-      "edge": 0.0537,
+      "implied_prob": 0.5556,
+      "edge": 0.106,
       "has_positive_edge": true,
       "avg_minutes": 31.4,
       "l20_dd_rate": 0.35,
@@ -118,30 +117,13 @@
       }
     },
     {
-      "player": "Rudy Gobert",
-      "game": "San Antonio Spurs @ Minnesota Timberwolves",
-      "model_prob": 0.5909,
-      "best_odds": 250,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.2857,
-      "edge": 0.3052,
-      "has_positive_edge": true,
-      "avg_minutes": 31.6,
-      "l20_dd_rate": 0.45,
-      "stats": {
-        "pts": 9.3,
-        "reb": 11.6,
-        "ast": 1.8
-      }
-    },
-    {
       "player": "Jarrett Allen",
       "game": "Detroit Pistons @ Cleveland Cavaliers",
       "model_prob": 0.5588,
-      "best_odds": 466,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.1767,
-      "edge": 0.3821,
+      "best_odds": 360,
+      "bookmaker": "Bovada",
+      "implied_prob": 0.2174,
+      "edge": 0.3414,
       "has_positive_edge": true,
       "avg_minutes": 26.8,
       "l20_dd_rate": 0.3,
@@ -155,10 +137,10 @@
       "player": "Chet Holmgren",
       "game": "Oklahoma City Thunder @ Los Angeles Lakers",
       "model_prob": 0.4857,
-      "best_odds": 145,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.4082,
-      "edge": 0.0776,
+      "best_odds": 171,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.369,
+      "edge": 0.1167,
       "has_positive_edge": true,
       "avg_minutes": 28.5,
       "l20_dd_rate": 0.3,
@@ -169,47 +151,13 @@
       }
     },
     {
-      "player": "Joel Embiid",
-      "game": "New York Knicks @ Philadelphia 76ers",
-      "model_prob": 0.4857,
-      "best_odds": 155,
-      "bookmaker": "Fanatics",
-      "implied_prob": 0.3922,
-      "edge": 0.0936,
-      "has_positive_edge": true,
-      "avg_minutes": 34.5,
-      "l20_dd_rate": 0.45,
-      "stats": {
-        "pts": 29.5,
-        "reb": 8.7,
-        "ast": 5.2
-      }
-    },
-    {
-      "player": "Stephon Castle",
-      "game": "San Antonio Spurs @ Minnesota Timberwolves",
-      "model_prob": 0.4138,
-      "best_odds": 460,
-      "bookmaker": "Bovada",
-      "implied_prob": 0.1786,
-      "edge": 0.2352,
-      "has_positive_edge": true,
-      "avg_minutes": 30.9,
-      "l20_dd_rate": 0.35,
-      "stats": {
-        "pts": 18.4,
-        "reb": 6.0,
-        "ast": 8.1
-      }
-    },
-    {
       "player": "Cade Cunningham",
       "game": "Detroit Pistons @ Cleveland Cavaliers",
       "model_prob": 0.3871,
-      "best_odds": -105,
+      "best_odds": 110,
       "bookmaker": "BetMGM",
-      "implied_prob": 0.5122,
-      "edge": -0.1251,
+      "implied_prob": 0.4762,
+      "edge": -0.0891,
       "has_positive_edge": false,
       "avg_minutes": 34.0,
       "l20_dd_rate": 0.45,
@@ -221,10 +169,10 @@
     }
   ],
   "summary": {
-    "total_recommended_dd": 4,
+    "total_recommended_dd": 3,
     "total_recommended_td": 0,
-    "total_high_probability": 8,
-    "total_recommended_units": 77.72,
-    "total_recommended_amount": 777.2
+    "total_high_probability": 6,
+    "total_recommended_units": 67.5,
+    "total_recommended_amount": 675.0
   }
 }
