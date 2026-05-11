@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-10",
-  "generated_at": "2026-05-10T15:31:49.432691+00:00",
+  "date": "2026-05-11",
+  "generated_at": "2026-05-11T16:14:46.067094+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -9,50 +9,32 @@
     "dd": [
       {
         "player": "Rudy Gobert",
-        "game": "San Antonio Spurs @ Minnesota Timberwolves",
+        "game": "Minnesota Timberwolves @ San Antonio Spurs",
         "model_prob": 0.8471,
-        "best_odds": 260,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.2778,
-        "edge": 0.5693,
+        "best_odds": 290,
+        "bookmaker": "Bovada",
+        "implied_prob": 0.2564,
+        "edge": 0.5906,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 31.8,
-        "l20_dd_rate": 0.45,
+        "avg_minutes": 31.4,
+        "l20_dd_rate": 0.5,
         "stats": {
-          "pts": 9.9,
-          "reb": 11.6,
-          "ast": 1.8
-        }
-      },
-      {
-        "player": "Karl-Anthony Towns",
-        "game": "New York Knicks @ Philadelphia 76ers",
-        "model_prob": 1.0,
-        "best_odds": -200,
-        "bookmaker": "BetMGM",
-        "implied_prob": 0.6667,
-        "edge": 0.3333,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 29.4,
-        "l20_dd_rate": 0.7,
-        "stats": {
-          "pts": 19.1,
+          "pts": 10.0,
           "reb": 11.3,
-          "ast": 4.8
+          "ast": 1.9
         }
       },
       {
         "player": "Jalen Duren",
         "game": "Detroit Pistons @ Cleveland Cavaliers",
         "model_prob": 0.5588,
-        "best_odds": -110,
-        "bookmaker": "BetMGM",
-        "implied_prob": 0.5238,
-        "edge": 0.035,
-        "bet_units": 8.27,
-        "bet_amount": 82.72,
+        "best_odds": 105,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.4878,
+        "edge": 0.071,
+        "bet_units": 15.6,
+        "bet_amount": 155.99,
         "avg_minutes": 31.8,
         "l20_dd_rate": 0.35,
         "stats": {
@@ -66,47 +48,30 @@
   },
   "high_probability": [
     {
-      "player": "Karl-Anthony Towns",
-      "game": "New York Knicks @ Philadelphia 76ers",
-      "model_prob": 1.0,
-      "best_odds": -200,
-      "bookmaker": "BetMGM",
-      "implied_prob": 0.6667,
-      "edge": 0.3333,
-      "has_positive_edge": true,
-      "avg_minutes": 29.4,
-      "l20_dd_rate": 0.7,
-      "stats": {
-        "pts": 19.1,
-        "reb": 11.3,
-        "ast": 4.8
-      }
-    },
-    {
       "player": "Rudy Gobert",
-      "game": "San Antonio Spurs @ Minnesota Timberwolves",
+      "game": "Minnesota Timberwolves @ San Antonio Spurs",
       "model_prob": 0.8471,
-      "best_odds": 260,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.2778,
-      "edge": 0.5693,
+      "best_odds": 290,
+      "bookmaker": "Bovada",
+      "implied_prob": 0.2564,
+      "edge": 0.5906,
       "has_positive_edge": true,
-      "avg_minutes": 31.8,
-      "l20_dd_rate": 0.45,
+      "avg_minutes": 31.4,
+      "l20_dd_rate": 0.5,
       "stats": {
-        "pts": 9.9,
-        "reb": 11.6,
-        "ast": 1.8
+        "pts": 10.0,
+        "reb": 11.3,
+        "ast": 1.9
       }
     },
     {
       "player": "Jalen Duren",
       "game": "Detroit Pistons @ Cleveland Cavaliers",
       "model_prob": 0.5588,
-      "best_odds": -110,
-      "bookmaker": "BetMGM",
-      "implied_prob": 0.5238,
-      "edge": 0.035,
+      "best_odds": 105,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.4878,
+      "edge": 0.071,
       "has_positive_edge": true,
       "avg_minutes": 31.8,
       "l20_dd_rate": 0.35,
@@ -121,7 +86,7 @@
       "game": "Oklahoma City Thunder @ Los Angeles Lakers",
       "model_prob": 0.5588,
       "best_odds": 120,
-      "bookmaker": "DraftKings",
+      "bookmaker": "Fanatics",
       "implied_prob": 0.4545,
       "edge": 0.1043,
       "has_positive_edge": true,
@@ -137,10 +102,10 @@
       "player": "Jarrett Allen",
       "game": "Detroit Pistons @ Cleveland Cavaliers",
       "model_prob": 0.4857,
-      "best_odds": 270,
-      "bookmaker": "BetMGM",
-      "implied_prob": 0.2703,
-      "edge": 0.2154,
+      "best_odds": 244,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.2907,
+      "edge": 0.195,
       "has_positive_edge": true,
       "avg_minutes": 26.9,
       "l20_dd_rate": 0.25,
@@ -152,10 +117,10 @@
     }
   ],
   "summary": {
-    "total_recommended_dd": 3,
+    "total_recommended_dd": 2,
     "total_recommended_td": 0,
-    "total_high_probability": 5,
-    "total_recommended_units": 53.27,
-    "total_recommended_amount": 532.72
+    "total_high_probability": 4,
+    "total_recommended_units": 38.1,
+    "total_recommended_amount": 380.99
   }
 }
