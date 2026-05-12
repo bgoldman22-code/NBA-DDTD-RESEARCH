@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-11",
-  "generated_at": "2026-05-11T16:14:46.067094+00:00",
+  "date": "2026-05-12",
+  "generated_at": "2026-05-12T16:01:40.199901+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -11,10 +11,10 @@
         "player": "Rudy Gobert",
         "game": "Minnesota Timberwolves @ San Antonio Spurs",
         "model_prob": 0.8471,
-        "best_odds": 290,
-        "bookmaker": "Bovada",
-        "implied_prob": 0.2564,
-        "edge": 0.5906,
+        "best_odds": 320,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.2381,
+        "edge": 0.609,
         "bet_units": 22.5,
         "bet_amount": 225.0,
         "avg_minutes": 31.4,
@@ -27,19 +27,19 @@
       },
       {
         "player": "Jalen Duren",
-        "game": "Detroit Pistons @ Cleveland Cavaliers",
-        "model_prob": 0.5588,
-        "best_odds": 105,
+        "game": "Cleveland Cavaliers @ Detroit Pistons",
+        "model_prob": 0.3871,
+        "best_odds": 160,
         "bookmaker": "FanDuel",
-        "implied_prob": 0.4878,
-        "edge": 0.071,
-        "bet_units": 15.6,
-        "bet_amount": 155.99,
-        "avg_minutes": 31.8,
-        "l20_dd_rate": 0.35,
+        "implied_prob": 0.3846,
+        "edge": 0.0025,
+        "bet_units": 0.45,
+        "bet_amount": 4.54,
+        "avg_minutes": 31.4,
+        "l20_dd_rate": 0.3,
         "stats": {
-          "pts": 15.9,
-          "reb": 9.8,
+          "pts": 15.3,
+          "reb": 9.4,
           "ast": 3.0
         }
       }
@@ -51,10 +51,10 @@
       "player": "Rudy Gobert",
       "game": "Minnesota Timberwolves @ San Antonio Spurs",
       "model_prob": 0.8471,
-      "best_odds": 290,
-      "bookmaker": "Bovada",
-      "implied_prob": 0.2564,
-      "edge": 0.5906,
+      "best_odds": 320,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.2381,
+      "edge": 0.609,
       "has_positive_edge": true,
       "avg_minutes": 31.4,
       "l20_dd_rate": 0.5,
@@ -65,62 +65,45 @@
       }
     },
     {
-      "player": "Jalen Duren",
-      "game": "Detroit Pistons @ Cleveland Cavaliers",
-      "model_prob": 0.5588,
-      "best_odds": 105,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.4878,
-      "edge": 0.071,
-      "has_positive_edge": true,
-      "avg_minutes": 31.8,
-      "l20_dd_rate": 0.35,
+      "player": "Cade Cunningham",
+      "game": "Cleveland Cavaliers @ Detroit Pistons",
+      "model_prob": 0.4615,
+      "best_odds": -105,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.5122,
+      "edge": -0.0507,
+      "has_positive_edge": false,
+      "avg_minutes": 34.0,
+      "l20_dd_rate": 0.45,
       "stats": {
-        "pts": 15.9,
-        "reb": 9.8,
-        "ast": 3.0
+        "pts": 23.3,
+        "reb": 4.8,
+        "ast": 8.8
       }
     },
     {
-      "player": "Chet Holmgren",
-      "game": "Oklahoma City Thunder @ Los Angeles Lakers",
-      "model_prob": 0.5588,
-      "best_odds": 120,
-      "bookmaker": "Fanatics",
-      "implied_prob": 0.4545,
-      "edge": 0.1043,
+      "player": "Jalen Duren",
+      "game": "Cleveland Cavaliers @ Detroit Pistons",
+      "model_prob": 0.3871,
+      "best_odds": 160,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.3846,
+      "edge": 0.0025,
       "has_positive_edge": true,
-      "avg_minutes": 28.4,
+      "avg_minutes": 31.4,
       "l20_dd_rate": 0.3,
       "stats": {
-        "pts": 17.3,
-        "reb": 8.7,
-        "ast": 1.4
-      }
-    },
-    {
-      "player": "Jarrett Allen",
-      "game": "Detroit Pistons @ Cleveland Cavaliers",
-      "model_prob": 0.4857,
-      "best_odds": 244,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.2907,
-      "edge": 0.195,
-      "has_positive_edge": true,
-      "avg_minutes": 26.9,
-      "l20_dd_rate": 0.25,
-      "stats": {
-        "pts": 15.1,
-        "reb": 7.8,
-        "ast": 1.1
+        "pts": 15.3,
+        "reb": 9.4,
+        "ast": 3.0
       }
     }
   ],
   "summary": {
     "total_recommended_dd": 2,
     "total_recommended_td": 0,
-    "total_high_probability": 4,
-    "total_recommended_units": 38.1,
-    "total_recommended_amount": 380.99
+    "total_high_probability": 3,
+    "total_recommended_units": 22.95,
+    "total_recommended_amount": 229.54
   }
 }
