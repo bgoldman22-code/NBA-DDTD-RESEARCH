@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-12",
-  "generated_at": "2026-05-12T16:01:40.199901+00:00",
+  "date": "2026-05-13",
+  "generated_at": "2026-05-13T16:03:55.150689+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -9,38 +9,20 @@
     "dd": [
       {
         "player": "Rudy Gobert",
-        "game": "Minnesota Timberwolves @ San Antonio Spurs",
-        "model_prob": 0.8471,
-        "best_odds": 320,
+        "game": "San Antonio Spurs @ Minnesota Timberwolves",
+        "model_prob": 0.6615,
+        "best_odds": 500,
         "bookmaker": "FanDuel",
-        "implied_prob": 0.2381,
-        "edge": 0.609,
+        "implied_prob": 0.1667,
+        "edge": 0.4949,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 31.4,
-        "l20_dd_rate": 0.5,
+        "avg_minutes": 31.1,
+        "l20_dd_rate": 0.45,
         "stats": {
-          "pts": 10.0,
-          "reb": 11.3,
+          "pts": 9.2,
+          "reb": 10.9,
           "ast": 1.9
-        }
-      },
-      {
-        "player": "Jalen Duren",
-        "game": "Cleveland Cavaliers @ Detroit Pistons",
-        "model_prob": 0.3871,
-        "best_odds": 160,
-        "bookmaker": "FanDuel",
-        "implied_prob": 0.3846,
-        "edge": 0.0025,
-        "bet_units": 0.45,
-        "bet_amount": 4.54,
-        "avg_minutes": 31.4,
-        "l20_dd_rate": 0.3,
-        "stats": {
-          "pts": 15.3,
-          "reb": 9.4,
-          "ast": 3.0
         }
       }
     ],
@@ -49,18 +31,18 @@
   "high_probability": [
     {
       "player": "Rudy Gobert",
-      "game": "Minnesota Timberwolves @ San Antonio Spurs",
-      "model_prob": 0.8471,
-      "best_odds": 320,
+      "game": "San Antonio Spurs @ Minnesota Timberwolves",
+      "model_prob": 0.6615,
+      "best_odds": 500,
       "bookmaker": "FanDuel",
-      "implied_prob": 0.2381,
-      "edge": 0.609,
+      "implied_prob": 0.1667,
+      "edge": 0.4949,
       "has_positive_edge": true,
-      "avg_minutes": 31.4,
-      "l20_dd_rate": 0.5,
+      "avg_minutes": 31.1,
+      "l20_dd_rate": 0.45,
       "stats": {
-        "pts": 10.0,
-        "reb": 11.3,
+        "pts": 9.2,
+        "reb": 10.9,
         "ast": 1.9
       }
     },
@@ -85,11 +67,11 @@
       "player": "Jalen Duren",
       "game": "Cleveland Cavaliers @ Detroit Pistons",
       "model_prob": 0.3871,
-      "best_odds": 160,
+      "best_odds": 135,
       "bookmaker": "FanDuel",
-      "implied_prob": 0.3846,
-      "edge": 0.0025,
-      "has_positive_edge": true,
+      "implied_prob": 0.4255,
+      "edge": -0.0384,
+      "has_positive_edge": false,
       "avg_minutes": 31.4,
       "l20_dd_rate": 0.3,
       "stats": {
@@ -100,10 +82,10 @@
     }
   ],
   "summary": {
-    "total_recommended_dd": 2,
+    "total_recommended_dd": 1,
     "total_recommended_td": 0,
     "total_high_probability": 3,
-    "total_recommended_units": 22.95,
-    "total_recommended_amount": 229.54
+    "total_recommended_units": 22.5,
+    "total_recommended_amount": 225.0
   }
 }
