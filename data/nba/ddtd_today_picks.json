@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-13",
-  "generated_at": "2026-05-13T16:03:55.150689+00:00",
+  "date": "2026-05-14",
+  "generated_at": "2026-05-14T16:01:52.302934+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -10,82 +10,137 @@
       {
         "player": "Rudy Gobert",
         "game": "San Antonio Spurs @ Minnesota Timberwolves",
-        "model_prob": 0.6615,
+        "model_prob": 0.9832,
         "best_odds": 500,
         "bookmaker": "FanDuel",
         "implied_prob": 0.1667,
-        "edge": 0.4949,
+        "edge": 0.8165,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 31.1,
-        "l20_dd_rate": 0.45,
+        "avg_minutes": 31.2,
+        "l20_dd_rate": 0.5,
         "stats": {
-          "pts": 9.2,
-          "reb": 10.9,
+          "pts": 9.9,
+          "reb": 11.2,
           "ast": 1.9
+        }
+      },
+      {
+        "player": "Jalen Duren",
+        "game": "Detroit Pistons @ Cleveland Cavaliers",
+        "model_prob": 0.7391,
+        "best_odds": 214,
+        "bookmaker": "DraftKings",
+        "implied_prob": 0.3185,
+        "edge": 0.4207,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 30.9,
+        "l20_dd_rate": 0.25,
+        "stats": {
+          "pts": 14.7,
+          "reb": 8.9,
+          "ast": 3.0
+        }
+      },
+      {
+        "player": "Cade Cunningham",
+        "game": "Detroit Pistons @ Cleveland Cavaliers",
+        "model_prob": 0.7391,
+        "best_odds": 130,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.4348,
+        "edge": 0.3043,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 34.7,
+        "l20_dd_rate": 0.4,
+        "stats": {
+          "pts": 23.9,
+          "reb": 5.1,
+          "ast": 8.8
         }
       }
     ],
-    "td": []
+    "td": [
+      {
+        "player": "Cade Cunningham",
+        "game": "Detroit Pistons @ Cleveland Cavaliers",
+        "model_prob": 0.1667,
+        "best_odds": 1900,
+        "bookmaker": "DraftKings",
+        "implied_prob": 0.05,
+        "edge": 0.1167,
+        "bet_units": 0.14,
+        "bet_amount": 1.38,
+        "avg_minutes": 34.7,
+        "l20_td_rate": 0.05,
+        "stats": {
+          "pts": 23.9,
+          "reb": 5.1,
+          "ast": 8.8
+        }
+      }
+    ]
   },
   "high_probability": [
     {
       "player": "Rudy Gobert",
       "game": "San Antonio Spurs @ Minnesota Timberwolves",
-      "model_prob": 0.6615,
+      "model_prob": 0.9832,
       "best_odds": 500,
       "bookmaker": "FanDuel",
       "implied_prob": 0.1667,
-      "edge": 0.4949,
+      "edge": 0.8165,
       "has_positive_edge": true,
-      "avg_minutes": 31.1,
-      "l20_dd_rate": 0.45,
+      "avg_minutes": 31.2,
+      "l20_dd_rate": 0.5,
       "stats": {
-        "pts": 9.2,
-        "reb": 10.9,
+        "pts": 9.9,
+        "reb": 11.2,
         "ast": 1.9
       }
     },
     {
       "player": "Cade Cunningham",
-      "game": "Cleveland Cavaliers @ Detroit Pistons",
-      "model_prob": 0.4615,
-      "best_odds": -105,
+      "game": "Detroit Pistons @ Cleveland Cavaliers",
+      "model_prob": 0.7391,
+      "best_odds": 130,
       "bookmaker": "BetMGM",
-      "implied_prob": 0.5122,
-      "edge": -0.0507,
-      "has_positive_edge": false,
-      "avg_minutes": 34.0,
-      "l20_dd_rate": 0.45,
+      "implied_prob": 0.4348,
+      "edge": 0.3043,
+      "has_positive_edge": true,
+      "avg_minutes": 34.7,
+      "l20_dd_rate": 0.4,
       "stats": {
-        "pts": 23.3,
-        "reb": 4.8,
+        "pts": 23.9,
+        "reb": 5.1,
         "ast": 8.8
       }
     },
     {
       "player": "Jalen Duren",
-      "game": "Cleveland Cavaliers @ Detroit Pistons",
-      "model_prob": 0.3871,
-      "best_odds": 135,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.4255,
-      "edge": -0.0384,
-      "has_positive_edge": false,
-      "avg_minutes": 31.4,
-      "l20_dd_rate": 0.3,
+      "game": "Detroit Pistons @ Cleveland Cavaliers",
+      "model_prob": 0.7391,
+      "best_odds": 214,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.3185,
+      "edge": 0.4207,
+      "has_positive_edge": true,
+      "avg_minutes": 30.9,
+      "l20_dd_rate": 0.25,
       "stats": {
-        "pts": 15.3,
-        "reb": 9.4,
+        "pts": 14.7,
+        "reb": 8.9,
         "ast": 3.0
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 1,
-    "total_recommended_td": 0,
+    "total_recommended_dd": 3,
+    "total_recommended_td": 1,
     "total_high_probability": 3,
-    "total_recommended_units": 22.5,
-    "total_recommended_amount": 225.0
+    "total_recommended_units": 67.64,
+    "total_recommended_amount": 676.38
   }
 }
