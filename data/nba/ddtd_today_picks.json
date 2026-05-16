@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-15",
-  "generated_at": "2026-05-15T15:54:55.135870+00:00",
+  "date": "2026-05-16",
+  "generated_at": "2026-05-16T15:33:50.821950+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -8,77 +8,41 @@
   "recommended_picks": {
     "dd": [
       {
-        "player": "Rudy Gobert",
-        "game": "San Antonio Spurs @ Minnesota Timberwolves",
-        "model_prob": 0.6615,
-        "best_odds": 600,
-        "bookmaker": "Fanatics",
-        "implied_prob": 0.1429,
-        "edge": 0.5187,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 31.1,
-        "l20_dd_rate": 0.45,
-        "stats": {
-          "pts": 9.2,
-          "reb": 10.9,
-          "ast": 1.9
-        }
-      },
-      {
-        "player": "Jalen Duren",
-        "game": "Detroit Pistons @ Cleveland Cavaliers",
-        "model_prob": 0.5909,
-        "best_odds": 254,
-        "bookmaker": "DraftKings",
-        "implied_prob": 0.2825,
-        "edge": 0.3084,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 30.6,
-        "l20_dd_rate": 0.25,
-        "stats": {
-          "pts": 14.4,
-          "reb": 8.9,
-          "ast": 3.0
-        }
-      },
-      {
         "player": "Cade Cunningham",
-        "game": "Detroit Pistons @ Cleveland Cavaliers",
-        "model_prob": 0.7391,
-        "best_odds": 115,
+        "game": "Cleveland Cavaliers @ Detroit Pistons",
+        "model_prob": 0.8471,
+        "best_odds": 130,
         "bookmaker": "BetMGM",
-        "implied_prob": 0.4651,
-        "edge": 0.274,
+        "implied_prob": 0.4348,
+        "edge": 0.4123,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 34.7,
-        "l20_dd_rate": 0.4,
+        "avg_minutes": 35.5,
+        "l20_dd_rate": 0.35,
         "stats": {
           "pts": 23.9,
-          "reb": 5.1,
-          "ast": 8.8
+          "reb": 5.0,
+          "ast": 8.4
         }
       }
     ],
     "td": [
       {
         "player": "Cade Cunningham",
-        "game": "Detroit Pistons @ Cleveland Cavaliers",
-        "model_prob": 0.1667,
-        "best_odds": 1800,
-        "bookmaker": "Fanatics",
-        "implied_prob": 0.0526,
-        "edge": 0.114,
-        "bet_units": 0.14,
-        "bet_amount": 1.35,
-        "avg_minutes": 34.7,
+        "game": "Cleveland Cavaliers @ Detroit Pistons",
+        "model_prob": 0.7143,
+        "best_odds": 1860,
+        "bookmaker": "DraftKings",
+        "implied_prob": 0.051,
+        "edge": 0.6633,
+        "bet_units": 1.89,
+        "bet_amount": 18.87,
+        "avg_minutes": 35.5,
         "l20_td_rate": 0.05,
         "stats": {
           "pts": 23.9,
-          "reb": 5.1,
-          "ast": 8.8
+          "reb": 5.0,
+          "ast": 8.4
         }
       }
     ]
@@ -86,61 +50,44 @@
   "high_probability": [
     {
       "player": "Cade Cunningham",
-      "game": "Detroit Pistons @ Cleveland Cavaliers",
-      "model_prob": 0.7391,
-      "best_odds": 115,
+      "game": "Cleveland Cavaliers @ Detroit Pistons",
+      "model_prob": 0.8471,
+      "best_odds": 130,
       "bookmaker": "BetMGM",
-      "implied_prob": 0.4651,
-      "edge": 0.274,
+      "implied_prob": 0.4348,
+      "edge": 0.4123,
       "has_positive_edge": true,
-      "avg_minutes": 34.7,
-      "l20_dd_rate": 0.4,
+      "avg_minutes": 35.5,
+      "l20_dd_rate": 0.35,
       "stats": {
         "pts": 23.9,
-        "reb": 5.1,
-        "ast": 8.8
+        "reb": 5.0,
+        "ast": 8.4
       }
     },
     {
-      "player": "Rudy Gobert",
-      "game": "San Antonio Spurs @ Minnesota Timberwolves",
-      "model_prob": 0.6615,
-      "best_odds": 600,
-      "bookmaker": "Fanatics",
-      "implied_prob": 0.1429,
-      "edge": 0.5187,
-      "has_positive_edge": true,
-      "avg_minutes": 31.1,
-      "l20_dd_rate": 0.45,
-      "stats": {
-        "pts": 9.2,
-        "reb": 10.9,
-        "ast": 1.9
-      }
-    },
-    {
-      "player": "Jalen Duren",
-      "game": "Detroit Pistons @ Cleveland Cavaliers",
-      "model_prob": 0.5909,
-      "best_odds": 254,
+      "player": "Chet Holmgren",
+      "game": "San Antonio Spurs @ Oklahoma City Thunder",
+      "model_prob": 0.4857,
+      "best_odds": 156,
       "bookmaker": "DraftKings",
-      "implied_prob": 0.2825,
-      "edge": 0.3084,
+      "implied_prob": 0.3906,
+      "edge": 0.0951,
       "has_positive_edge": true,
-      "avg_minutes": 30.6,
-      "l20_dd_rate": 0.25,
+      "avg_minutes": 28.8,
+      "l20_dd_rate": 0.3,
       "stats": {
-        "pts": 14.4,
-        "reb": 8.9,
-        "ast": 3.0
+        "pts": 17.4,
+        "reb": 8.7,
+        "ast": 1.4
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 3,
+    "total_recommended_dd": 1,
     "total_recommended_td": 1,
-    "total_high_probability": 3,
-    "total_recommended_units": 67.64,
-    "total_recommended_amount": 676.35
+    "total_high_probability": 2,
+    "total_recommended_units": 24.39,
+    "total_recommended_amount": 243.87
   }
 }
