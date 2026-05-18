@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-17",
-  "generated_at": "2026-05-17T15:34:26.642053+00:00",
+  "date": "2026-05-18",
+  "generated_at": "2026-05-18T16:23:08.094929+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -8,71 +8,52 @@
   "recommended_picks": {
     "dd": [
       {
-        "player": "Cade Cunningham",
-        "game": "Cleveland Cavaliers @ Detroit Pistons",
-        "model_prob": 0.8471,
-        "best_odds": 140,
-        "bookmaker": "BetMGM",
-        "implied_prob": 0.4167,
-        "edge": 0.4304,
-        "bet_units": 22.5,
-        "bet_amount": 225.0,
-        "avg_minutes": 35.5,
-        "l20_dd_rate": 0.35,
+        "player": "Evan Mobley",
+        "game": "Cleveland Cavaliers @ New York Knicks",
+        "model_prob": 0.3386,
+        "best_odds": 202,
+        "bookmaker": "DraftKings",
+        "implied_prob": 0.3311,
+        "edge": 0.0075,
+        "bet_units": 1.25,
+        "bet_amount": 12.54,
+        "avg_minutes": 33.0,
+        "l20_dd_rate": 0.25,
         "stats": {
-          "pts": 23.9,
-          "reb": 5.0,
-          "ast": 8.4
+          "pts": 17.3,
+          "reb": 8.7,
+          "ast": 3.9
         }
       }
     ],
-    "td": [
-      {
-        "player": "Cade Cunningham",
-        "game": "Cleveland Cavaliers @ Detroit Pistons",
-        "model_prob": 0.7143,
-        "best_odds": 1800,
-        "bookmaker": "Bovada",
-        "implied_prob": 0.0526,
-        "edge": 0.6617,
-        "bet_units": 1.89,
-        "bet_amount": 18.86,
-        "avg_minutes": 35.5,
-        "l20_td_rate": 0.05,
-        "stats": {
-          "pts": 23.9,
-          "reb": 5.0,
-          "ast": 8.4
-        }
-      }
-    ]
+    "td": []
   },
   "high_probability": [
     {
-      "player": "Cade Cunningham",
-      "game": "Cleveland Cavaliers @ Detroit Pistons",
-      "model_prob": 0.8471,
-      "best_odds": 140,
-      "bookmaker": "BetMGM",
-      "implied_prob": 0.4167,
-      "edge": 0.4304,
+      "player": "Karl-Anthony Towns",
+      "game": "Cleveland Cavaliers @ New York Knicks",
+      "model_prob": 0.9536,
+      "best_odds": -206,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.6732,
+      "edge": 0.2804,
       "has_positive_edge": true,
-      "avg_minutes": 35.5,
-      "l20_dd_rate": 0.35,
+      "avg_minutes": 28.8,
+      "l20_dd_rate": 0.7,
       "stats": {
-        "pts": 23.9,
-        "reb": 5.0,
-        "ast": 8.4
+        "pts": 18.8,
+        "reb": 10.9,
+        "ast": 5.2
       }
     },
     {
       "player": "Chet Holmgren",
       "game": "San Antonio Spurs @ Oklahoma City Thunder",
       "model_prob": 0.4857,
-      "best_odds": 163,
+      "best_odds": 172,
       "bookmaker": "DraftKings",
-      "implied_prob": 0.3802,
-      "edge": 0.1055,
+      "implied_prob": 0.3676,
+      "edge": 0.1181,
       "has_positive_edge": true,
       "avg_minutes": 28.8,
       "l20_dd_rate": 0.3,
@@ -85,9 +66,9 @@
   ],
   "summary": {
     "total_recommended_dd": 1,
-    "total_recommended_td": 1,
+    "total_recommended_td": 0,
     "total_high_probability": 2,
-    "total_recommended_units": 24.39,
-    "total_recommended_amount": 243.86
+    "total_recommended_units": 1.25,
+    "total_recommended_amount": 12.54
   }
 }
