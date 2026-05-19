@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-18",
-  "generated_at": "2026-05-18T16:23:08.094929+00:00",
+  "date": "2026-05-19",
+  "generated_at": "2026-05-19T16:18:45.618539+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -8,15 +8,33 @@
   "recommended_picks": {
     "dd": [
       {
+        "player": "Stephon Castle",
+        "game": "San Antonio Spurs @ Oklahoma City Thunder",
+        "model_prob": 0.3193,
+        "best_odds": 400,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.2,
+        "edge": 0.1193,
+        "bet_units": 16.77,
+        "bet_amount": 167.73,
+        "avg_minutes": 32.8,
+        "l20_dd_rate": 0.4,
+        "stats": {
+          "pts": 18.9,
+          "reb": 5.9,
+          "ast": 7.7
+        }
+      },
+      {
         "player": "Evan Mobley",
         "game": "Cleveland Cavaliers @ New York Knicks",
         "model_prob": 0.3386,
-        "best_odds": 202,
-        "bookmaker": "DraftKings",
-        "implied_prob": 0.3311,
-        "edge": 0.0075,
-        "bet_units": 1.25,
-        "bet_amount": 12.54,
+        "best_odds": 200,
+        "bookmaker": "Bovada",
+        "implied_prob": 0.3333,
+        "edge": 0.0052,
+        "bet_units": 0.89,
+        "bet_amount": 8.86,
         "avg_minutes": 33.0,
         "l20_dd_rate": 0.25,
         "stats": {
@@ -33,10 +51,10 @@
       "player": "Karl-Anthony Towns",
       "game": "Cleveland Cavaliers @ New York Knicks",
       "model_prob": 0.9536,
-      "best_odds": -206,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.6732,
-      "edge": 0.2804,
+      "best_odds": -185,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.6491,
+      "edge": 0.3045,
       "has_positive_edge": true,
       "avg_minutes": 28.8,
       "l20_dd_rate": 0.7,
@@ -49,26 +67,26 @@
     {
       "player": "Chet Holmgren",
       "game": "San Antonio Spurs @ Oklahoma City Thunder",
-      "model_prob": 0.4857,
-      "best_odds": 172,
+      "model_prob": 0.4138,
+      "best_odds": 171,
       "bookmaker": "DraftKings",
-      "implied_prob": 0.3676,
-      "edge": 0.1181,
+      "implied_prob": 0.369,
+      "edge": 0.0448,
       "has_positive_edge": true,
-      "avg_minutes": 28.8,
+      "avg_minutes": 29.2,
       "l20_dd_rate": 0.3,
       "stats": {
-        "pts": 17.4,
-        "reb": 8.7,
-        "ast": 1.4
+        "pts": 16.8,
+        "reb": 8.6,
+        "ast": 1.2
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 1,
+    "total_recommended_dd": 2,
     "total_recommended_td": 0,
     "total_high_probability": 2,
-    "total_recommended_units": 1.25,
-    "total_recommended_amount": 12.54
+    "total_recommended_units": 17.66,
+    "total_recommended_amount": 176.59
   }
 }
