@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-22",
-  "generated_at": "2026-05-22T16:05:22.663301+00:00",
+  "date": "2026-05-23",
+  "generated_at": "2026-05-23T15:38:42.213687+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -11,12 +11,12 @@
         "player": "Jalen Brunson",
         "game": "New York Knicks @ Cleveland Cavaliers",
         "model_prob": 0.2899,
-        "best_odds": 425,
-        "bookmaker": "BetMGM",
-        "implied_prob": 0.1905,
-        "edge": 0.0994,
-        "bet_units": 13.81,
-        "bet_amount": 138.11,
+        "best_odds": 370,
+        "bookmaker": "Bovada",
+        "implied_prob": 0.2128,
+        "edge": 0.0771,
+        "bet_units": 11.02,
+        "bet_amount": 110.16,
         "avg_minutes": 36.1,
         "l20_dd_rate": 0.25,
         "stats": {
@@ -26,21 +26,39 @@
         }
       },
       {
+        "player": "Victor Wembanyama",
+        "game": "Oklahoma City Thunder @ San Antonio Spurs",
+        "model_prob": 0.9536,
+        "best_odds": -750,
+        "bookmaker": "Caesars",
+        "implied_prob": 0.8824,
+        "edge": 0.0713,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 30.6,
+        "l20_dd_rate": 0.7,
+        "stats": {
+          "pts": 25.3,
+          "reb": 12.6,
+          "ast": 3.2
+        }
+      },
+      {
         "player": "Stephon Castle",
         "game": "Oklahoma City Thunder @ San Antonio Spurs",
-        "model_prob": 0.3975,
-        "best_odds": 210,
-        "bookmaker": "Fanatics",
-        "implied_prob": 0.3226,
-        "edge": 0.0749,
-        "bet_units": 12.45,
-        "bet_amount": 124.45,
-        "avg_minutes": 33.4,
-        "l20_dd_rate": 0.4,
+        "model_prob": 0.2373,
+        "best_odds": 350,
+        "bookmaker": "Bovada",
+        "implied_prob": 0.2222,
+        "edge": 0.0151,
+        "bet_units": 2.18,
+        "bet_amount": 21.79,
+        "avg_minutes": 33.6,
+        "l20_dd_rate": 0.35,
         "stats": {
-          "pts": 19.4,
-          "reb": 6.0,
-          "ast": 7.7
+          "pts": 19.0,
+          "reb": 5.8,
+          "ast": 7.5
         }
       }
     ],
@@ -48,13 +66,30 @@
   },
   "high_probability": [
     {
+      "player": "Victor Wembanyama",
+      "game": "Oklahoma City Thunder @ San Antonio Spurs",
+      "model_prob": 0.9536,
+      "best_odds": -750,
+      "bookmaker": "Caesars",
+      "implied_prob": 0.8824,
+      "edge": 0.0713,
+      "has_positive_edge": true,
+      "avg_minutes": 30.6,
+      "l20_dd_rate": 0.7,
+      "stats": {
+        "pts": 25.3,
+        "reb": 12.6,
+        "ast": 3.2
+      }
+    },
+    {
       "player": "Karl-Anthony Towns",
       "game": "New York Knicks @ Cleveland Cavaliers",
       "model_prob": 0.7188,
-      "best_odds": -205,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.6721,
-      "edge": 0.0466,
+      "best_odds": -210,
+      "bookmaker": "Bovada",
+      "implied_prob": 0.6774,
+      "edge": 0.0413,
       "has_positive_edge": true,
       "avg_minutes": 29.8,
       "l20_dd_rate": 0.7,
@@ -65,28 +100,28 @@
       }
     },
     {
-      "player": "Stephon Castle",
+      "player": "Chet Holmgren",
       "game": "Oklahoma City Thunder @ San Antonio Spurs",
-      "model_prob": 0.3975,
-      "best_odds": 210,
-      "bookmaker": "Fanatics",
-      "implied_prob": 0.3226,
-      "edge": 0.0749,
+      "model_prob": 0.5588,
+      "best_odds": 267,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.2725,
+      "edge": 0.2863,
       "has_positive_edge": true,
-      "avg_minutes": 33.4,
-      "l20_dd_rate": 0.4,
+      "avg_minutes": 29.2,
+      "l20_dd_rate": 0.25,
       "stats": {
-        "pts": 19.4,
-        "reb": 6.0,
-        "ast": 7.7
+        "pts": 16.6,
+        "reb": 8.2,
+        "ast": 1.3
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 2,
+    "total_recommended_dd": 3,
     "total_recommended_td": 0,
-    "total_high_probability": 2,
-    "total_recommended_units": 26.26,
-    "total_recommended_amount": 262.56
+    "total_high_probability": 3,
+    "total_recommended_units": 35.7,
+    "total_recommended_amount": 356.95
   }
 }
