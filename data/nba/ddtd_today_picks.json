@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-23",
-  "generated_at": "2026-05-23T15:38:42.213687+00:00",
+  "date": "2026-05-24",
+  "generated_at": "2026-05-24T15:35:57.554069+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -8,31 +8,49 @@
   "recommended_picks": {
     "dd": [
       {
+        "player": "Karl-Anthony Towns",
+        "game": "New York Knicks @ Cleveland Cavaliers",
+        "model_prob": 1.0,
+        "best_odds": -250,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.7143,
+        "edge": 0.2857,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 30.4,
+        "l20_dd_rate": 0.65,
+        "stats": {
+          "pts": 17.4,
+          "reb": 10.4,
+          "ast": 5.6
+        }
+      },
+      {
         "player": "Jalen Brunson",
         "game": "New York Knicks @ Cleveland Cavaliers",
-        "model_prob": 0.2899,
-        "best_odds": 370,
-        "bookmaker": "Bovada",
-        "implied_prob": 0.2128,
-        "edge": 0.0771,
-        "bet_units": 11.02,
-        "bet_amount": 110.16,
-        "avg_minutes": 36.1,
+        "model_prob": 0.4468,
+        "best_odds": 375,
+        "bookmaker": "BetMGM",
+        "implied_prob": 0.2105,
+        "edge": 0.2363,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 36.2,
         "l20_dd_rate": 0.25,
         "stats": {
-          "pts": 26.7,
-          "reb": 2.8,
-          "ast": 7.5
+          "pts": 26.6,
+          "reb": 2.9,
+          "ast": 7.4
         }
       },
       {
         "player": "Victor Wembanyama",
         "game": "Oklahoma City Thunder @ San Antonio Spurs",
         "model_prob": 0.9536,
-        "best_odds": -750,
-        "bookmaker": "Caesars",
-        "implied_prob": 0.8824,
-        "edge": 0.0713,
+        "best_odds": -680,
+        "bookmaker": "DraftKings",
+        "implied_prob": 0.8718,
+        "edge": 0.0818,
         "bet_units": 22.5,
         "bet_amount": 225.0,
         "avg_minutes": 30.6,
@@ -42,37 +60,36 @@
           "reb": 12.6,
           "ast": 3.2
         }
-      },
-      {
-        "player": "Stephon Castle",
-        "game": "Oklahoma City Thunder @ San Antonio Spurs",
-        "model_prob": 0.2373,
-        "best_odds": 350,
-        "bookmaker": "Bovada",
-        "implied_prob": 0.2222,
-        "edge": 0.0151,
-        "bet_units": 2.18,
-        "bet_amount": 21.79,
-        "avg_minutes": 33.6,
-        "l20_dd_rate": 0.35,
-        "stats": {
-          "pts": 19.0,
-          "reb": 5.8,
-          "ast": 7.5
-        }
       }
     ],
     "td": []
   },
   "high_probability": [
     {
+      "player": "Karl-Anthony Towns",
+      "game": "New York Knicks @ Cleveland Cavaliers",
+      "model_prob": 1.0,
+      "best_odds": -250,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.7143,
+      "edge": 0.2857,
+      "has_positive_edge": true,
+      "avg_minutes": 30.4,
+      "l20_dd_rate": 0.65,
+      "stats": {
+        "pts": 17.4,
+        "reb": 10.4,
+        "ast": 5.6
+      }
+    },
+    {
       "player": "Victor Wembanyama",
       "game": "Oklahoma City Thunder @ San Antonio Spurs",
       "model_prob": 0.9536,
-      "best_odds": -750,
-      "bookmaker": "Caesars",
-      "implied_prob": 0.8824,
-      "edge": 0.0713,
+      "best_odds": -680,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.8718,
+      "edge": 0.0818,
       "has_positive_edge": true,
       "avg_minutes": 30.6,
       "l20_dd_rate": 0.7,
@@ -83,30 +100,13 @@
       }
     },
     {
-      "player": "Karl-Anthony Towns",
-      "game": "New York Knicks @ Cleveland Cavaliers",
-      "model_prob": 0.7188,
-      "best_odds": -210,
-      "bookmaker": "Bovada",
-      "implied_prob": 0.6774,
-      "edge": 0.0413,
-      "has_positive_edge": true,
-      "avg_minutes": 29.8,
-      "l20_dd_rate": 0.7,
-      "stats": {
-        "pts": 17.8,
-        "reb": 10.7,
-        "ast": 5.3
-      }
-    },
-    {
       "player": "Chet Holmgren",
       "game": "Oklahoma City Thunder @ San Antonio Spurs",
       "model_prob": 0.5588,
-      "best_odds": 267,
-      "bookmaker": "DraftKings",
-      "implied_prob": 0.2725,
-      "edge": 0.2863,
+      "best_odds": 300,
+      "bookmaker": "Fanatics",
+      "implied_prob": 0.25,
+      "edge": 0.3088,
       "has_positive_edge": true,
       "avg_minutes": 29.2,
       "l20_dd_rate": 0.25,
@@ -115,13 +115,30 @@
         "reb": 8.2,
         "ast": 1.3
       }
+    },
+    {
+      "player": "Jalen Brunson",
+      "game": "New York Knicks @ Cleveland Cavaliers",
+      "model_prob": 0.4468,
+      "best_odds": 375,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.2105,
+      "edge": 0.2363,
+      "has_positive_edge": true,
+      "avg_minutes": 36.2,
+      "l20_dd_rate": 0.25,
+      "stats": {
+        "pts": 26.6,
+        "reb": 2.9,
+        "ast": 7.4
+      }
     }
   ],
   "summary": {
     "total_recommended_dd": 3,
     "total_recommended_td": 0,
-    "total_high_probability": 3,
-    "total_recommended_units": 35.7,
-    "total_recommended_amount": 356.95
+    "total_high_probability": 4,
+    "total_recommended_units": 67.5,
+    "total_recommended_amount": 675.0
   }
 }
