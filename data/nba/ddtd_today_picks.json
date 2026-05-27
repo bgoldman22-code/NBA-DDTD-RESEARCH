@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-26",
-  "generated_at": "2026-05-26T16:29:09.229986+00:00",
+  "date": "2026-05-27",
+  "generated_at": "2026-05-27T16:29:30.170597+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -8,21 +8,39 @@
   "recommended_picks": {
     "dd": [
       {
-        "player": "Victor Wembanyama",
-        "game": "San Antonio Spurs @ Oklahoma City Thunder",
-        "model_prob": 1.0,
-        "best_odds": -600,
+        "player": "Karl-Anthony Towns",
+        "game": "New York Knicks @ Oklahoma City Thunder",
+        "model_prob": 0.9832,
+        "best_odds": -280,
         "bookmaker": "FanDuel",
-        "implied_prob": 0.8571,
-        "edge": 0.1429,
+        "implied_prob": 0.7368,
+        "edge": 0.2464,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 30.9,
-        "l20_dd_rate": 0.65,
+        "avg_minutes": 30.6,
+        "l20_dd_rate": 0.7,
         "stats": {
-          "pts": 26.0,
-          "reb": 12.2,
-          "ast": 3.4
+          "pts": 17.6,
+          "reb": 10.9,
+          "ast": 5.7
+        }
+      },
+      {
+        "player": "Victor Wembanyama",
+        "game": "Oklahoma City Thunder @ San Antonio Spurs",
+        "model_prob": 1.0,
+        "best_odds": -575,
+        "bookmaker": "DraftKings",
+        "implied_prob": 0.8519,
+        "edge": 0.1481,
+        "bet_units": 22.5,
+        "bet_amount": 225.0,
+        "avg_minutes": 31.2,
+        "l20_dd_rate": 0.6,
+        "stats": {
+          "pts": 25.9,
+          "reb": 11.8,
+          "ast": 3.1
         }
       }
     ],
@@ -31,27 +49,61 @@
   "high_probability": [
     {
       "player": "Victor Wembanyama",
-      "game": "San Antonio Spurs @ Oklahoma City Thunder",
+      "game": "Oklahoma City Thunder @ San Antonio Spurs",
       "model_prob": 1.0,
-      "best_odds": -600,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.8571,
-      "edge": 0.1429,
+      "best_odds": -575,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.8519,
+      "edge": 0.1481,
       "has_positive_edge": true,
-      "avg_minutes": 30.9,
-      "l20_dd_rate": 0.65,
+      "avg_minutes": 31.2,
+      "l20_dd_rate": 0.6,
       "stats": {
-        "pts": 26.0,
-        "reb": 12.2,
-        "ast": 3.4
+        "pts": 25.9,
+        "reb": 11.8,
+        "ast": 3.1
+      }
+    },
+    {
+      "player": "Karl-Anthony Towns",
+      "game": "New York Knicks @ Oklahoma City Thunder",
+      "model_prob": 0.9832,
+      "best_odds": -280,
+      "bookmaker": "FanDuel",
+      "implied_prob": 0.7368,
+      "edge": 0.2464,
+      "has_positive_edge": true,
+      "avg_minutes": 30.6,
+      "l20_dd_rate": 0.7,
+      "stats": {
+        "pts": 17.6,
+        "reb": 10.9,
+        "ast": 5.7
+      }
+    },
+    {
+      "player": "Chet Holmgren",
+      "game": "Oklahoma City Thunder @ San Antonio Spurs",
+      "model_prob": 0.4468,
+      "best_odds": 250,
+      "bookmaker": "BetMGM",
+      "implied_prob": 0.2857,
+      "edge": 0.1611,
+      "has_positive_edge": true,
+      "avg_minutes": 29.2,
+      "l20_dd_rate": 0.25,
+      "stats": {
+        "pts": 16.1,
+        "reb": 8.3,
+        "ast": 1.2
       }
     }
   ],
   "summary": {
-    "total_recommended_dd": 1,
+    "total_recommended_dd": 2,
     "total_recommended_td": 0,
-    "total_high_probability": 1,
-    "total_recommended_units": 22.5,
-    "total_recommended_amount": 225.0
+    "total_high_probability": 3,
+    "total_recommended_units": 45.0,
+    "total_recommended_amount": 450.0
   }
 }
