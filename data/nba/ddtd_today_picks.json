@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-28",
-  "generated_at": "2026-05-28T16:37:38.680731+00:00",
+  "date": "2026-05-29",
+  "generated_at": "2026-05-29T16:29:34.777288+00:00",
   "model_version": "v3",
   "bankroll": 4500,
   "unit_size": 10,
@@ -11,10 +11,10 @@
         "player": "Karl-Anthony Towns",
         "game": "New York Knicks @ Oklahoma City Thunder",
         "model_prob": 0.9832,
-        "best_odds": -260,
+        "best_odds": -320,
         "bookmaker": "FanDuel",
-        "implied_prob": 0.7222,
-        "edge": 0.261,
+        "implied_prob": 0.7619,
+        "edge": 0.2213,
         "bet_units": 22.5,
         "bet_amount": 225.0,
         "avg_minutes": 30.6,
@@ -27,51 +27,88 @@
       },
       {
         "player": "Victor Wembanyama",
-        "game": "Oklahoma City Thunder @ San Antonio Spurs",
+        "game": "San Antonio Spurs @ Oklahoma City Thunder",
         "model_prob": 1.0,
-        "best_odds": -500,
-        "bookmaker": "Caesars",
-        "implied_prob": 0.8333,
-        "edge": 0.1667,
+        "best_odds": -460,
+        "bookmaker": "DraftKings",
+        "implied_prob": 0.8214,
+        "edge": 0.1786,
         "bet_units": 22.5,
         "bet_amount": 225.0,
-        "avg_minutes": 31.2,
+        "avg_minutes": 31.1,
         "l20_dd_rate": 0.6,
         "stats": {
-          "pts": 25.9,
-          "reb": 11.8,
-          "ast": 3.1
+          "pts": 25.2,
+          "reb": 11.5,
+          "ast": 3.0
+        }
+      },
+      {
+        "player": "Stephon Castle",
+        "game": "San Antonio Spurs @ Oklahoma City Thunder",
+        "model_prob": 0.2373,
+        "best_odds": 360,
+        "bookmaker": "FanDuel",
+        "implied_prob": 0.2174,
+        "edge": 0.0199,
+        "bet_units": 2.86,
+        "bet_amount": 28.6,
+        "avg_minutes": 33.4,
+        "l20_dd_rate": 0.25,
+        "stats": {
+          "pts": 18.9,
+          "reb": 5.5,
+          "ast": 7.2
         }
       }
     ],
-    "td": []
+    "td": [
+      {
+        "player": "Shai Gilgeous-Alexander",
+        "game": "San Antonio Spurs @ Oklahoma City Thunder",
+        "model_prob": 0.1667,
+        "best_odds": 7500,
+        "bookmaker": "Bovada",
+        "implied_prob": 0.0132,
+        "edge": 0.1535,
+        "bet_units": 0.17,
+        "bet_amount": 1.75,
+        "avg_minutes": 34.5,
+        "l20_td_rate": 0.0,
+        "stats": {
+          "pts": 27.4,
+          "reb": 3.0,
+          "ast": 7.5
+        }
+      }
+    ]
   },
   "high_probability": [
     {
       "player": "Victor Wembanyama",
-      "game": "Oklahoma City Thunder @ San Antonio Spurs",
+      "game": "San Antonio Spurs @ Oklahoma City Thunder",
       "model_prob": 1.0,
-      "best_odds": -500,
-      "bookmaker": "Caesars",
-      "implied_prob": 0.8333,
-      "edge": 0.1667,
+      "best_odds": -460,
+      "bookmaker": "DraftKings",
+      "implied_prob": 0.8214,
+      "edge": 0.1786,
       "has_positive_edge": true,
-      "avg_minutes": 31.2,
+      "avg_minutes": 31.1,
       "l20_dd_rate": 0.6,
       "stats": {
-        "pts": 25.9,
-        "reb": 11.8,
-        "ast": 3.1
+        "pts": 25.2,
+        "reb": 11.5,
+        "ast": 3.0
       }
     },
     {
       "player": "Karl-Anthony Towns",
       "game": "New York Knicks @ Oklahoma City Thunder",
       "model_prob": 0.9832,
-      "best_odds": -260,
+      "best_odds": -320,
       "bookmaker": "FanDuel",
-      "implied_prob": 0.7222,
-      "edge": 0.261,
+      "implied_prob": 0.7619,
+      "edge": 0.2213,
       "has_positive_edge": true,
       "avg_minutes": 30.6,
       "l20_dd_rate": 0.7,
@@ -80,30 +117,13 @@
         "reb": 10.9,
         "ast": 5.7
       }
-    },
-    {
-      "player": "Chet Holmgren",
-      "game": "Oklahoma City Thunder @ San Antonio Spurs",
-      "model_prob": 0.4468,
-      "best_odds": 280,
-      "bookmaker": "FanDuel",
-      "implied_prob": 0.2632,
-      "edge": 0.1837,
-      "has_positive_edge": true,
-      "avg_minutes": 29.2,
-      "l20_dd_rate": 0.25,
-      "stats": {
-        "pts": 16.1,
-        "reb": 8.3,
-        "ast": 1.2
-      }
     }
   ],
   "summary": {
-    "total_recommended_dd": 2,
-    "total_recommended_td": 0,
-    "total_high_probability": 3,
-    "total_recommended_units": 45.0,
-    "total_recommended_amount": 450.0
+    "total_recommended_dd": 3,
+    "total_recommended_td": 1,
+    "total_high_probability": 2,
+    "total_recommended_units": 48.03,
+    "total_recommended_amount": 480.35
   }
 }
